@@ -6,7 +6,7 @@ Azure Cloud Shell sample commands:
 
 Save JSON from Configuration Items:
 
-$config_obj | Export-Csv -NoTypeInformation -Encoding utf8 config_obj.json
+$config_obj | ConvertTo-Json | Out-File -Encoding utf8 config_obj.json
 
 Connection Properties to convert between Policy-Based and VTI, etc.
 
