@@ -1,8 +1,8 @@
 Azure Cloud Shell sample commands:
 
-Get-AzVirtualNetworkGateway
-Get-AzLocalNetworkGateway
-Get-AzVirtualNetworkGatewayConnection
+* Get-AzVirtualNetworkGateway
+* Get-AzLocalNetworkGateway
+* Get-AzVirtualNetworkGatewayConnection
 
 Save JSON from Configuration Items:
 
