@@ -19,3 +19,6 @@ Cisco ASA Support for Azure VTI BGP Notes
   * Section "31-Bit Subnet Mask"
 * Example from Cisco for VTI with BGP
   * https://www.cisco.com/c/en/us/support/docs/security/adaptive-security-appliance-asa-software/214109-configure-asa-ipsec-vti-connection-to-az.html
+  * neighbor 1.2.3.4 ebgp-multihop #
+    * enable ebgp-multihop for the neighbor (neighbor ip not directly in vti subnet range)
+    * also requires a static route for reachability of the neighbor across the vti, see example
