@@ -7,5 +7,11 @@ One easy way is to install Git for Windows and access it through Git Bash.
 
 ## Default Configuration
 
-Show build details including default configuration path.
+Show build details including default configuration path (for openssl.cnf).
 * `openssl version -a`
+
+## Changes to Config File
+
+There is a line that should be uncommented under the `[ req ]` section of your customized `openssl.cnf` for creating Certificate Signing Requests (CSR).
+
+* `req_extensions = v3_req`
