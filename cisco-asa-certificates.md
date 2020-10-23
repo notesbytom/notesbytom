@@ -9,6 +9,15 @@ SSL AnyConnect VPN server certificate assignment.
 IKEv2 Remote-Access VPN server certificate assignment.
 * `crypto ikev2 remote-access trustpoint CERT_TP_NAME`
   * Substitute a real trust point name
+  
+IKEv1 Remote-Access VPN server certificate assignment.
+```
+tunnel-group GROUP_NAME ipsec-attributes
+  ikev1 trust-point CERT_TRUSTPOINT_NAME
+```
+* Substitute real tunnel-group and trust-point names
+  * Default tunnel-gruop for remote-access is `DefaultRAGroup`
+
 
 ## Anyconnect and ASDM Web URL's
 
