@@ -10,3 +10,12 @@ This is the VPN profile that is used when no other remote-access profiles match.
 ## IP Address Pools
 
 IP Address Pools for Remote-Access clients are defined with `ip local pool` and assigned to a tunnel-group with `address-pool`
+
+## Phase One Encryption
+
+IPsec Phase One (IKE/ISAKMP) encryption settings compatible with Windows L2TP-IPsec client default settings.
+* Cipher: 3DES
+* HMAC: SHA1
+* Diffie Hellman Group: 2
+
+Reference: [Default Encryption Settings for the Microsoft L2TP/IPSec Virtual Private Network Client](https://support.microsoft.com/en-us/help/325158/default-encryption-settings-for-the-microsoft-l2tp-ipsec-virtual-priva)
