@@ -33,3 +33,17 @@ You can test the new certificate for SSL/TLS protocols using a web browser and t
 Using `openssl` you can encode your PKCS12 binary file to a BASE64 text file.
 
 * `openssl base64 -in binary_pkcs12_input_filename -out base64_text_output_filename`
+
+## Import Certificates
+
+If you're storing the ASA identity certificate and associated CA certificate in the same trustpoint, import the PKCS12 first to create the new trustpoint, then import the CA certificate after the PKCS12 import is complete and the new trustpoint was automatically created.
+
+* Import a PKCS12 file into new ASA trustpoint
+  * `crypto ca import YOUR_TP_NAME PKCS12_SECRET`
+    * Past the base64 text encoded PKCS12 contents followed by `quit`
+* Import the root (or intermediate) CA to your new trustpoint.
+  * Enable terminal enrollment on the trustpoint first
+    * `crypto ca trustpoint YOUR_TP_NAME`
+      * `enrollment terminal`
+  * `crypto ca authenticate YOUR_TP_NAME`
+    * Paste the base64 PEM-encoded text certificate followed by `quit` then `yes` to accept
