@@ -27,3 +27,9 @@ You can test the new certificate for SSL/TLS protocols using a web browser and t
   * https://your.fqdn.com/
 * ASDM Managment will be under /admin/ if Anyconnect is enabled
   * https://your.fqdn.com/admin/
+
+## Encode PKCS12 binary to BASE64 text for ASA Import
+
+Using `openssl` you can encode your PKCS12 binary file to a BASE64 text file.
+
+* `openssl base64 -in binary_pkcs12_input_filename -out base64_text_output_filename`
