@@ -39,7 +39,7 @@ Using `openssl` you can encode your PKCS12 binary file to a BASE64 text file.
 If you're storing the ASA identity certificate and associated CA certificate in the same trustpoint, import the PKCS12 first to create the new trustpoint, then import the CA certificate after the PKCS12 import is complete and the new trustpoint was automatically created.
 
 * Import a PKCS12 file into new ASA trustpoint
-  * `crypto ca import YOUR_TP_NAME PKCS12_SECRET`
+  * `crypto ca import YOUR_TP_NAME pkcs12 PKCS12_SECRET`
     * Past the base64 text encoded PKCS12 contents followed by `quit`
 * Import the root (or intermediate) CA to your new trustpoint.
   * Enable terminal enrollment on the trustpoint first
