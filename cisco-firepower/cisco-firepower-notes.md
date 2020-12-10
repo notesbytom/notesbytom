@@ -10,6 +10,14 @@ From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][
 
 * *"Virtual Tunnel Interface (VTI) and route-based site-to-site VPN"*
 
+# SSH Decryption
+
+[ENH: Add SSH decryption on the Firepower (CSCvj90930)][7]
+
+Cisco Firepower Enhancement Request for SSH decryption has not been implemented. No indication of plans to add the feature.
+
+Open a support request with Cisco and mention this Enhancement request number to indicate your desire for the feature.
+
 # Traffic Decryption
 
 From FMC Config Guide v6.7, [Understanding Traffic Decryption][1]
@@ -54,3 +62,4 @@ From FMC Config Guide v6.7, [File and Malware Inspection Performance and Storage
 [4]: https://www.cisco.com/c/en/us/td/docs/security/firepower/623/configuration/guide/fpmc-config-guide-v623/decryption_tuning_using_ssl_rules.html
 [5]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvf75938/
 [6]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/relnotes/firepower-release-notes-670/m_features_functionality.html
+[7]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvj90930/
