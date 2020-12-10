@@ -25,6 +25,11 @@ To improve performance, you can restrict file detection to only one of those app
     * *"Protection (for Classic devices)"*
   * *"Allow, Block, Block with Reset"*
   
+From FMC Config Guide v6.2.3, [Decryption Tuning Using TLS/SSL Rules][4]
+
+* "*Encrypted Application Identification. The system can identify unencrypted applications that become encrypted using **StartTLS. This includes such applications as** SMTPS, POPS, **FTPS,** TelnetS, and IMAPS. In addition, it can identify certain encrypted applications based on the Server Name Indication in the TLS ClientHello message, or the server certificate subject distinguished name value."*
+  * It's not clear if the Firpower behavior with StartTLS applications would be different, hopefully the same once an application is identified?
+
 From FMC Config Guide v6.7, [File and Malware Inspection Performance and Storage Tuning][3]
   
 * *"Limit the number of bytes inspected when doing file type detection"* 
@@ -36,3 +41,4 @@ From FMC Config Guide v6.7, [File and Malware Inspection Performance and Storage
 [1]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/understanding_traffic_decryption.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_policies_and_advanced_malware_protection.html
 [3]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_and_malware_inspection_performance_and_storage_tuning.html
+[4]: https://www.cisco.com/c/en/us/td/docs/security/firepower/623/configuration/guide/fpmc-config-guide-v623/decryption_tuning_using_ssl_rules.html
