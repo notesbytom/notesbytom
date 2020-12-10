@@ -1,5 +1,15 @@
 # Cisco Firepower Notes
 
+# Virtual Tunnel Interfaces (VTI)
+
+[ENH: FTD should support VTI/Virtual-Template (CSCvf75938)][5]
+
+This has been implemented, it will be good to test it out :-). BGP settings will be important to tune dynamic routing.
+
+From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][6]
+
+* *"Virtual Tunnel Interface (VTI) and route-based site-to-site VPN"*
+
 # Traffic Decryption
 
 From FMC Config Guide v6.7, [Understanding Traffic Decryption][1]
@@ -42,3 +52,5 @@ From FMC Config Guide v6.7, [File and Malware Inspection Performance and Storage
 [2]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_policies_and_advanced_malware_protection.html
 [3]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_and_malware_inspection_performance_and_storage_tuning.html
 [4]: https://www.cisco.com/c/en/us/td/docs/security/firepower/623/configuration/guide/fpmc-config-guide-v623/decryption_tuning_using_ssl_rules.html
+[5]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvf75938/
+[6]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/relnotes/firepower-release-notes-670/m_features_functionality.html
