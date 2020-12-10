@@ -24,6 +24,15 @@ To improve performance, you can restrict file detection to only one of those app
     * *"Threat (for FTD devices)"*
     * *"Protection (for Classic devices)"*
   * *"Allow, Block, Block with Reset"*
+  
+From FMC Config Guide v6.7, [File and Malware Inspection Performance and Storage Tuning][3]
+  
+* *"Limit the number of bytes inspected when doing file type detection"* 
+  * *"Specifies the number of bytes inspected when performing file type detection."*
+  * *"0 - 4294967295 (4GB), 0 removes the restriction. The default value is the maximum segment size of a TCP packet (1460 bytes). 
+  In most cases, the system can identify common file types using the first packet. To detect ISO files, enter a value greater than 36870."*
+
 
 [1]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/understanding_traffic_decryption.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_policies_and_advanced_malware_protection.html
+[3]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_and_malware_inspection_performance_and_storage_tuning.html
