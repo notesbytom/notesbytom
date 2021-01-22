@@ -1,6 +1,6 @@
 # Gitlab Administrators
 
-## Grand admin access from cli
+## Grant admin access from cli
 
 If you have privileged command-line access, you can grant or revoke instance admininstrator role.
 - https://docs.gitlab.com/12.10/ee/security/reset_root_password.html
