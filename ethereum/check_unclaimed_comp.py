@@ -1,6 +1,4 @@
-import os
-import web3
-import json
+import os, json, web3
 
 # TEST SETUP to check unclaimed comp:
 # (1) Put your Compound account address in ...
@@ -9,6 +7,8 @@ import json
 # ... https://github.com/compound-finance/compound-config/tree/master/networks
 # (3) Put files 'mainnet-abi.json' and 'mainnet.json' in ...
 # ... script working directory
+# (4) Dependency is here: https://github.com/ethereum/web3.py ...
+# ... can be installed with `pip install web3`
 
 def test():
     myAddr = os.environ['MYACCOUNT']
