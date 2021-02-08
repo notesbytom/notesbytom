@@ -5,7 +5,7 @@ b = bytes.fromhex('2320536574205742544320436f6c6c61746572616c20466163746f7220746
 # print the value (b)
 # ... noticed some \n\n double newlines
 # ... noticed \xe2\x80\x99 utf8 value for "Right Single Quotation Mark"
-* ....  see also https://unicode-table.com/en/2019/
+# ....  see also https://unicode-table.com/en/2019/
 # ....  in javascript string, write it as '\u2019'
 
 hex(len(b))
