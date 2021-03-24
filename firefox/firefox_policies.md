@@ -35,4 +35,5 @@ The JSON Preferences setting seems to be preferred by the documentation. It requ
     "Value": true,
     "Status": "default"
   },
-}```
+}
+```
