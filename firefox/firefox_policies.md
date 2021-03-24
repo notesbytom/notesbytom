@@ -17,7 +17,9 @@
 
 ## User Certificate Support (OS Cert Store)
 
-The latest 2.8 release of Policy Templates is missing the `security.osclientcerts.autoload` option which is in the github master branch. Here is some information on the registry setting if desired for testing.
+The released Policy Templates has both the deprecated setting for Preferences `security.osclientcerts.autoload` and the modern JSON Preferences setting. 
+
+The deprecated preference sets a registry value with the following details.
 
 * https://github.com/mozilla/policy-templates/blob/master/windows/firefox.admx
   * Value Type: Boolean
@@ -26,3 +28,11 @@ The latest 2.8 release of Policy Templates is missing the `security.osclientcert
   * enabledValue: `decimal value="1"`
   * disabledValue: `decimal value="0"`
 
+The JSON Preferences setting seems to be preferred by the documentation. It requires all deprecated preferences to be unset (cleared).
+
+```{
+  "security.osclientcerts.autoload": {
+    "Value": true,
+    "Status": "default"
+  },
+}```
