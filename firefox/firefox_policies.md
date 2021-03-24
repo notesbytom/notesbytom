@@ -30,7 +30,8 @@ The deprecated preference sets a registry value with the following details.
 
 The JSON Preferences setting seems to be preferred by the documentation. It requires all deprecated preferences to be unset (cleared).
 
-```{
+```
+{
   "security.osclientcerts.autoload": {
     "Value": true,
     "Status": "default"
