@@ -19,15 +19,6 @@
 
 The released Policy Templates has both the deprecated setting for Preferences `security.osclientcerts.autoload` and the modern JSON Preferences setting. 
 
-The deprecated preference sets a registry value with the following details.
-
-* https://github.com/mozilla/policy-templates/blob/master/windows/firefox.admx
-  * Value Type: Boolean
-  * `key="Software\Policies\Mozilla\Firefox\Preferences"`
-  * `valueName="security.osclientcerts.autoload"`
-  * enabledValue: `decimal value="1"`
-  * disabledValue: `decimal value="0"`
-
 The JSON Preferences setting seems to be preferred by the documentation. It requires all deprecated preferences to be unset (cleared).
 
 ```
@@ -38,3 +29,12 @@ The JSON Preferences setting seems to be preferred by the documentation. It requ
   },
 }
 ```
+
+The **deprecated** preference sets a registry value with the following details. The documentation recommends the JSON Preferences config instead. Avoid setting this so that you can use the JSON Preferences (above).
+
+* https://github.com/mozilla/policy-templates/blob/master/windows/firefox.admx
+  * Value Type: Boolean
+  * `key="Software\Policies\Mozilla\Firefox\Preferences"`
+  * `valueName="security.osclientcerts.autoload"`
+  * enabledValue: `decimal value="1"`
+  * disabledValue: `decimal value="0"`
