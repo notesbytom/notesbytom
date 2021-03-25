@@ -43,6 +43,9 @@ The **deprecated** preference sets a registry value with the following details. 
 
 Firefox seems to be picky about JSON formatting for configuration text. Specifically I needed to REMOVE TRAILING COMMA after the last element.
 
+* Trailing commas in JSON (Mozilla JavaScript Reference)
+  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas#trailing_commas_in_json
+  * *"trailing commas are **not allowed** in JSON"*
 * Can you use a trailing comma in a JSON object?
   * https://stackoverflow.com/questions/201782/can-you-use-a-trailing-comma-in-a-json-object
   * Answer: Not allowed by JSON specification, but some parsers might not care.
