@@ -26,7 +26,7 @@ The JSON Preferences setting seems to be preferred by the documentation. It requ
   "security.osclientcerts.autoload": {
     "Value": true,
     "Status": "default"
-  },
+  }
 }
 ```
 
@@ -38,3 +38,12 @@ The **deprecated** preference sets a registry value with the following details. 
   * `valueName="security.osclientcerts.autoload"`
   * enabledValue: `decimal value="1"`
   * disabledValue: `decimal value="0"`
+
+## JSON Formatting Issues
+
+Firefox seems to be picky about JSON formatting for configuration text. Specifically I needed to REMOVE TRAILING COMMA after the last element.
+
+* Can you use a trailing comma in a JSON object?
+  * https://stackoverflow.com/questions/201782/can-you-use-a-trailing-comma-in-a-json-object
+  * Answer: Not allowed by JSON specification, but some parsers might not care.
+  * Firefox configuration parser seems to disallow trailing commas in JSON text.
