@@ -28,3 +28,21 @@
   * Adjust to `threshold 10 retry 10` to match AWS suggestion?
 * AWS Example Config suggests `threshold 10 retry 10`
 
+### BGP ASDOT Notation
+
+* AWS Virtual Gateway Supports 32-bit Private AS Numbers
+  * These must be specified in ASPlain Notation for Configuration
+  * 32-bit Private AS Number Range in ASPlain
+    * `4200000000 - 4294967294` (asplain)
+  * Configuration Viewing is also in ASPlain Notation
+* AWS Customer Gateway Object Supports Only 16-bit Private AS Numbers
+  * This is due to their use of Signed Integer for the Value
+  * Maximum positive Signed Integer is 2^31-1
+  * 32-bit Private AS Numbers are bigger than this
+* Cisco ASA Supports BGP Configuration with ASDot Notation
+  * 32-bit Private AS Number Range in ASDot
+    * `64086.59904 - 65535.65534` (asdot)
+  * To view configured AS Numbers as ASDot configure `router bgp ...`
+    * `bgp asnotation dot`
+    * Without this command, values will appear as ASPlain
+
