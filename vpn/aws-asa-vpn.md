@@ -20,3 +20,11 @@
   * Consider changing to "Start" to match ASA?
   * Start is only supported with IP-Address Customer Gateway
 
+### Dead Peer Detection (DPD)
+
+* ASA Default is `threshold 10 retry 2`
+  * This is configured under `tunnel-group ... ipsec-attributes`
+  * Option is `isakmp keepalive ...`
+  * Adjust to `threshold 10 retry 10` to match AWS suggestion?
+* AWS Example Config suggests `threshold 10 retry 10`
+
