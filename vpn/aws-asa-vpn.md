@@ -14,3 +14,9 @@ Phase 2 Lifetime:
   * This can be set at the `crypto ipsec profile` level
 * AWS Default 3600 Seconds (max)
 
+Startup Action:
+* ASA Default is Both (Initiator and Responder)
+* AWS Default is Add (Responder-Only)
+  * Consider changing to "Start" to match ASA?
+  * Start is only supported with IP-Address Customer Gateway
+
