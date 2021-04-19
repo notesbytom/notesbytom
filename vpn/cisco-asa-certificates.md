@@ -2,22 +2,30 @@
 
 ## Assign Cert to Services
 
-SSL AnyConnect VPN server certificate assignment.
+**SSL AnyConnect VPN** server certificate assignment.
 * `ssl trust-point CERT_TP_NAME outside`
   * Substitute a real trust point name and interface (outside is an example)
 
-IKEv2 Remote-Access VPN server certificate assignment.
+**IKEv2 Remote-Access VPN** server certificate assignment.
 * `crypto ikev2 remote-access trustpoint CERT_TP_NAME`
   * Substitute a real trust point name
   
-IKEv1 Remote-Access VPN server certificate assignment.
+**IKEv1 Remote-Access VPN** server certificate assignment.
 ```
 tunnel-group GROUP_NAME ipsec-attributes
   ikev1 trust-point CERT_TRUSTPOINT_NAME
 ```
 * Substitute real tunnel-group and trust-point names
-  * Default tunnel-gruop for remote-access is `DefaultRAGroup`
+  * Default tunnel-group for remote-access is `DefaultRAGroup`
 
+**Client Authentication** with CA certificate (trustpoint)
+```
+crypto ca trustpoint YOUR_TRUSTPOINT_NAME
+ validation-usage ipsec-client ssl-client
+```
+* The default for a trustpoint is: `ipsec-client ssl-client`
+* Non-standard ipsec client cert? `ignore-ipsec-keyusage` (NOT recommended)
+* Non-standard ssl client cert? `ignore-ssl-keyusage` (NOT recommended)
 
 ## Anyconnect and ASDM Web URL's
 
