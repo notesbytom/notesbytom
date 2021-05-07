@@ -1,4 +1,4 @@
-# Replicate between Named Active Directory Sites. 
+# Replicate between Named Active Directory Sites. Bi-Directional (push and pull)
 #   Call it like: Replicate-SitePair "Site1" "Site2"
 #   Get Site Names: Get-ADReplicationSite -Properties CN -Filter * | sort CN | ft CN
 #   Replication Topology (KCC) must have selected this site-pair for direct replication
