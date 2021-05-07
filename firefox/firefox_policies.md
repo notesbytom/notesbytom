@@ -2,6 +2,8 @@
 
 ## Policy Reference Documents
 
+* Customizing Firefox Using Group Policy (Windows)
+  * https://support.mozilla.org/en-US/kb/customizing-firefox-using-group-policy-windows
 * Expanding Client Certificates in Firefox 75
   *  https://blog.mozilla.org/security/2020/04/14/expanding-client-certificates-in-firefox-75/
   *  `about:config` item `security.osclientcerts.autoload`
@@ -9,6 +11,9 @@
   * https://github.com/mozilla/policy-templates/blob/master/README.md
   * Certificates | ImportEnterpriseRoots
     * Configuration Item `security.enterprise_roots.enabled`
+  * Disable Firefox Accounts integration (Sync)
+    * Configuration Item `identity.fxaccounts.enabled`
+    * GPO Registry: `Software\Policies\Mozilla\Firefox\DisableFirefoxAccounts`
   * Preferences
     * Configuration Item `security.osclientcerts.autoload`
 * Setting Up Certificate Authorities (CAs) in Firefox
