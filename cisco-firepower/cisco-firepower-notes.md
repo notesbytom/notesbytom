@@ -10,6 +10,13 @@ From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][
 
 * *"Virtual Tunnel Interface (VTI) and route-based site-to-site VPN"*
 
+# Manage FTD on a data interface
+
+From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][6]
+
+* *"You can now configure FMC management of the FTD on a data interface instead of using the dedicated management interface. This feature is useful for remote deployment when you want to manage the FTD at a branch office from an FMC at headquarters and need to **manage the FTD on the outside interface**."*
+* *"FMC access on a data interface is not supported with clustering or high availability."*
+
 # SSH Decryption
 
 [ENH: Add SSH decryption on the Firepower (CSCvj90930)][7]
