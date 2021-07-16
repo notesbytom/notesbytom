@@ -9,4 +9,5 @@ EIGRP is the Cisco Proprietary Enhanced Interior Gateway Routing Protocol.
 * If an **EIGRP authentication key** is used, add that under the INTERFACE CONFIGURATION.
   * `authentication key eigrp 10 cisco123 key-id 1`
   * `authentication mode eigrp 10 md5`
+  * If copying the key from Cisco IOS, you can use `show key chain` to view the IOS key.
 
