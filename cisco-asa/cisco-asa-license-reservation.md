@@ -22,7 +22,7 @@ Here are some example commands for managing permanent license reservation on the
 * `license smart`
   * `feature tier standard`
   * `feature context number`
-* A REBOOT might be required to activate some features.
+* A REBOOT (`reload`) might be required to activate some features.
   
 ## Clock Time
 
