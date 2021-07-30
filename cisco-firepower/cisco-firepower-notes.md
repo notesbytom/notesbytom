@@ -1,6 +1,6 @@
 # Cisco Firepower Notes
 
-# Offline License Reservation
+## Offline License Reservation
 
 Starting with FDM 6.6 (locally-managed firepower FTD device), FDM supports Universal Permanent License Reservation. 
 
@@ -9,7 +9,7 @@ Starting with FDM 6.6 (locally-managed firepower FTD device), FDM supports Unive
 * "FDM supports Universal PLR only. You cannot apply a Specific PLR to an FDM-managed device."
 * "You must work with your Cisco representative to enable Universal Permanent License Reservation (PLR) mode in your Cisco Smart Software Manager (CSSM) account."
 
-# Virtual Tunnel Interfaces (VTI)
+## Virtual Tunnel Interfaces (VTI)
 
 [ENH: FTD should support VTI/Virtual-Template (CSCvf75938)][5]
 
@@ -19,14 +19,14 @@ From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][
 
 * *"Virtual Tunnel Interface (VTI) and route-based site-to-site VPN"*
 
-# Manage FTD on a data interface
+## Manage FTD on a data interface
 
 From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][6]
 
 * *"You can now configure FMC management of the FTD on a data interface instead of using the dedicated management interface. This feature is useful for remote deployment when you want to manage the FTD at a branch office from an FMC at headquarters and need to **manage the FTD on the outside interface**."*
 * *"FMC access on a data interface is not supported with clustering or high availability."*
 
-# SSH Decryption
+## SSH Decryption
 
 [ENH: Add SSH decryption on the Firepower (CSCvj90930)][7]
 
@@ -34,7 +34,7 @@ Cisco Firepower Enhancement Request for SSH decryption has not been implemented.
 
 Open a support request with Cisco and mention this Enhancement request number to indicate your desire for the feature.
 
-# Traffic Decryption
+## Traffic Decryption
 
 From FMC Config Guide v6.7, [Understanding Traffic Decryption][1]
 
@@ -45,7 +45,7 @@ actions. For more information, see Decrypt and Resign (Outgoing Traffic). and Kn
 * *"**Aggressive TLS 1.3 downgrade**, [introduced in] 6.2.3.7, Using the system support `ssl-client-hello-enabled aggressive_tls13_downgrade {true|false}` 
 CLI command, you can determine the behavior for downgrading TLS 1.3 traffic to TLS 1.2. For details, see the Command Reference for Firepower Threat Defense."*
 
-# File Control
+## File Control
 
 From FMC Config Guide v6.7, [File Policies and Malware Protection][2]
 
