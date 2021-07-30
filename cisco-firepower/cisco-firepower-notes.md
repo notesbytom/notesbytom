@@ -1,5 +1,14 @@
 # Cisco Firepower Notes
 
+# Offline License Reservation
+
+Starting with FDM 6.6 (locally-managed firepower FTD device), FDM supports Universal Permanent License Reservation. 
+
+* https://www.cisco.com/c/en/us/td/docs/security/firepower/660/fdm/fptd-fdm-config-guide-660/fptd-fdm-license.html#id_123878
+* "If you do not have a path to the internet for the system, you cannot use Smart Licensing. Instead, switch to Permanent License Reservation (PLR) mode."
+* "FDM supports Universal PLR only. You cannot apply a Specific PLR to an FDM-managed device."
+* "You must work with your Cisco representative to enable Universal Permanent License Reservation (PLR) mode in your Cisco Smart Software Manager (CSSM) account."
+
 # Virtual Tunnel Interfaces (VTI)
 
 [ENH: FTD should support VTI/Virtual-Template (CSCvf75938)][5]
