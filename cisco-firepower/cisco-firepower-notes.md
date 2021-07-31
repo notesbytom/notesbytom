@@ -1,5 +1,12 @@
 # Cisco Firepower Notes
 
+## SAML Authentication
+
+SAML support was added for FMC in version 6.7.0.
+
+* "The FMC now supports single sign-on (SSO) for external users configured at any third-party SAML 2.0-compliant identity provider (IdP)."
+* https://www.cisco.com/c/en/us/td/docs/security/firepower/roadmap/fmc-new-features/fmc-new-features-by-release.html
+
 ## Offline License Reservation
 
 Starting with FDM 6.6 (locally-managed firepower FTD device), FDM supports Universal Permanent License Reservation. 
