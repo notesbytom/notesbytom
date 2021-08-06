@@ -53,6 +53,7 @@ Examples for LACP channel-group (etherchannel)
 * `int port-channel 2`
   * `switchport mode trunk`
   * `description Po 2 LACP to OtherSwitch DTP`
+* `show etherchannel`
 
 ## Native Vlan Tagging
 
