@@ -30,6 +30,30 @@ Examples for configuring serial-console and ssh access "lines".
 * Exec mode command `vtp primary` or `do vtp primary` (from config mode) to add or edit vlan information (assign name to number).
   * All devices by default are secondary servers (can't add or edit layer-two vlans).
 
+## Port-Channel LACP
+
+Examples for LACP channel-group (etherchannel)
+
+* `int gig 1/0/47`
+  * `channel-group 1 mode active`
+  * `description port-channel 1 member g1/0/47`
+* `int gig 1/0/48`
+  * `channel-group 1 mode active`
+  * `description port-channel 1 member g1/0/48`
+* `int port-channel 1`
+  * `switchport mode trunk`
+  * `switchport nonegotiate`
+  * `description Po 1 LACP to firewall NO-dtp`
+* `int gig 1/0/45`
+  * `channel-group 2 mode active`
+  * `description port-channel 2 member g1/0/45`
+* `int gig 1/0/46`
+  * `channel-group 2 mode active`
+  * `description port-channel 2 member g1/0/46`
+* `int port-channel 2`
+  * `switchport mode trunk`
+  * `description Po 2 LACP to OtherSwitch DTP`
+
 ## Native Vlan Tagging
 
 * Global command: `vlan dot1q tag native`
