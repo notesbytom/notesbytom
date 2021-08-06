@@ -2,6 +2,25 @@
 
 Tech Notes for Cisco Catalyst switches.
 
+## Clock Time
+
+Examples for configuring and managing time settings.
+
+* `clock timezone EST -5`
+* `clock summer-time EDT recurring`
+* `show clock`
+* `clock set HH:MM:SS Month DD YYYY`
+
+## Management Console
+
+Examples for configuring serial-console and ssh access "lines".
+
+* `line con 0`
+  * `logging synchronous`
+* `line vty 0 15`
+  * `logging synchronous`
+  * `transport input ssh`
+
 ## VLAN Trunk Protocol (VTP)
 
 * Use VTP Version 3 to support vlans 1 through 4094 (extended range).
