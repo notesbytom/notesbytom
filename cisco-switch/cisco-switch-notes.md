@@ -20,6 +20,7 @@ Examples for configuring serial-console and ssh access "lines".
 * `line vty 0 15`
   * `logging synchronous`
   * `transport input ssh`
+* `show run part line`
 
 ## VLAN Trunk Protocol (VTP)
 
