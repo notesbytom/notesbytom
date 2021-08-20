@@ -1,5 +1,9 @@
 # Windows Dynamic DNS Registration Fails
 
+## Related Issue - Azure Information Protection Conditional Access
+
+I believe that the Azure Information Protection Conditional-Access machine registration / access token was being partially reset on every reboot of these impacted systems due to the behavior mimicking a computer name-change / domain-join operation.
+
 ## Test Commands with Error Messages
 
 Command-prompt and PowerShell test commands with associated error messages and comments.
@@ -16,8 +20,9 @@ Command-prompt and PowerShell test commands with associated error messages and c
 
 In our environment the cause of this issue was a pending computer-name change or domain join which normally would just require a system reboot to resolve.
 
-Unfortunately, in our environment a team-member had created a desired-state-configuration to automate domain-join to our old-domain which was triggered by a scheduled task
-during every startup or user logon. 
+Unfortunately, in our environment a team-member had created a desired-state-configuration to automate domain-join 
+to our old-domain which was triggered by a scheduled task during every startup or user logon. 
+The legacy-doman join was failing, but the system was still acting as if a name-change or domain-join was in-process and pending-reboot.
 
 In order to resolve the issue we were able to disable or unregister the scheduled task and remove the DSC (no longer needed).
 
