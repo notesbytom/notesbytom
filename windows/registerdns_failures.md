@@ -4,6 +4,16 @@
 
 I believe that the Azure Information Protection Conditional-Access machine registration / access token was being partially reset on every reboot of these impacted systems due to the behavior mimicking a computer name-change / domain-join operation.
 
+## Dynamic DNS Registration Overview
+
+During normal operation a computer will automatically register its DNS record(s) at boot, on a regular refresh interval, and any time the computer IP Address changes. 
+
+If a computer has more than one IP Address (like wifi and wired), the dynamic dns registration results may be unreliable.
+
+Active-Directory integrated DNS records replicate with the rest of the LDAP directory partitions. New or changed records will take the replication interval before they resolve in other sites or domain-controllers.
+
+Recent versions of Windows also dynamically register reverse-dns IP-to-Name records when possible. These reverse records are Highly Unreliable because a reverse record created by one computer will be "owned" by the first computer with that reverse-record. Other computers using an ip-address previously registered by another computer will be unable to delete or change the reverse-record because the record is "owned" by the previous computer. DNS Stale-Record Scavenging can be enabled if desired to attempt to clear out old inaccurate reverse-dns records but BEWARE that some dynamically-registered server dns-records may be automatically-deleted in the process of scavenging stale client reverse-dns records. BACKUP a copy of all dns-records to CSV using powershell BEFORE enabling DNS Stale-Record Scavenging to have a record of any reverse entries to add back as static for servers.
+
 ## Test Commands with Error Messages
 
 Command-prompt and PowerShell test commands with associated error messages and comments. These commands require UAC Privilege Elevation (run-as-administrator).
