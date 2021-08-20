@@ -6,7 +6,7 @@ I believe that the Azure Information Protection Conditional-Access machine regis
 
 ## Test Commands with Error Messages
 
-Command-prompt and PowerShell test commands with associated error messages and comments.
+Command-prompt and PowerShell test commands with associated error messages and comments. These commands require UAC Privilege Elevation (run-as-administrator).
 
 * `ipconfig /registerdns`
   * ERROR: `Registration of DNS records failed: The service has not been started.`
