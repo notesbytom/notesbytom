@@ -25,16 +25,16 @@ In order to resolve the issue we were able to disable or unregister the schedule
 
 Commands to review and disable or remove a named scheduled task with comments.
 
-* `Get-ScheduledTask -TaskName "YourProblemTaskName" -Verbose`
+* `Get-ScheduledTask -TaskName 'YourProblemTaskName' -Verbose`
   * This will fail if a task with the matching name is missing.
 * `Get-ScheduledTask -TaskPath '\'`
   * List all root-level scheduled tasks for the computer
-* (Get-ScheduledTask -TaskPath '\' | Where TaskName -eq 'YourProblemTaskName') -ne $null
+* `(Get-ScheduledTask -TaskPath '\' | Where TaskName -eq 'YourProblemTaskName') -ne $null`
   * Returns `$true` if the TaskName is present
   * Returns `$false` if the TaskName is missing
-* `Disable-ScheduledTask -TaskName "YourProblemTaskName" -Verbose`
+* `Disable-ScheduledTask -TaskName 'YourProblemTaskName' -Verbose`
   * Disable the named scheduled task (without deleting)
-* `Unregister-ScheduledTask -TaskName "YourProblemTaskName" -Confirm:$false -Verbose`
+* `Unregister-ScheduledTask -TaskName 'YourProblemTaskName' -Confirm:$false -Verbose`
   * Remove the named scheduled task (delete)
 
 ## Remove Desired State Configuration (DSC)
