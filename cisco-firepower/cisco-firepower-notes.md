@@ -39,6 +39,7 @@ From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][
 
 * *"You can now configure FMC management of the FTD on a data interface instead of using the dedicated management interface. This feature is useful for remote deployment when you want to manage the FTD at a branch office from an FMC at headquarters and need to **manage the FTD on the outside interface**."*
 * *"FMC access on a data interface is not supported with clustering or high availability."*
+* This is supported in FTD "Routed" firewall-mode only on a routed-interface. It doesn't work on Transparent firewall as of August 2021.
 
 ## SSH Decryption
 
