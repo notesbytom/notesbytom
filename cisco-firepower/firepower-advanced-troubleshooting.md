@@ -6,7 +6,7 @@
 * Accessible from Health Monitor - Select Device - Advanced Troubleshooting button.
 * Files in `/var/common/` can be downloaded from here with the exact filename (case sensitive).
 
-## `locate` and `updatedb`
+## locate and updatedb
 
 Firepower 7.0 seems to have a compatibility issue with the `locate` database. This might only be an issue for upgrades from previous releases?
 I am seeing the issue after an upgrade from FMC 6.4 to 7.0. I was able to resolve it with the following.
