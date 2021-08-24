@@ -84,7 +84,16 @@ From FMC Config Guide v6.7, [File and Malware Inspection Performance and Storage
   * *"Specifies the number of bytes inspected when performing file type detection."*
   * *"0 - 4294967295 (4GB), 0 removes the restriction. The default value is the maximum segment size of a TCP packet (1460 bytes). 
   In most cases, the system can identify common file types using the first packet. To detect ISO files, enter a value greater than 36870."*
+  
+## Snort Rule Updates
 
+Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat management products for use with Firepower devices.
+
+* VRT file contains Cisco Talos Snort 2 Rules
+  * VRT = Sourcefire [Vulnerability Research Team](https://en.wikipedia.org/wiki/Sourcefire_Vulnerability_Research_Team)
+  * SRU = Snort Rule Update (Snort 2)
+* LSP file contains Cisco Talos Snort 3 Rules
+  * LSP = [Lightweight Security Package](https://www.cisco.com/c/en/us/td/docs/security/firepower/70/snort3/config-guide/snort3-configuration-guide-v70/overview.html)
 
 [1]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/understanding_traffic_decryption.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_policies_and_advanced_malware_protection.html
