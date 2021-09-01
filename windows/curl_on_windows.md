@@ -14,3 +14,17 @@ Git for Windows includes Git Bash cli tools based on msys2 which includes `curl`
 
 * https://git-scm.com/ - Git official Windows distribution
 
+## netrc Credentials
+
+Credentials for protocols like FTP can be specified in a `.netrc` configuration file.
+
+* Option: [`--netrc`](https://curl.se/docs/manpage.html#-n)
+  * Unix/Linux/Git-Bash: `$HOME/.netrc` (`~/.netrc`)
+  * Windows-Native: `$env:HOME\_netrc` (`%HOME%\_netrc`)
+    * NOTE: HOME is MISSING on Windows by default.
+    * cmd (temporary): `set HOME=%USERPROFILE%`
+    * powershell (temporary): `$env:HOME=$env:USERPROFILE`
+    * `setx` ... I don't know how to use this but I think it can set persistent environment variables
+    * GUI: `rundll32 sysdm.cpl,EditEnvironmentVariables`
+* Option: [`--netrc-file`](https://curl.se/docs/manpage.html#--netrc-file)
+  * Override default path and filename of `.netrc` file
