@@ -36,7 +36,7 @@ The `shred` cli tool is included in Git Bash. It can be used to securely delete 
 * In Git Bash
   * `shred --remove test_file`
 
-## Expand Bash Variables
+## Expand Git-Bash Variables
 
 Directly in git-bash, variable notation like `~` or `$HOME` will expand
 to indicate a real value for programs.
