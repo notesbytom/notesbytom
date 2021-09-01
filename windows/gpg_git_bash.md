@@ -41,7 +41,18 @@ The `shred` cli tool is included in Git Bash. It can be used to securely delete 
 Directly in git-bash, variable notation like `~` or `$HOME` will expand
 to indicate a real value for programs.
 
-When running git-bash tools externally like from PowerShell, prefix a command with `eval`
-to invoke shell-expansion in a command-string.
+When running git-bash tools externally like from PowerShell, BEWARE of how you're QUOTING EXPANDABLE ITEMS. 
+If bash sees items within single-quotes it WILL NOT expand them.
+Here's an Powershell quoting-fail example followed by the corrected successful version.
+* `& 'C:\Program Files\Git\bin\bash.exe' -l -c "gpg --batch --quiet --passphrase-file test_key --output '~/test.txt' --decrypt test.txt.asc"`
+  * FAILS WITH `gpg: error creating '~/test.txt': No such file or directory`
+  * NOTE that the single-quotes around our `~` are passed to bash: `'~/test.txt'`
+* `& 'C:\Program Files\Git\bin\bash.exe' -l -c 'gpg --batch --quiet --passphrase-file test_key --output "~/test.txt" --decrypt test.txt.asc'`
+  * WORKS because `~` is inside double-quotes which are passed to bash: `"~/test.txt"`
 
-* ...
+An odd workaround that makes the broken example work, prefixing command with `eval`.
+In this case I believe `eval` removes the single quotes before passing the "evaluated"
+command-string to bash.
+* `& 'C:\Program Files\Git\bin\bash.exe' -l -c "eval gpg --batch --quiet --passphrase-file test_key --output '~/test.txt' --decrypt test.txt.asc"`
+  * This works but is not recommended, the quoting should be fixed to 
+    pass double-quotes or no-quotes to bash around the `~` or other expandable item.
