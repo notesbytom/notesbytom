@@ -56,3 +56,5 @@ command-string to bash.
 * `& 'C:\Program Files\Git\bin\bash.exe' -l -c "eval gpg --batch --quiet --passphrase-file test_key --output '~/test.txt' --decrypt test.txt.asc"`
   * This works but is not recommended, the quoting should be fixed to 
     pass double-quotes or no-quotes to bash around the `~` or other expandable item.
+
+* [Invoking Bash](https://www.gnu.org/software/bash/manual/html_node/Invoking-Bash.html) GNU documentation
