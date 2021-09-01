@@ -15,6 +15,7 @@ Recent versions of Windows ship with a native curl.exe command-line tool.
 Git for Windows includes Git Bash cli tools based on msys2 which includes `curl`.
 
 * https://git-scm.com/ - Git official Windows distribution
+* Running from powershell, see [gpg_git_bash.md](./gpg_git_bash.md) notes
 
 ## Certificate Revocation Check
 
