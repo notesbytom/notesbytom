@@ -16,6 +16,18 @@ Git for Windows includes Git Bash cli tools based on msys2 which includes `curl`
 
 * https://git-scm.com/ - Git official Windows distribution
 
+## Certificate Revocation Check
+
+By default, schannel on Windows will check certificate revocation.
+If a CRL other revocation check method is not available then secure connections
+will fail. If there is no way to load a CRL or verify revocation status then you
+can tell `curl` to ignore unknown revocation status.
+
+* Option: `--ssl-revoke-best-effort`
+* This option is available in curl with git-bash
+* Older curl native-version on windows has option `--ssl-no-revoke` instead
+  * A future upgrade should have the new best-effort option which is preferred
+
 ## netrc Credentials
 
 Credentials for protocols like FTP can be specified in a `.netrc` configuration file.
