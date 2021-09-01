@@ -24,3 +24,20 @@ There are other ways to generate a sequence of random characters. This is a simp
 * In Git Bash
   * `gpg --batch --quiet --passphrase-file test_key --output test.txt --decrypt test.txt.asc`
 * OUTPUT file is named in `--output` option
+
+## Securely Delete Plaintext File
+
+The `shred` cli tool is included in Git Bash. It can be used to securely delete files.
+
+* In Git Bash
+  * `shred --remove test_file`
+
+## Expand Bash Variables
+
+Directly in git-bash, variable notation like `~` or `$HOME` will expand
+to indicate a real value for programs.
+
+When running git-bash tools externally like from PowerShell, prefix a command with `eval`
+to invoke shell-expansion in a command-string.
+
+* ...
