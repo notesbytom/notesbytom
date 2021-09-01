@@ -17,12 +17,16 @@ There are other ways to generate a sequence of random characters. This is a simp
 
 * In Git Bash
   * `gpg --batch --armor --passphrase-file test_key --symmetric test.txt`
+* In Powershell
+  * `& 'C:\Program Files\Git\bin\bash.exe' -l -c 'gpg --batch --armor --passphrase-file test_key --symmetric test.txt'`
 * OUTPUT FILE will be `test.txt.asc` (appends `.asc` to original filename)
 
 ## Decrypt a File With Symmetric Key
 
 * In Git Bash
   * `gpg --batch --quiet --passphrase-file test_key --output test.txt --decrypt test.txt.asc`
+* In Powershell
+  * `& 'C:\Program Files\Git\bin\bash.exe' -l -c 'gpg --batch --quiet --passphrase-file test_key --output test.txt --decrypt test.txt.asc'`
 * OUTPUT file is named in `--output` option
 
 ## Securely Delete Plaintext File
