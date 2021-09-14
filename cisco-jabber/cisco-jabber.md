@@ -24,5 +24,12 @@
     * Escalate to a meeting and share
       * Use Webex instead of Jabber Screen Sharing
 
+HINT, start a Video Call with a contact and from there start the screen sharing which will use BFCP over the video call.
+
+* [ow to Enable Screen Sharing in Jabber](https://uit.stanford.edu/service/jabber/screen-share)
+  * Only available during video call (BFCP)
+  * Help Article from Stanford University IT
+  * Comment about IM-Only screen sharing limitations - less support for this option.
+
 [1]: https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/jabber/14_0/cjab_b_planning-guide-cisco-jabber-14_0/cjab_b_planning-guide-cisco-jabber-129_chapter_01010.html
 [2]: https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/jabber/14_0/cjab_b_planning-guide-cisco-jabber-14_0/cjab_b_planning-guide-cisco-jabber-129_chapter_01000.html
