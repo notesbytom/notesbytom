@@ -31,5 +31,14 @@ HINT, start a Video Call with a contact and from there start the screen sharing 
   * Help Article from Stanford University IT
   * Comment about IM-Only screen sharing limitations - less support for this option.
 
+## Parameters Reference
+
+* [Parameters Reference Guide for Cisco Jabber 14.0 - Common Policies][3]
+  * `EnableP2PDesktopShare`
+    * Default is true
+  * `EnableBFCPVideoDesktopShare`
+    * Default is true
+
 [1]: https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/jabber/14_0/cjab_b_planning-guide-cisco-jabber-14_0/cjab_b_planning-guide-cisco-jabber-129_chapter_01010.html
 [2]: https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/jabber/14_0/cjab_b_planning-guide-cisco-jabber-14_0/cjab_b_planning-guide-cisco-jabber-129_chapter_01000.html
+[3]: https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/jabber/14_0/cjab_book_parameters-reference-guide-for-cisco-jabber-14_0/cjab_b_parameter-reference-guide-jabber-129_chapter_0111.html
