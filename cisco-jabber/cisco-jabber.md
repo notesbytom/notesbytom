@@ -26,7 +26,7 @@
 
 HINT, start a Video Call with a contact and from there start the screen sharing which will use BFCP over the video call.
 
-* [ow to Enable Screen Sharing in Jabber](https://uit.stanford.edu/service/jabber/screen-share)
+* [How to Enable Screen Sharing in Jabber](https://uit.stanford.edu/service/jabber/screen-share)
   * Only available during video call (BFCP)
   * Help Article from Stanford University IT
   * Comment about IM-Only screen sharing limitations - less support for this option.
