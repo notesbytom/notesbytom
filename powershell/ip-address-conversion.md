@@ -17,3 +17,7 @@ Now we finish by shifting back to the right by 16 bits (two bytes) so that they 
 
 Note that the IPAddress.Address property is deprecated because it is too small for ipv6 address.
 For compatibility with ipv6, code should use IPAddress.GetAddressBytes()
+
+## Greater Than Less Than Comparisons
+
+The reason we want an integer representation is to do greater-than or less-than comparisons for sorting and filtering!
