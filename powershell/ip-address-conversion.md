@@ -18,6 +18,11 @@ Now we finish by shifting back to the right by 16 bits (two bytes) so that they 
 Note that the IPAddress.Address property is deprecated because it is too small for ipv6 address.
 For compatibility with ipv6, code should use IPAddress.GetAddressBytes()
 
+Here's an example using the `BitConverter`. It takes three statements rather than one. 
+*This pattern can be altered to support IPv6 with BigInteger.*
+
+`$bytes = [IPAddress]::Parse("4.3.2.1").getAddressBytes(); [Array]::Reverse($bytes); [BitConverter]::ToUInt32($bytes,0)`
+
 ## Greater Than Less Than Comparisons
 
 The reason we want an integer representation is to do greater-than or less-than comparisons for sorting and filtering!
