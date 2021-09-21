@@ -26,3 +26,11 @@ Here's an example using the `BitConverter`. It takes three statements rather tha
 ## Greater Than Less Than Comparisons
 
 The reason we want an integer representation is to do greater-than or less-than comparisons for sorting and filtering!
+
+## Array Comparisons
+
+It is also possible to compare two arrays structurally in PowerShell using something like the following.
+
+`(1,2,3).CompareTo((3,2,1),[System.Collections.StructuralComparisons]::StructuralComparer)`
+
+This returns `-gt 0`, `-eq 0`, or `-lt 0` for greater-than, equal, or less-than respectively.
