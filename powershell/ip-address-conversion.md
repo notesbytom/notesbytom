@@ -8,7 +8,7 @@ You can convert an IPv4 Address Object in DotNet into an Int64/long. These IPAdd
 
 `[ipaddress]::NetworkToHostOrder(([ipaddress]"4.3.2.1").Address -shl 16) -shr 16`
 
-This is tricky because the IPAddress.Address is stored in network-byte-order (big endian).
+This is tricky because the `IPAddress.Address` is stored in network-byte-order (big endian).
 Since it is a signed long, the address is in the lower four bytes.
 If we do network-to-host without shifting, the first byte will be in the sign position (unwanted).
 By shifting left by 16 bits, the ipv4 address is now in the "middle" four bytes of the 8-byte long.
