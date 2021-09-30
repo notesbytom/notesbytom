@@ -13,4 +13,5 @@ Alternatively you can use the hints here to configure the AP with a static IP an
   * Verify with `show capwap ip config`
 * Configure the SwitchPort for the matching access vlan
 * Verify connectivity from AP to the controller with `ping a.b.c.d`
-* Configure a Controller IP: `capwap ap primary-base 4.3.2.1
+* Configure a Controller IP: `capwap ap primary-base 4.3.2.1`
+* Turn logging back on: `logging console` 
