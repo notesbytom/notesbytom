@@ -52,7 +52,7 @@ Open a support request with Cisco and mention this Enhancement request number to
 
 ## Traffic Decryption
 
-From FMC Config Guide v6.7, [Understanding Traffic Decryption][1]
+From FMC Config Guide v7.0, [Understanding Traffic Decryption][1]
 
 * *"The Firepower System **does not support mutual authentication; that is, you cannot upload a client
 certificate** to the FMC and use it for either Decrypt - Resign or Decrypt - Known Key TLS/SSL rule 
@@ -98,7 +98,7 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 * LSP file contains Cisco Talos Snort 3 Rules
   * LSP = [Lightweight Security Package](https://www.cisco.com/c/en/us/td/docs/security/firepower/70/snort3/config-guide/snort3-configuration-guide-v70/overview.html)
 
-[1]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/understanding_traffic_decryption.html
+[1]: https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/understanding_traffic_decryption.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_policies_and_advanced_malware_protection.html
 [3]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_and_malware_inspection_performance_and_storage_tuning.html
 [4]: https://www.cisco.com/c/en/us/td/docs/security/firepower/623/configuration/guide/fpmc-config-guide-v623/decryption_tuning_using_ssl_rules.html
