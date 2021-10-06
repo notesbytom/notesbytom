@@ -10,7 +10,7 @@ Here's an example roughly based on the above Q&A post.
 
 * `openssl rand -out sample.txt -base64 $(( 2**30 * (6*64)/(8*64+2) ))`
 
-The math/arithmetic within [bash is using the *Double-Parenthesis Construct*][4] I believe.
+The math/arithmetic within [bash is using the *Double-Parentheses Construct*][4] I believe.
 
 ## base64 encoding overhead
 
