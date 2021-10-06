@@ -42,6 +42,10 @@ Using `openssl` you can encode your PKCS12 binary file to a BASE64 text file.
 
 * `openssl base64 -in binary_pkcs12_input_filename -out base64_text_output_filename`
 
+Documentation for `openssl enc -base64` is analagous to `openssl base64`.
+
+* https://www.openssl.org/docs/manmaster/man1/openssl-enc.html
+
 ## Import Certificates
 
 If you're storing the ASA identity certificate and associated CA certificate in the same trustpoint, import the PKCS12 first to create the new trustpoint, then import the CA certificate after the PKCS12 import is complete and the new trustpoint was automatically created.
