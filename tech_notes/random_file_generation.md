@@ -16,7 +16,7 @@ The math/arithmetic within [bash is using the *Double-Parentheses Construct*][4]
 
 The above openssl example accounts for base64 text encoding overhead.
 The assumption is 6 data bits per 8-bit character with 64-character lines and `\r\n` end-of-line.
-See the [`Base64` Wikipedia article][3] for more on base64 encoding conventions.
+See the [Base64 Wikipedia article][3] for more on base64 encoding conventions.
 
 [1]: https://superuser.com/questions/470949/how-do-i-create-a-1gb-random-file-in-linux
 [2]: https://www.openssl.org/docs/manmaster/man1/openssl-rand.html
