@@ -10,3 +10,13 @@ Beware that you don't create loops because this disables STP on the specified po
 * https://techhub.hpe.com/eginfolib/networking/docs/switches/YA-YB/15-18/5998-8157_yayb_2530_atmg/content/ch04s05.html
 * `spanning-tree [<port-list> | all ] bpdu-filter`
 
+## SNMP Configuration
+
+* Force SNMP Response source-ip to be same as destination of the requester
+  * `snmp-server response-source  dst-ip-of-request`
+  * This was helpful for MRTG and likely other network monitoring tools
+  * See "HP Switch Software Management and Configuration Guide" (MCG)
+    * Chapter "Configuring for Network Management Applications"
+      * Section "... SNMP ..."
+      * https://techhub.hpe.com/eginfolib/networking/docs/switches/K-KA-KB/15-18/5998-8160_ssw_mcg/content/ch06s10.html
+      * https://techhub.hpe.com/eginfolib/networking/docs/switches/WB/15-18/5998-8162_wb_2920_mcg/content/ch06.html
