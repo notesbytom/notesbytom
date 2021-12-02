@@ -15,3 +15,12 @@ Alternatively you can use the hints here to configure the AP with a static IP an
 * Verify connectivity from AP to the controller with `ping a.b.c.d`
 * Configure a Controller IP: `capwap ap primary-base 4.3.2.1`
 * Turn logging back on: `logging console` 
+
+## If your AP is Mobility Express or Previously Configured
+
+* In Mobility Express, go to Wireless Settings - Access Points
+  * Select the AP you want to migrate and choose "Convert to CAPWAP
+  * Wait for the AP to load the CAPWAP image and refresh the Mobility Express to see AP Type of "CAPWAP"
+* Login to the AP using Serial Console and erase the capwap config
+  * `capwap ap erase all`
+* After the AP reboots, it should have factory defaults and be ready to prime using steps above.
