@@ -1,4 +1,4 @@
--- Attempt to rank Jira users by activity in current year (high number is more activity --
+-- Attempt to rank Jira users by activity in current year (high number is more activity) --
 -- This example assumes MySQL --
 -- SUBSTITUTE your jira database name for "jiradb" below --
 -- YEAR(...) returns a number, NOT a datetime --
