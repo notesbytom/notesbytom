@@ -1,6 +1,7 @@
 -- example query to review Confluence user content-creation activity over the current year
 -- a number is assigned to estimate number of creation-interactions by each user
 -- this example assumes MySQL database, replace "confluence" with your confluence-database-name
+-- see also: https://confluence.atlassian.com/confkb/how-to-identify-inactive-users-in-confluence-214335880.html
 
 use confluence;
 
