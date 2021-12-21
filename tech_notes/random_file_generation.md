@@ -8,7 +8,7 @@ Some suggestions are listed in this Q&A post: [How do I create a 1GB random file
 A good tool for this purpose is the [`openssl rand` command][2]. 
 Here's an example roughly based on the above Q&A post.
 
-* `openssl rand -out sample.txt -base64 $(( 2**30 * (6*64)/(8*64+2) ))`
+* `openssl rand -out sample.txt -base64 $(( 2**30 * (6*64)/(8*(64+2)) ))`
 
 The math/arithmetic within [bash is using the *Double-Parentheses Construct*][4] I believe.
 
