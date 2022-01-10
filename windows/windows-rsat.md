@@ -38,3 +38,5 @@ Registry detective work for verifying this GPO setting is active on a computer.
 * `boolean id="CheckBox_SidestepWSUS" valueName="RepairContentServerSource"`
 * `trueValue` ... `decimal value="2"`
 * `falseValue` ... `delete`
+
+Verify current settings in Registry: `get-itemproperty "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Servicing"`
