@@ -28,3 +28,13 @@ On-Premise systems must have a way to get the RSAT package files - this is usual
   * Enabled - [x] Download repair content and optional features directly from Windows Update instead of Windows Server Update Services (WSUS).
 
 With this fix, on-prem users should be able to install the RSAT utilities.
+
+Registry detective work for verifying this GPO setting is active on a computer.
+
+* Policy `*.admx` and `*.adml` files for text searching in `"$env:SystemRoot\PolicyDefinitions"`
+* `C:\Windows\PolicyDefinitions\Servicing.admx` has `CheckBox_SidestepWSUS`
+* `class="Machine"` (HKLM)
+* `key="Software\Microsoft\Windows\CurrentVersion\Policies\Servicing"`
+* `boolean id="CheckBox_SidestepWSUS" valueName="RepairContentServerSource"`
+* `trueValue` ... `decimal value="2"`
+* `falseValue` ... `delete`
