@@ -59,3 +59,7 @@ If you're storing the ASA identity certificate and associated CA certificate in 
       * `enrollment terminal`
   * `crypto ca authenticate YOUR_TP_NAME`
     * Paste the base64 PEM-encoded text certificate followed by `quit` then `yes` to accept
+    * You can specify `Fingerprint ABC123...` for the `authenticate` command 
+       to auto-match imported cert (avoid confirm prompt)
+    * Get the MD5 hex-encoded fingerprint with `openssl` command-line tool:
+      * `openssl x509 -noout -fingerprint -md5 -in CERT_FILE_NAME.pem | sed 's/://g'`
