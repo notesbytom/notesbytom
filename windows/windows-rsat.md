@@ -10,6 +10,9 @@ The RSAT utilities can be installed or removed with PowerShell on recent version
 * `Add-WindowsCapability -Online`
 * `Remove-WindowsCapability -Online`
 
+Example installing DHCP tools
+* `get-windowscapability -online -Name 'rsat.dhcp*' | Add-WindowsCapability -Online`
+
 ## Tools Available
 
 There are RSAT utilities available for Windows Server services like the following:
