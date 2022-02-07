@@ -11,6 +11,9 @@ get-localuser | where sid -like 's-1-5-*-500'
 # Well-known sid for local admin: S-1-5-domain-500. 
 # "A user account for the system administrator. Every computer has a local Administrator account ..."
 
+# A function to allow naming a remote computer (or defaults to local computer)
+# Call function like `get-laps -hostName "SOME-COMPUTER-NAME"`
+
 function get-laps($hostName = $env:COMPUTERNAME) {
   $adComputer = get-adcomputer $hostName -Properties 'ms-Mcs-AdmPwd','ms-Mcs-AdmPwdExpirationTime'
   "ADComputer Identity = $hostName"
