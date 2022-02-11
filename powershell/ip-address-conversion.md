@@ -34,3 +34,10 @@ It is also possible to compare two arrays structurally in PowerShell using somet
 `(1,2,3).CompareTo((3,2,1),[System.Collections.StructuralComparisons]::StructuralComparer)`
 
 This returns `-gt 0`, `-eq 0`, or `-lt 0` for greater-than, equal, or less-than respectively.
+
+## Binary to Decimal to Binary
+
+* [Use PowerShell to Easily Convert Decimal to Binary and Back](https://devblogs.microsoft.com/scripting/use-powershell-to-easily-convert-decimal-to-binary-and-back/)
+* `[convert]::ToInt32("1111",2)`
+* `[convert]::ToString(15,2)`
+* `[convert]` is shorthand for `[System.Convert]`
