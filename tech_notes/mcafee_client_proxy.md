@@ -5,3 +5,4 @@ McAfee can control the proxy settings on a client computer. For Microsoft Window
 * [How to view the McAfee Client Proxy status without the McAfee Agent](https://kc.mcafee.com/corporate/index?page=content&id=KB75223)
 * `Get-ItemProperty "HKLM:\SOFTWARE\McAfee\MCP\About\"`
 
+PowerShell `Invoke-WebRequest` will automatically use this McAfee Client Proxy if active.
