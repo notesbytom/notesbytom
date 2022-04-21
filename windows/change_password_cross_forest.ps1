@@ -5,7 +5,7 @@
 #  DOMAINCONTROLLERNAME.SOMEDOMAIN-FQDN.COM
 # ENTER_NEW_PASSWORD_HERE
 
-# Example command to see if the user's password is expired. Works cross-forest, specify domain-controller in target-user's domain)
+# Example command to see if the user's password is expired. Works cross-forest, specify domain-controller in target-user's domain.
 
 Get-ADUser USERNAME_FROM_SOMEDOMAIN -Server DOMAINCONTROLLERNAME.SOMEDOMAIN-FQDN.COM -Properties * | fl *expired*
 
