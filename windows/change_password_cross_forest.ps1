@@ -10,6 +10,7 @@
 Get-ADUser USERNAME_FROM_SOMEDOMAIN -Server DOMAINCONTROLLERNAME.SOMEDOMAIN-FQDN.COM -Properties * | fl *expired*
 
 # Example to change the user's password, even if it's expired. Works cross-forest, specify domain-controller in target-user's domain.
+# ... this example is for interactive password change (you are prompted for the old and new values).
 
 Set-ADAccountPassword -Identity USERNAME_FROM_SOMEDOMAIN -Server DOMAINCONTROLLERNAME.SOMEDOMAIN-FQDN.COM
 
