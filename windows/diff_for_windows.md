@@ -22,3 +22,11 @@ There is a discussion about using Compare-Object as a diff or fc.exe alternative
 
 * https://serverfault.com/questions/5598/how-do-i-diff-two-text-files-in-windows-powershell
 * It behaves differently than Linux/Unix `diff` or Windows `fc.exe` so the discussion is worth reading.
+
+## Git Bash (diff)
+
+If you install Git for Windows, you will get the Linux/Unix `diff` command as part of Git Bash.
+
+* https://git-scm.com/download/win (download and documentation - Git for Windows, includes Git Bash)
+* https://gitforwindows.org/ (Git for Windows project site)
+* https://github.com/git-for-windows/git/ (open-source project - Git for Windows)
