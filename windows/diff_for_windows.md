@@ -14,3 +14,11 @@ If you're looking for a standalone graphical diff tool, WinMerge is a popular op
 
 * https://winmerge.org/ (downloads and documentation)
 * https://github.com/WinMerge/winmerge/ (open-source project)
+
+## PowerShell Compare-Object
+
+Powershell has a built-in alias called `diff` that maps to `Compare-Object`.
+There is a discussion about using Compare-Object as a diff or fc.exe alternative here:
+
+* https://serverfault.com/questions/5598/how-do-i-diff-two-text-files-in-windows-powershell
+* It behaves differently than Linux/Unix `diff` or Windows `fc.exe` so the discussion is worth reading.
