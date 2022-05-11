@@ -2,7 +2,7 @@
 
 # Helpful Article: https://jmcnatt.net/quick-tips/powershell-capturing-a-redirected-url-from-a-web-request/
 
-`$obj = Invoke-WebRequest -Uri $Uri -MaximumRedirection 0 -ErrorAction SilentlyContinue`
+$obj = Invoke-WebRequest -Uri $Uri -MaximumRedirection 0 -ErrorAction SilentlyContinue
 
 # The returned object will have the:
 # redirect status code ($obj.StatusCode)
