@@ -1,5 +1,9 @@
 # Atlassian Custom CA Trust
 
+## Backup
+
+Backup a copy of any config files / trust store files before making changes in case you need to revert.
+
 ## Jira or Confluence Custom CA Trust
 
 Jira and Confluence internal app processes must trust the CA that signed the server cert presented.
@@ -13,3 +17,7 @@ If there is a trust chain, you might need to import the intermediate CA certs as
   * `/opt/atlassian/confluence/jre/lib/security/cacerts`
 
 You can use the Java built-in `keytool` utility command to manage the `cacerts` trust store for each Atlassian app.
+
+## Restart Services or Daemons
+
+After updating the CA trust store for each Atlassian app, you might need to restart the app service/daemon for the new trust to become active.
