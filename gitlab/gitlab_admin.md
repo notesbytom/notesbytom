@@ -14,7 +14,8 @@ If you have privileged command-line access, you can grant or revoke instance adm
 See this stack overflow question for more hints
 - [How to setup admin user with gitlab ...][1]
 
-Additional Reading
+## Additional Reading
+
 - [GitLab Rails Console Cheat Sheet][2]
 - GitLab [Rails console][4] Overview
 - [Old broken link for resetting root password][3]
