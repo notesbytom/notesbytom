@@ -62,3 +62,17 @@ Examples for LACP channel-group (etherchannel)
 * Interface-specific command: `switchport trunk native vlan tag`
   * This interface-specific command might not work if global is off, YMMV
 
+## StackWise Switch Group/Cluster
+
+Some Catalyst switch families/models can be combined into one logical switch using special "Stacking" / stackwise cables.
+
+* `show switch`
+* `switch current-stack-member-number renumber new-stack-member-number`
+* `switch stack-member-number priority new priority-value`
+  * The default priority is 1 (higher numbers are preferred during active switch election)
+  * Number from 1 to 15
+
+Documentation for Catalyst 9300 Series:
+* Chapter: [Managing Switch Stacks][manage_stack]
+ 
+[manage_stack]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-3/configuration_guide/stck_mgr_ha/b_173_stck_mgr_ha_9300_cg/managing_switch_stacks.html
