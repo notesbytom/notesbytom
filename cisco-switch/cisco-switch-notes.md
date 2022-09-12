@@ -68,7 +68,7 @@ Some Catalyst switch families/models can be combined into one logical switch usi
 
 * `show switch`
 * `switch current-stack-member-number renumber new-stack-member-number`
-* `switch stack-member-number priority new priority-value`
+* `switch stack-member-number priority new-priority-value`
   * The default priority is 1 (higher numbers are preferred during active switch election)
   * Number from 1 to 15
 
