@@ -17,6 +17,8 @@ Starting with FDM 6.6 (locally-managed firepower FTD device), FDM supports Unive
 * "You must work with your Cisco representative to enable Universal Permanent License Reservation (PLR) mode in your Cisco Smart Software Manager (CSSM) account."
 * Version 6.6 was first released in April 2020, but [wasn't available on all appliances until Sept 2020](https://www.cisco.com/c/en/us/td/docs/security/firepower/660/relnotes/firepower-release-notes-660/welcome.html).
 
+As of [FTD FDM 7.2.0][8] *"Device Manager supports Universal PLR only. You cannot apply a Specific PLR using the device manager."*
+
 Centrally managed Firepower Management Center (FMC) deployments can use Specific License Reservation starting with FMC 6.3.0.
 
 * https://www.cisco.com/c/en/us/td/docs/security/firepower/roadmap/fmc-new-features/fmc-new-features-by-release.html
@@ -105,3 +107,4 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [5]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvf75938/
 [6]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/relnotes/firepower-release-notes-670/m_features_functionality.html
 [7]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvj90930/
+[8]: https://www.cisco.com/c/en/us/td/docs/security/firepower/720/fdm/fptd-fdm-config-guide-720/fptd-fdm-license.html
