@@ -9,6 +9,7 @@ Alternatively you can use the hints here to configure the AP with a static IP an
 * Connect the Main PoE Ethernet Port on the AP to a powered port on your switch
 * Login - if the AP has factory defaults you can web-search for the default credentials
 * Temporarily turn off logging: `logging console disable`
+* Make the terminal length infinite (no pause): `terminal length 0`
 * Configure a Static IP: `capwap ap ip 1.2.3.4 255.255.255.0 1.2.3.1`
   * Verify with `show capwap ip config`
 * Configure the SwitchPort for the matching access vlan
