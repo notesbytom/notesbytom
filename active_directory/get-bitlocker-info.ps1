@@ -21,3 +21,5 @@ function get-bitlocker(
 # If your credentials have sufficient access and a matching bitlocker object is found,
 # Look for the `msFVE-RecoveryPassword` property in the results
 # Based loosely on an example from https://www.top-password.com/blog/tag/get-bitlocker-recovery-key-from-ad-powershell/
+
+# Glossary: FVE = Full Volume Encryption? 
