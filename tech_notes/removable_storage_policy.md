@@ -1,6 +1,7 @@
 # Removable Storage Policy
 
 Access to Removable Storage devices in Windows can be restricted by Group Policy.
+Search keywords: removable media.
 
 ## Limit Scope of Policy
 
