@@ -52,7 +52,7 @@ If you're storing the ASA identity certificate and associated CA certificate in 
 
 * Import a PKCS12 file into new ASA trustpoint
   * `crypto ca import YOUR_TP_NAME pkcs12 PKCS12_SECRET`
-    * Past the base64 text encoded PKCS12 contents followed by `quit`
+    * Paste the base64 text encoded PKCS12 contents followed by `quit`
 * Import the root (or intermediate) CA to your new trustpoint.
   * Enable terminal enrollment on the trustpoint first
     * `crypto ca trustpoint YOUR_TP_NAME`
