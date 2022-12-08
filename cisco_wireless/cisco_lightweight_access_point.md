@@ -25,5 +25,9 @@ Alternatively you can use the hints here to configure the AP with a static IP an
   * Wait for the AP to load the CAPWAP image and refresh the Mobility Express to see AP Type of "CAPWAP"
   * OR from the CLI (serial console) use the `ap-type capwap` command
 * Login to the AP using Serial Console and erase the capwap config
+  * From Mobility Express CLI, use special command `apciscoshell`
+    * Mobility Express Access Points use the same login as the Controller
+  * `ap-type capwap`
+    * Access Point may prompt for a reboot to convert change to CAPWAP mode
   * `capwap ap erase all`
 * After the AP reboots, it should have factory defaults and be ready to prime using steps above.
