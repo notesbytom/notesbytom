@@ -30,3 +30,4 @@ If you install Git for Windows, you will get the Linux/Unix `diff` command as pa
 * https://git-scm.com/download/win (download and documentation - Git for Windows, includes Git Bash)
 * https://gitforwindows.org/ (Git for Windows project site)
 * https://github.com/git-for-windows/git/ (open-source project - Git for Windows)
+* https://www.gnu.org/software/diffutils/ (GNU Diffutils project site)
