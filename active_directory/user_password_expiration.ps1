@@ -1,7 +1,7 @@
 # Get User Password Expiration Date/Time from named Active Directory domain (example with PowerShell)
 
 $ad_user = Get-ADUser SOME_USERNAME -Properties msDS-UserPasswordExpiryTimeComputed -Server YOUR.DOMAIN.FQDN
-[System.DateTime]::FromFileTime($u.'msDS-UserPasswordExpiryTimeComputed')
+[System.DateTime]::FromFileTime($ad_user.'msDS-UserPasswordExpiryTimeComputed')
 
 # This special computed property seems to be missing when using `-Properties *`
 # ... it seems that we must spell this special property out verbatim.
