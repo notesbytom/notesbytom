@@ -2,20 +2,24 @@
 
 ## Reference: [Plan for high availability and site resilience][1]
 
-**"Network requirements" section**
+### Section: "Software requirements"
+
+* *"Exchange Server 2019 is supported on the Windows Server 2019 and Windows Server 2022 operating system. Within a specific **DAG, all members must be running the same supported operating system**."*
+
+### Section: "Network requirements"
 
 * *"Using IPv6 addresses and IP address ranges is supported only when **both IPv6 and IPv4 are enabled** on that computer, and the **network supports both IP address** versions."*
 * Still NOT supporting IPv6-Only deployments ... not optimistic for an IPv6-Native future
   * Clients can be IPv6-Only, BUT servers cannot be
 * This is current as of Exchange 2019 (latest as of February 2023)
 
-**"General site resilience planning" section**
+### Section: "General site resilience planning"
 
 * *"The servers in the second datacenter must have sufficient capacity to host the combined user population of both datacenters."*
 
 ## Reference: [High availability and site resilience in Exchange Server][2]
 
-**"Site resilience" section**
+### Section: "Site resilience"
 
 * *"In Exchange 2016 and Exchange 2019, the namespace doesn't need to move with the DAG. ... The HTTP stack can accept multiple IP addresses for a fully qualified domain name (FQDN), and if the first IP address it tries fails hard (that is, it can't connect), it will try the next IP address in the list."*
 * *"To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members."*
