@@ -25,6 +25,15 @@
 * *"To get automatic failover for the DAG, you simply architect a solution where the DAG is evenly split between two datacenters, and then place the witness server in a third location so that it can be arbitrated by DAG members in either datacenter, regardless of the state of the network between the datacenters that contain the DAG members."*
 * *"An **intermittent failure** requires some sort of **extra administrative action** to be taken because it might be the result of a replacement device being put into service. While this repair process is occurring, the device might be powered on and accepting some requests, but not really ready to service clients until the necessary configuration steps are performed. In this scenario, the administrator can perform a **namespace switchover** by simply **removing the VIP for the device being replaced from DNS**. Then during that service period, no clients will be trying to connect to it. After the replacement process has completed, the administrator can add the VIP back to DNS, and clients will eventually start using it."*
 
+## Reference: [Manage database availability groups in Exchange Server][3]
+
+### Section: "Performing maintenance on DAG members"
+
+* *"**Before performing any type of software or hardware maintenance** on a DAG member, you should first **put the DAG member in maintenance mode**."*
+* *"**To begin maintenance** procedures on a DAG member, including **flushing the transport queues and suspending client connectivity**, perform the following tasks:"*
+  * There is a **Detailed List of Steps to follow both before and after maintenance** to include updates to either Windows or Exchange.
+  * This is **NON-TRIVIAL!**
+
 ## Notes to Self
 
 * What type of failover / switchover actions should we perform during Windows updates or Exchange Software updates on DAG members? Intermittent manual process or automatic?
@@ -32,3 +41,4 @@
 
 [1]: https://learn.microsoft.com/en-us/exchange/high-availability/plan-ha
 [2]: https://learn.microsoft.com/en-us/exchange/high-availability/high-availability
+[3]: https://learn.microsoft.com/en-us/exchange/high-availability/manage-ha/manage-dags
