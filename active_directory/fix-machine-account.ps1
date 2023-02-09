@@ -9,3 +9,5 @@ Test-ComputerSecureChannel -Verbose
 Reset-ComputerMachinePassword -Server SOME_DOMAIN_CONTROLLER -Credential (get-credential)
 
 # You can substitute a valid credential object for get-credential (with permission to reset computer machine passwords
+
+# Related Article: https://theitbros.com/fix-trust-relationship-failed-without-domain-rejoining/
