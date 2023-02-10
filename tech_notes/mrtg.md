@@ -26,7 +26,7 @@ cp /etc/mrtg/mrtg.cfg /etc/mrtg/factory_mrtg.cfg
 # Use `indexmaker` to generate /var/www/mrtg/index.html
 indexmaker --output=/var/www/mrtg/index.html --Title=Multi_Router_Traffic_Grapher /etc/mrtg/mrtg.cfg
 
-# Enable the systemd `mrtg` unit to start when the system boots-up ... and start it at now
+# Enable the systemd `mrtg` unit to start when the system boots-up ... and start it now
 systemctl enable mrtg
 systemctl start mrtg
 systemctl enable httpd
