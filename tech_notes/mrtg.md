@@ -44,3 +44,18 @@ systemctl start httpd
 * Copy the New Target Items from the sample config into your active MRTG configuration file
 * Use `mrtg --check /etc/mrtg/mrtg.cfg` to validate your config file syntax
 * Use `systemctl restart mrtg` to start monitoring the new items with MRTG
+
+## Time Synchronization (chrony)
+
+It is important to have time syncrhonized to a reliable source on your network monitoring system.
+Here are some notes (hints) for time synchronization with CentOS Stream 8.
+
+Modern CentOS/RHEL ship with the `chrony` NTP service for clock network synchronization.
+The default [configuration `/etc/chrony.conf`][1] uses something like `pool pool.ntp.org iburst`.
+If you are on an air-gapped / isolated network, you can specify your own NTP servers - 
+simply comment out the default pool and add lines like `server srv.fq.dn iburst`
+(substitute your real server name or ip address for "srv.fq.dn").
+Restart the chrony service with `systemctl restart chronyd` to reload the configuration.
+Verify with `chronyc sources`.
+
+[1]: https://www.redhat.com/sysadmin/chrony-time-services-linux
