@@ -58,4 +58,6 @@ simply comment out the default pool and add lines like `server srv.fq.dn iburst`
 Restart the chrony service with `systemctl restart chronyd` to reload the configuration.
 Verify with `chronyc sources`.
 
+Verify the **Time Zone** is set to your desired value with `timedatectl`.
+
 [1]: https://www.redhat.com/sysadmin/chrony-time-services-linux
