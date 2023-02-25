@@ -11,3 +11,5 @@
 # Show with thousands separator (bits per second). String format operator.
 
 '{0:N0}' -f (64*[math]::pow(2,20)*8)
+
+# 536,870,912
