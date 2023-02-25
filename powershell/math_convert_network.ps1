@@ -7,3 +7,7 @@
 # 1 Mega Byte = 2^20 Bytes
 # 1 Byte = 8 Bits
 # 1 Mega Bit = 10^6 Bits
+
+# Show with thousands separator (bits per second). String format operator.
+
+'{0:N0}' -f (64*[math]::pow(2,20)*8)
