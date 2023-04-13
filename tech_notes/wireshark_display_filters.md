@@ -13,5 +13,8 @@ You can customize the Time Display Format
 
 ## References
 
-* https://wiki.wireshark.org/DisplayFilters
+* [Wireshark Wiki - Display Filters][1]
+* [Wireshark User’s Guide - Building Display Filter Expressions][2]
 
+[1]: https://wiki.wireshark.org/DisplayFilters
+[2]: https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
