@@ -1,7 +1,5 @@
 # Exchange Updates
 
-https://techcommunity.microsoft.com/t5/exchange-team-blog/new-exchange-server-security-update-and-hotfix-packaging/ba-p/3301819
-
 Exchange Security Updates (SU) from the Catalog are in *.cab form. Inside the CAB file is a *.msp patch file.
 
 Apparently the \*.msp must be installed with ELEVATED PRIVILEGES. 
@@ -15,3 +13,11 @@ To help resolve this issue, EXE Package files are also published in the Microsof
 It is recommended to use the EXE Packages because they include logic that will require elevation to proceed with the install.
 
 Read the linked article for more detail from Microsoft.
+
+## References
+
+* [New Exchange Server Security Update and Hotfix Packaging][1]
+* [Microsoft Standard Installer command-line options][2]
+
+[1]: https://techcommunity.microsoft.com/t5/exchange-team-blog/new-exchange-server-security-update-and-hotfix-packaging/ba-p/3301819
+[2]: https://learn.microsoft.com/en-us/windows/win32/msi/standard-installer-command-line-options
