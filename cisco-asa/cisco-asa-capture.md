@@ -1,6 +1,6 @@
 # Cisco ASA Capture
 
-In version 9.9(1): *"Support for capturing [...] decrypted packets. New options were added: [...] `include-decrypted`."*
+Feature Added in version 9.9(1): *"Support for capturing [...] decrypted packets. New options were added: [...] `include-decrypted`."*
 
 This should be useful for capturing traffic on the encrypted side of the ASA inside of an IPsec tunnel?
 The documentation for this feature doesn't make it clear if this is only for traffic between ASA cluster units?
