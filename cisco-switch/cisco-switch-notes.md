@@ -83,6 +83,9 @@ An upgrade of version-mismatch (V-Mismatch) stack members might be as easy as `i
 
 Reference: [Upgrade Guide for Cisco IOS XE Catalyst 9000 Switches][upgrade]
 
+To see if a switch is in `INSTALL` mode, use the `show version` commmand. Each stack member will be listed along with the Mode Column (INSTALL or BUNDLE).
+As long as the Active switch or supervisor is in INSTALL mode, we should be able to auto-upgrade / autoupgrade all stack members.
+
 ## Object Groups for Access-Lists
 
 Extended Access-Lists (ACLs) can now use named object groups - this greatly helps with self-documenting configurations.
