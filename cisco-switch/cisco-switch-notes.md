@@ -76,3 +76,11 @@ Documentation for Catalyst 9300 Series:
 * Chapter: [Managing Switch Stacks][manage_stack]
  
 [manage_stack]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-3/configuration_guide/stck_mgr_ha/b_173_stck_mgr_ha_9300_cg/managing_switch_stacks.html
+
+## Object Groups for Access-Lists
+
+Extended Access-Lists (ACLs) can now use named object groups - this greatly helps with self-documenting configurations.
+* [Chapter: Object Groups for ACLs][obj-acl]
+* Feature added in Release: Cisco IOS XE Gibraltar 16.12.1
+
+[obj-acl]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/16-12/configuration_guide/sec/b_1612_sec_9300_cg/object_group_acls.html
