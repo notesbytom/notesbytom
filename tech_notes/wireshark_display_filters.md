@@ -4,6 +4,10 @@ Show traffic matching a tcp port (Remote Desktop / RDP Example):
 * `tcp.port == 3389`
   * Alternative syntax: `tcp.port eq 3389`
 
+Match IP Address in Subnet - either in source or destination:
+* `(ip.src >= 1.2.0.0 and ip.src <= 1.3.0.0) or (ip.dst >= 1.2.0.0 and ip.dst <= 1.3.0.0)`
+  * Match source or destination ip of 1.2.x.x
+
 ## Time Display Format
 
 You can customize the Time Display Format
