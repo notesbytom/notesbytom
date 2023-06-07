@@ -20,3 +20,5 @@ foreach ($scope in $scopes) {
     # ... comment-out if you don't have load-balance-failover scopes
     Invoke-DhcpServerv4FailoverReplication -ComputerName $dhcpserver -ScopeId $scope.ScopeId -Force -Verbose
 }
+
+# Reference https://www.cisco.com/c/en/us/support/docs/broadband-cable/cable-modem-termination-systems-cmts/12188-calculate-hexadecimal-dhcp.html
