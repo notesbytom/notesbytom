@@ -21,4 +21,5 @@ foreach ($scope in $scopes) {
     Invoke-DhcpServerv4FailoverReplication -ComputerName $dhcpserver -ScopeId $scope.ScopeId -Force -Verbose
 }
 
-# Reference https://www.cisco.com/c/en/us/support/docs/broadband-cable/cable-modem-termination-systems-cmts/12188-calculate-hexadecimal-dhcp.html
+# Cisco Reference "How to Calculate the Hexadecimal Value for DHCP Option 2 (time offset)" 
+#   https://www.cisco.com/c/en/us/support/docs/broadband-cable/cable-modem-termination-systems-cmts/12188-calculate-hexadecimal-dhcp.html
