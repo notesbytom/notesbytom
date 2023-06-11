@@ -12,7 +12,7 @@ C9200 "Modular" have Network Module (NM) Uplink option with up to four (4) SFP+ 
 
 **C9200CX "Compact"** (small) models are fanless fixed-port switches suitable for use on a desk top or shelf. They support up to two (2) SFP+ ports. Between 8 and 12 copper access ports with option for additional two (2) copper uplink ports.
 
-* June 2023 Pricing example: [C9200CX-8P-2X2G (CDW)][2] ~$2,374 Retail~, $1,690 Sale
+* June 2023 Pricing example PoE+: [C9200CX-8P-2X2G (CDW)][2] ~$2,374 Retail~, $1,690 Sale
 
 Related documentation:
 
