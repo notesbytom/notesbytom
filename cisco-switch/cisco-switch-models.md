@@ -10,8 +10,11 @@ C9200L "Fixed Port" models support up to four (4) SFP+ 10G ports or two (2) SFP+
 
 C9200CX "Compact" (small) models are fanless fixed-port switches suitable for use on a desk top or shelf. They support up to two (2) SFP+ ports. Between 8 and 12 copper access ports with option for additional two (2) copper uplink ports.
 
+* Pricing example: [C9200CX-8P-2X2G (CDW)][2] ~$2,374 Retail~, $1,690 Sale
+
 Related documentation:
 
 * [9200 Series Switches Data Sheet][1]
 
 [1]: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html
+[2]: https://www.cdw.com/search/?key=C9200CX-8P-2X2G
