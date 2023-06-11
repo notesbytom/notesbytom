@@ -8,7 +8,7 @@ C9200 "Modular" have Network Module (NM) Uplink option with up to four (4) SFP+ 
 
 **C9200L "Fixed Port"** models support up to four (4) SFP+ 10G ports or two (2) SFP+ 25G ports. Stacking bandwidth 80 Gbps - Stacks Only with C9200L models.
 
-* June 2023 Pricing example: [C9200L-24T-4G (CDW)][3] ~$2,485 Retail~, $1,110 Sale (Network Essentials license), $1,768  Sale (Net. Advantage lic.)
+* June 2023 Pricing example Non-PoE: [C9200L-24T-4G (CDW)][3] ~$2,485 Retail~, $1,110 Sale (Network Essentials license), $1,768  Sale (Net. Advantage lic.)
 
 **C9200CX "Compact"** (small) models are fanless fixed-port switches suitable for use on a desk top or shelf. They support up to two (2) SFP+ ports. Between 8 and 12 copper access ports with option for additional two (2) copper uplink ports.
 
