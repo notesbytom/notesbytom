@@ -3,7 +3,7 @@
 ICMP us an essential IP Protocol which supports features such as: `ping`, `traceroute`, and Path MTU Detection. 
 
 ICMP runs on top of IP - this would normally put ICMP in Layer 4 "Transport" of the [OSI Model][3], but ICMP is so essential to the functioning of IP that it is listed under Layer 3 "Network" along with IP itself. 
-Because ICMP runs on top of ICMP, I like to think of it as a higher level protocol - maybe layer 3.5 of the OSI Model (between 3 and 4). ICMP packets have an ICMP header that is separate from the IP header.
+Because ICMP runs on top of IP, I like to think of it as a higher level protocol - maybe layer 3.5 of the OSI Model (between 3 and 4). ICMP packets have an ICMP header that is separate from the IP header.
 
 ## References
 
