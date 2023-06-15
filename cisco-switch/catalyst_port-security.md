@@ -2,6 +2,14 @@
 
 Port Security is a feature on Catalyst switches to restrict the quantity and identity of allowable MAC Addresses on a Switch Port.
 
+## Sticky MAC Addresses
+
+Use `switchport port-security mac-address sticky` to lock-in MAC addresses leared on the port.
+
+These will show in the running-config. 
+
+You can save the config with `write mem` to preserve the MAC address port association when the switch power cycles / reboots.
+
 ## Voice Access Ports
 
 Voice Access ports are configured with `switchport voice vlan #` and `switchport access vlan #` to use both a phone and computer on the same port with different vlans.
