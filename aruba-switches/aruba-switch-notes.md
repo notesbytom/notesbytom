@@ -34,14 +34,13 @@ Beware that you don't create loops because this disables STP on the specified po
   * See "HP Switch Software Management and Configuration Guide" (MCG)
     * Chapter "Configuring for Network Management Applications"
       * Section "... SNMP ..."
+      * https://techhub.hpe.com/eginfolib/networking/docs/switches/K-KA-KB/15-18/5998-8160_ssw_mcg/content/ch06s10.html
+      * https://techhub.hpe.com/eginfolib/networking/docs/switches/WB/15-18/5998-8162_wb_2920_mcg/content/ch06.html
      
 ## Switch Model and Serial Number
 
 Use `show run` to get the Switch Model Number. Listed at the top of the running configuration.
 
 Use `show system information` to get the Switch Serial Number.
-
-      * https://techhub.hpe.com/eginfolib/networking/docs/switches/K-KA-KB/15-18/5998-8160_ssw_mcg/content/ch06s10.html
-      * https://techhub.hpe.com/eginfolib/networking/docs/switches/WB/15-18/5998-8162_wb_2920_mcg/content/ch06.html
 
 [1]: https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=c04408237
