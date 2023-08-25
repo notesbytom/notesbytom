@@ -7,3 +7,5 @@ to find known security issues with a given Cisco software version that have been
 
 This tool provides a list of security issues, minimum fixed versions, and an 
 overall minimum fixed version to ensure all known security issues have been fixed.
+
+You can export the list of security issues to a CSV file for reference.
