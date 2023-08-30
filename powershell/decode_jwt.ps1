@@ -18,7 +18,7 @@ function decodeJWT($strInput) {
     foreach ($strPart in $strList) { 
        
         # Convert from base64url to base64 (standard) special characters + padding.
-        $strPart = $strPart.Replace('-','+').Replace('_','/') + (pad64($strPart));
+        $strPart = $strPart.Replace('-','+').Replace('_','/') + (pad64 $strPart);
         [text.encoding]::utf8.GetString([convert]::FromBase64String( $strPart ) ) 
     } 
 }
