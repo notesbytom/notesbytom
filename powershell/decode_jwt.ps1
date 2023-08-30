@@ -3,8 +3,9 @@ Set-StrictMode -Version Latest
 # Rough Functions to Decode JSON Web Token (JWT) data in PowerShell without dependencies.
 
 function pad64($str) { 
-    if ($str.Length%4 -eq 0) { return "" } 
-    else { return "=" * (4-($str.Length%4)) } 
+    $strLenMod4 = $str.Length % 4;
+    if ($strLenMod4 -eq 0) { return "" } 
+    else { return "=" * (4-$strLenMod4) } 
 }
 
 function decodeJWT($strInput) { 
