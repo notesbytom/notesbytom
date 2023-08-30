@@ -8,9 +8,14 @@ function pad64($str) {
 }
 
 function decodeJWT($strInput) { 
+    # Split out Headers, Claims, and Signature parts
     $strList = $strInput.Split('.'); 
+    
+    # Ignore the Binary Signature Part (last item in list)
     $strList = $strList[0..($strList.Length-2)]; 
     foreach ($strPart in $strList) { 
+       
+        # Convert from base64url to base64 (standard) special characters
         $strPart = $strPart.Replace('-','+').Replace('_','/') + (pad64($strPart));
         [text.encoding]::utf8.GetString([convert]::FromBase64String( $strPart ) ) 
     } 
@@ -23,3 +28,6 @@ function decodeJWT($strInput) {
 
 # Similar Web-Based Tool:
 # - https://www.jstoolset.com/jwt
+
+# Reference base64url encoding and padding:
+# - https://en.wikipedia.org/wiki/Base64
