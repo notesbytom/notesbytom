@@ -7,6 +7,12 @@ Windows ships with the `fc.exe` (file compare) tool which can be used from the c
 Unfortunately there is a conflict with the `Format-Custom` alias `fc` in PowerShell. 
 To workaround this, always specify the executable name with the extension: `fc.exe`.
 
+## VSCode GUI Compare (Diff)
+
+Visual Studio Code (VSCode) has a built-in GUI Compare (Diff) Feature. Further reading:
+* https://stackoverflow.com/questions/30139597/visual-studio-code-is-there-a-compare-feature-like-that-plugin-for-notepad
+* https://vscode.one/diff-vscode/
+
 ## WinMerge GUI Diff for Windows
 
 If you prefer a GUI diff utility, there might be one built into your favorite Integrated Development Environment (IDE).
