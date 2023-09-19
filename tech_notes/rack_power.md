@@ -9,6 +9,6 @@ Ironically, the "locking" connectors don't actually lock - they just resist unpl
 
 ## IEC Appliance Couplers
 
-Male and Female power connectors. For Rack Power, we often see C13/C14, C15/C16, and C19/C20.
+Female and Male power connectors. For Rack Power, we often see C13/C14, C15/C16, and C19/C20.
 
 * https://en.wikipedia.org/wiki/IEC_60320#Appliance_couplers
