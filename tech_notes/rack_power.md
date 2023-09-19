@@ -12,3 +12,16 @@ Ironically, the "locking" connectors don't actually lock - they just resist unpl
 Female and Male power connectors. For Rack Power, we often see C13/C14, C15/C16, and C19/C20.
 
 * https://en.wikipedia.org/wiki/IEC_60320#Appliance_couplers
+* Odd-Numbered codes are female connectors like C13, C15, C19.
+  * The PDU connectors are normally female like C13. These supply power.
+    * The cord connecting to PDU would then be C14 in this case.
+* Even-Numbered codes are male connectors like C14, C16, C19.
+  * The Power Supply (PSU) connectors are normally male like C14. These consume power.
+    * The metal prongs are exposed in these male connectors.
+    * The cord connecting to PSU would then be C13 in this case.
+
+## Glossary
+
+* PSU = Power Supply Unit
+* PDU = Power Distribution Unit (rack-mount power strip)
+* UPS = Uninterruptible Power Supply (battery back-up unit)
