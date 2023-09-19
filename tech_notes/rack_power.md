@@ -41,7 +41,7 @@ This **reduces heat** on power cabling which helps **reduce cooling needs** and 
 
 The equipment using the power "sees" the difference in potential (voltage) between the two legs. These legs are out of phase with each other by 120 degrees or (2/3)*PI radians.
 
-Here is are PowerShell formulas to **calculate the two-leg difference in potential**: 
+Here are PowerShell formulas to **calculate the two-leg difference in potential**: 
 * `2*120*[Math]::Sin([Math]::PI/3)`
   * [Circular Segment][3] Chord Length where Radius = 120 Volts and Angle Theta = (1/3) x 2 x PI radians = 120 Degrees
 * `2*120*[Math]::Cos([Math]::PI/6)`
