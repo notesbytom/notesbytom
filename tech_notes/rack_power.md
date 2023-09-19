@@ -37,7 +37,7 @@ If you have a lower power 120v PDU - the PDU-side might be NEMA 5-20R for up to 
 When we use 208 Volt AC power in an equipment rack, we are able to get **almost twice the wattage** for the **same amount of current** (amps). 
 This **reduces heat** on power cabling which helps **reduce cooling needs** and **reduces fire risk** as well.
 
-208 Volt AC Power is created by delivering TWO HOTS to our AC power supply. Each hot supply wire is from a different phase of a Three-Phase 120 Volt AC power source.
+208 Volt AC Power is created by delivering TWO HOTS to our AC power supply. Each hot supply wire is from a different phase (leg) of a Three-Phase 120 Volt AC power source.
 
 The equipment using the power "sees" the difference in potential (voltage) between the two legs. These legs are out of phase with each other by 120 degrees or (2/3)*PI radians.
 
