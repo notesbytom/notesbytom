@@ -41,7 +41,11 @@ This **reduces heat** on power cabling which helps **reduce cooling needs** and 
 
 The equipment using the power "sees" the difference in potential (voltage) between the two legs. These legs are out of phase with each other by 120 degrees or (2/3)*PI radians.
 
-Here is a PowerShell formula to calculate the two-leg difference in potential: `120*[Math]::Cos([Math]::PI/6)*2`
+Here is are PowerShell formulas to **calculate the two-leg difference in potential**: 
+* `2*120*[Math]::Sin([Math]::PI/3)`
+  * [Circular Segment][3] Chord Length where Radius = 120 Volts and Angle Theta = (1/3) x 2 x PI radians = 120 Degrees
+* `2*120*[Math]::Cos([Math]::PI/6)`
+  * Looking at the Triangles a different way for same answer. 180 Degrees - 120 Degrees / 2 = 30 Degrees = PI/6 radians
 
 This gives a result of `207.846096908265` or ~ 208 Volts AC.
 
@@ -53,3 +57,4 @@ This gives a result of `207.846096908265` or ~ 208 Volts AC.
 
 [1]: https://en.wikipedia.org/wiki/IEC_60320#North_American_ratings
 [2]: https://en.wikipedia.org/wiki/American_wire_gauge
+[2]: https://en.wikipedia.org/wiki/Circular_segment
