@@ -19,6 +19,17 @@ Female and Male power connectors. For Rack Power, we often see C13/C14, C15/C16,
   * The Power Supply (PSU) connectors are normally male like C14. These consume power.
     * The metal prongs are exposed in these male connectors.
     * The cord connecting to PSU would then be C13 in this case.
+   
+## Notched Connectors
+
+Higher-wattage power supplies often have notched connectors like C16. This may be to prevent the connection of lower-amperage C13 power-cords.
+
+If your power-supply has notched C16 (male) connector, your power cable will need a notched C15 (female) connector.
+
+If you have a **208v** or 240v high-power PDU, the most **common power cord** needed in this case would be **C14 to C15**. The PDU connector would be C13 in this case. 
+This should support at least 10+A ~2000W for 208v.
+
+If you have a lower power 120v PDU - the PDU-side might be NEMA 5-20R for up to 20A ~2000W or NEMA 5-15R for up to 15A ~1500W
 
 ## Glossary
 
