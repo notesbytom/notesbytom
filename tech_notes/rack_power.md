@@ -57,4 +57,4 @@ This gives a result of `207.846096908265` or ~ 208 Volts AC.
 
 [1]: https://en.wikipedia.org/wiki/IEC_60320#North_American_ratings
 [2]: https://en.wikipedia.org/wiki/American_wire_gauge
-[2]: https://en.wikipedia.org/wiki/Circular_segment
+[3]: https://en.wikipedia.org/wiki/Circular_segment
