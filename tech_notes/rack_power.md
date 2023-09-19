@@ -27,7 +27,8 @@ Higher-wattage power supplies often have notched connectors like C16. This may b
 If your power-supply has notched C16 (male) connector, your power cable will need a notched C15 (female) connector.
 
 If you have a **208v** or 240v high-power PDU, the most **common power cord** needed in this case would be **C14 to C15**. The PDU connector would be C13 in this case. 
-This should support at least 10+A ~2000W for 208v.
+This should support at least 10+A ~2000W for 208v. While the International Standard allows up to 10 Amps, [North America allows up to 15A][1] in this case ~3000W for 108v - 
+check markings on your power cable for the max amperage which is related to [wire gauge][2] (thickness) and distance.
 
 If you have a lower power 120v PDU - the PDU-side might be NEMA 5-20R for up to 20A ~2000W or NEMA 5-15R for up to 15A ~1500W
 
@@ -36,3 +37,6 @@ If you have a lower power 120v PDU - the PDU-side might be NEMA 5-20R for up to 
 * PSU = Power Supply Unit
 * PDU = Power Distribution Unit (rack-mount power strip)
 * UPS = Uninterruptible Power Supply (battery back-up unit)
+
+[1]: https://en.wikipedia.org/wiki/IEC_60320#North_American_ratings
+[2]: https://en.wikipedia.org/wiki/American_wire_gauge
