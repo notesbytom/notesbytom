@@ -49,6 +49,18 @@ Here are PowerShell formulas to **calculate the two-leg difference in potential*
 
 This gives a result of `207.846096908265` or ~ 208 Volts AC.
 
+## 208 Volt to 120 Volt AC Conversion
+
+208 Volt AC power using two hot phases of a three-phase 120-Volt supply is very common. Unfortunately, there is not an easy way to convert to 120 Volt service without a Neutral Supply wire.
+
+One possible way to convert is to use a transformer on each of the two hot legs down from 120 Volt until the difference in potential (chord length) is 120 Volts.
+
+Here is a PowerShell formula to determine the approximate voltage we need on each leg: `60/[Math]::Cos([Math]::PI/6)`
+
+The result is ~ 69.3 Volts for each leg. I believe you would need two step-down transformers, one for each leg. The two-hot outputs should then work for 120 Volt AC devices.
+
+I believe that is the method used by transformers like the [Tripp Lite SU5000XFMRT2U][4]
+
 ## Glossary
 
 * PSU = Power Supply Unit
@@ -58,3 +70,4 @@ This gives a result of `207.846096908265` or ~ 208 Volts AC.
 [1]: https://en.wikipedia.org/wiki/IEC_60320#North_American_ratings
 [2]: https://en.wikipedia.org/wiki/American_wire_gauge
 [3]: https://en.wikipedia.org/wiki/Circular_segment
+[4]: https://tripplite.eaton.com/5kva-5kw-step-down-isolation-transformer-208v-120v-2u-rack-mount-l6-30p-5-15-20r-l6-30r~SU5000XFMRT2U
