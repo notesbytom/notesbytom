@@ -15,6 +15,13 @@ Keeping an Archive of recent configurations with rollback capabilities.
     * Restore previous running config if within timed rollback window.
   * `configure confirm`
     * Keep `configure replace ...` changes and cancel timed rollback window.
+   
+ ## Verification
+
+ * `show archive`
+   * List all config revisions in the archive
+ * `show archive config differences ...`
+   * This is used by `configure replace` to restore a given config.
 
 ## References:
 
