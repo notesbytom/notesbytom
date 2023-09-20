@@ -8,6 +8,10 @@ An archive of recent configuration revisions can be maintained with `archive` co
 
 * See my notes named "[switch_config_archive.md][3]"
 
+Persistent logging is configured with commands like `logging buffered` and `logging persistent ...`
+
+* Verify logging config with `show logging`
+
 ## References
 
 * [Configuration Change Notification and Logging][2]
