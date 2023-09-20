@@ -5,7 +5,7 @@ Keeping an Archive of recent configurations with rollback capabilities.
 ## Commands
 
 * `archive ...`
-  * Configure archiving including the path pattern and maximum archived configs.
+  * Configure archiving including the `path` pattern and `maximum` archived configs.
 * `archive config`
   * Archive the current running config.
 * `configure replace ...`
