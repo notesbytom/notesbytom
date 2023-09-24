@@ -12,6 +12,14 @@ Persistent logging is configured with commands like `logging buffered` and `logg
 
 * Verify logging config with `show logging`
 
+## Terminal Monitor
+
+Use the `terminal monitor` command to view logging output during an SSH session. 
+You can verify if this is on using the `show terminal` command.
+
+* `Capabilities: Receives Logging Output`
+  * This indicates that the Terminal has the logging `monitor` enabled.
+
 ## References
 
 * [Configuration Change Notification and Logging][2]
