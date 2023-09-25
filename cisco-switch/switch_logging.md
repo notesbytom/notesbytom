@@ -20,6 +20,12 @@ If there are specific log messages that should be skipped and not logged. I beli
 
 This is not to be confused with the `logging filter` and associated commands which are much more advanced and require TCL scripts.
 
+Log Message Format Example: `seq no:timestamp: %facility-severity-MNEMONIC:description`.
+
+* [System Message Logging][5]
+
+We can change the timestamp format using commands like: `service timestamps log datetime [localtime] [msec] [show-timezone]`.
+
 ## Terminal Monitor
 
 Use the `terminal monitor` command to view logging output during an SSH session. 
@@ -37,3 +43,4 @@ You can verify if this is on using the `show terminal` command.
 [2]: https://www.cisco.com/c/en/us/td/docs/ios/ios_xe/fundamentals/configuration/guide/2_xe/cf_xe_book/cf_config-logger_xe.html
 [3]: ./switch_config_archive.md
 [4]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/esm/command/esm-cr-book/esm-cr-a1.html
+[5]: https://www.cisco.com/c/en/us/td/docs/routers/access/wireless/software/guide/SysMsgLogging.html
