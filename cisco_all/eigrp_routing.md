@@ -56,6 +56,6 @@ SIMPLIFY/REDUCE the route advertisements sent to other EIGRP peers in your netwo
 * Well-Placed summaries can keep your routing tables clean, short, and easy to read.
 
 There is an auto-summary feature which is OFF by default. I recommend Leaving auto-summary OFF!
-Modern routing is Classless and classfull auto-summaries
+Modern routing is Classless. Legacy Classful auto-summaries are unlikely to match your route-summary needs.
 
 [1]: https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/200156-Configure-EIGRP-Named-Mode.html
