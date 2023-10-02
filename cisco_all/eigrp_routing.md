@@ -24,7 +24,7 @@ By default, all EIGRP interfaces matching a `network ...` statement will be acti
 I recommend changing the interface default to passive!
 * In named configuration mode, do this under `af-interface default`
   * `passive-interface`
-* Then set the specific af-interface(s) to `no passive-interface` for EIGRP peering
+* Then set the specific af-interface(s) to `no passive-interface` for EIGRP Active peering (neighborship).
 
 ## Advertising Directly Connected Subnets (Networks)
 
