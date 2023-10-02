@@ -46,7 +46,7 @@ Use a `match address prefix-list ...` to easily specify route CIDR prefixes for 
 
 EIGRP route summaries are configured at the interface level. 
 In "classic" syntax this is done under each `interface ...` config section.
-In "named" syntax, this is done within the `router eigrp` - `address-family` - `af-interface ...` section.
+In "named" syntax, this is done within the `router eigrp` - `address-family` - `af-interface ...` section using `summary-address` command.
 
 Summaries are configured on the interface(s) you want to SEND the OUTBOUND SUMMARY Advertisement(s). 
 NOT on the interface(s) where the specific non-summarized routes were learned or connected.
