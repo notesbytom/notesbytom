@@ -59,4 +59,42 @@ SIMPLIFY/REDUCE the route advertisements sent to other EIGRP peers in your netwo
 There is an auto-summary feature which is OFF by default. I recommend Leaving auto-summary OFF!
 Modern routing is Classless. Legacy Classful auto-summaries are unlikely to match your route-summary needs.
 
+## Named Configuration Example
+
+For this example, assume the following:
+
+* Interface Vlan 10 will be an active interface with IP 10.10.10.10
+  * EIGRP Neighbors will be discovered from this subnet 10.10.10.0 /24
+  * Our Router-ID will also be 10.10.10.10
+* Interfaces Vlan 301, 302, 303 will be passive for user traffic only
+  * Vlan 301 IP 10.30.1.1 /24
+  * Vlan 302 IP 10.30.2.1 /24
+  * Vlan 303 IP 10.30.3.1 /24
+* Instead of advertising each of the user subnets, we will advertise a summary:
+  * Summary 10.30.0.0 /16 is advertised to Vlan 10 EIGRP Neighbors
+* There are NO VRF's in this example
+  * If using a VRF - that is specified on the address-family line
+
+```
+router eigrp eigrp_virt
+ !
+ address-family ipv4 unicast autonomous-system 65535
+  !
+  af-interface default
+   passive-interface
+  exit-af-interface
+  !
+  af-interface Vlan10
+   summary-address 10.13.0.0 255.255.0.0
+   no passive-interface
+  exit-af-interface
+  !
+  topology base
+  exit-af-topology
+  network 10.13.0.0 0.0.255.255
+  network 10.10.10.0 0.0.0.255
+  eigrp router-id 10.10.10.10
+ exit-address-family
+```
+
 [1]: https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/200156-Configure-EIGRP-Named-Mode.html
