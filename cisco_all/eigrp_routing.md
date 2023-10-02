@@ -18,7 +18,8 @@ The Named configurations are easier to read and maintain.
 
 ## Active vs Passive Interfaces
 
-Active interfaces will attempt to find EIGRP peers (neighbors). To prevent EIGRP peering on an interface, make it Passive.
+Active interfaces will attempt to find EIGRP peers (neighbors) to share routes with. 
+To prevent EIGRP peering on an interface, make it Passive.
 
 By default, all EIGRP interfaces matching a `network ...` statement will be active! 
 I recommend changing the interface default to passive!
