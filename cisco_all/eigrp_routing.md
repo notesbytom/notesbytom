@@ -85,16 +85,38 @@ router eigrp eigrp_virt
   exit-af-interface
   !
   af-interface Vlan10
-   summary-address 10.13.0.0 255.255.0.0
+   summary-address 10.30.0.0 255.255.0.0
    no passive-interface
   exit-af-interface
   !
   topology base
   exit-af-topology
-  network 10.13.0.0 0.0.255.255
+  network 10.30.0.0 0.0.255.255
   network 10.10.10.0 0.0.0.255
   eigrp router-id 10.10.10.10
  exit-address-family
+```
+
+## Classic Configuration Example
+
+Make the same assumptions as the Named Configuration example. 
+The biggest differences are:
+* No address-family section
+* summary-address under interface configuration section rather than af-interface section
+* passive-interface names the interface directly rather than under af-interface section
+
+```
+router eigrp 65535
+ network 10.30.0.0 0.0.255.255
+ network 10.10.10.0 0.0.0.255
+ passive-interface default
+ no passive-interface Vlan10
+ eigrp router-id 10.10.10.10
+
+interface Vlan10
+ ip address 10.10.10.10 255.255.255.0
+ ip summary-address eigrp 65535 10.30.0.0 255.255.0.0
+end
 ```
 
 [1]: https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/200156-Configure-EIGRP-Named-Mode.html
