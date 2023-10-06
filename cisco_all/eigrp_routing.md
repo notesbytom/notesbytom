@@ -27,6 +27,9 @@ I recommend changing the interface default to passive!
   * `passive-interface`
 * Then set the specific af-interface(s) to `no passive-interface` for EIGRP Active peering (neighborship).
 
+To form a Neighborship, two EIGRP routers must share the same **Autonomous System (AS) Number** across a peering link.
+There doesn't appear to be any significance to EIGRP ASN's, other than the matching requirement for neighborship.
+
 ## Advertising Directly Connected Subnets (Networks)
 
 By Default, EIGRP will advertise the subnets of every interface which matches a `network ...` statement.
