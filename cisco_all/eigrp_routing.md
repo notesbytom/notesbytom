@@ -128,7 +128,7 @@ end
 ```
 ## Further Reading Resources
 
-* [Enhanced Interior Gateway Routing Protoco][2] (Wikipedia)
+* [Enhanced Interior Gateway Routing Protocol][2] (Wikipedia)
 
 [1]: https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/200156-Configure-EIGRP-Named-Mode.html
 [2]: https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol
