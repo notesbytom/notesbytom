@@ -30,6 +30,11 @@ I recommend changing the interface default to passive!
 To form a Neighborship, two EIGRP routers must share the same **Autonomous System (AS) Number** across a peering link.
 There doesn't appear to be any significance to EIGRP ASN's, other than the matching requirement for neighborship.
 
+The EIGRP Topology Table lists Passive or Active Routes. These Should NOT Be Confused with Active/Passive Interfaces.
+Passive Routes are prefixes where EIGRP has determined the Best Path. 
+Active Routes are prefixes that EIGRP is still actively-working to determine a best path.
+This duplicate use of Active/Passive terminology is confusing!
+
 ## Advertising Directly Connected Subnets (Networks)
 
 By Default, EIGRP will advertise the subnets of every interface which matches a `network ...` statement.
@@ -121,5 +126,9 @@ interface Vlan10
  ip summary-address eigrp 65535 10.30.0.0 255.255.0.0
 end
 ```
+## Further Reading Resources
+
+* [Enhanced Interior Gateway Routing Protoco][2] (Wikipedia)
 
 [1]: https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/200156-Configure-EIGRP-Named-Mode.html
+[2]: https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol
