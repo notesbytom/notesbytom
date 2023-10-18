@@ -7,13 +7,13 @@ EIGRP is Cisco's proprietary routing protocol. It does not use UDP or TCP, but i
 There is an older "classic" configuration syntax, and a newer ["named" config style][1]. 
 These configuration syntax choices are mostly interchangeable and cross-compatible.
 
-If you need to handle IPv6 routing, Named is mandatory in IOS.
+If you need to handle IPv6 VRF routing, Named is mandatory in IOS.
 
 The named configuration is more consistent to read when dealing with VRF's.
 
 Route Summarization / Aggregation configurations are listed within the `router eigrp` section for easier reference.
 
-I recommend the Named config style even in cases where IPv6 or VRF's are not used.
+I recommend the Named config style even in cases where VRF's are not used.
 The Named configurations are easier to read and maintain.
 
 **Conversion to Named Config**: Use the command `eigrp upgrade-cli EIGRP_INST_NAME` to migrate to new config style.
