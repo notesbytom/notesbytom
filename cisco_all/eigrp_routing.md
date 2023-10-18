@@ -28,7 +28,9 @@ I recommend changing the interface default to passive!
 * Then set the specific af-interface(s) to `no passive-interface` for EIGRP Active peering (neighborship).
 
 To form a Neighborship, two EIGRP routers must share the same **Autonomous System (AS) Number** across a peering link.
-There doesn't appear to be any significance to EIGRP ASN's, other than the matching requirement for neighborship.
+The number you choose for an EIGRP ASN is not significant unless a router straddles Multiple Autonomous Systems.
+In the case of Multiple ASN's advertising the same prefix, the router will prefer the route with the Lowest ASN.
+
 
 The EIGRP Topology Table lists Passive or Active Routes. These Should NOT Be Confused with Active/Passive Interfaces.
 Passive Routes are prefixes where EIGRP has determined the Best Path. 
