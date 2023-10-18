@@ -15,5 +15,6 @@ Here are some hints:
    
 The trouble can be seen if you use `terminal monitor` and `debug ntp all` where the NTP `src` is shown as 0.0.0.0 for outbound packets.
 * Setting the correct VRF on your `ntp server vrf ...` lines should fix this.
+* Another indicator of this type of error is if the server in `show ntp associations` is stuck in the .INIT. or .TIME. states.
  
 It is surprisingly hard to find Cisco IOS Documentation / Examples for sending IOS Device NTP Traffic over a VRF!
