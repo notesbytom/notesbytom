@@ -18,6 +18,7 @@ The Named configurations are easier to read and maintain.
 
 **Conversion to Named Config**: Use the command `eigrp upgrade-cli EIGRP_INST_NAME` to migrate to new config style.
 * Substitute your preferred EIGRP Instance Name for EIGRP_INST_NAME.
+* This can be done at runtime *"without an impact to the established EIGRP peering"*.
 
 ## Active vs Passive Interfaces
 
