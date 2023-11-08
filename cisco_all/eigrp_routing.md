@@ -132,9 +132,35 @@ interface Vlan10
  ip summary-address eigrp 65535 10.30.0.0 255.255.0.0
 end
 ```
+
+## Neighbor Authentication
+
+To establish a neighborship and share routes, EIGRP can require authentication.
+* Legacy authentication supports only MD5 and Key-Chain
+* Modern authentication in Named mode supports SHA-256 and simple pass-phrase or MD5 for backward compatibility
+
+MD5 Authentication Example in Named Mode (removed other parts of config for brevity).
+```
+key chain eigrp_key
+ key 1
+  key-string SomeSharedSecret987654321...
+  ! Key Number and Key-String MUST MATCH for EIGRP Neighbors!!
+router eigrp eigrp_virt
+ address-family ipv4 unicast autonomous-system 65535
+  af-interface Vlan10
+   authentication mode md5
+   authentication key-chain eigrp_key
+  exit-af-interface
+ exit-address-family
+```
+
+For Examples using SHA-256 Authentication, see the following Cisco Community article:
+* [Authentication Using "EIGRP Named" Mode][3] - featuring SHA2-256
+
 ## Further Reading Resources
 
 * [Enhanced Interior Gateway Routing Protocol][2] (Wikipedia)
 
 [1]: https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/200156-Configure-EIGRP-Named-Mode.html
 [2]: https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol
+[3]: https://community.cisco.com/t5/networking-knowledge-base/authentication-using-quot-eigrp-named-quot-mode/ta-p/3147063
