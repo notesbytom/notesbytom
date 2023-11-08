@@ -133,6 +133,33 @@ interface Vlan10
 end
 ```
 
+## Filtering Received Routes
+
+There may be the case where someone has mistakenly (or purposefully) redistributed WAN routes into the EIGRP LAN network.
+In the case of a medium to large-sized WAN, there could be easily 500 or more WAN routes flooding the LAN routing protocol with unneccessary route prefixes - assuming the LAN Routers only need one default-route to reach all WAN prefixes.
+This is a perfect use-case for route-filtering if you don't have control or permission to stop the WAN route redistribution into EIGRP directly.
+Less received routes will keep the LAN route table cleaner and reduce the load on our routing protocol (EIGRP).
+
+As an example, we can use a Prefix-List to restrict received routes on an EIGRP Router to just those prefixes of-interest on the LAN itself - along with possibly a default route prefix if that is not statically configured.
+
+```
+! ==== Other parts of config excluded for brevity ====
+ip prefix-list eigrp_filter_in seq 5 permit 10.10.0.0/16 le 32
+ip prefix-list eigrp_filter_in seq 10 permit 10.30.0.0/16 le 32
+ip prefix-list eigrp_filter_in seq 15 permit 0.0.0.0/0
+router eigrp eigrp_virt
+ address-family ipv4 unicast autonomous-system 65535
+  topology base
+   distribute-list prefix eigrp_filter_in in
+  exit-af-topology
+ exit-address-family
+```
+
+I recommend using Prefix-Lists for Route Filtering because of the Easier-to-read CIDR notation, and because of the more precise prefix control.
+In this case because we used a Prefix-List instead of an access-list based route-map, we were able to allow a dynamic default-route without receiving all other routes.
+When an IPv4 prefix is specified with le 32 - this makes it similar to an access-list entry matching all more-specific routes under that prefix.
+When an IPv4 previx is left without the "le ##" part, it will only match that prefix Exactly! This is what we want for the Default Route!
+
 ## Neighbor Authentication
 
 To establish a neighborship and share routes, EIGRP can require authentication.
