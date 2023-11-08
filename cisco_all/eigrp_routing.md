@@ -150,8 +150,21 @@ router eigrp eigrp_virt
   af-interface Vlan10
    authentication mode md5
    authentication key-chain eigrp_key
+   no passive-interface
   exit-af-interface
  exit-address-family
+```
+
+MD5 Authentication Example in Classic Mode (removed other parts of config for brevity).
+```
+key chain eigrp_key
+ key 1
+  key-string SomeSharedSecret987654321...
+interface Vlan10
+ ip authentication mode eigrp 65535 md5
+ ip authentication key-chain eigrp 65535 eigrp_key
+router eigrp 65535
+ no passive-interface Vlan10
 ```
 
 For Examples using SHA-256 Authentication, see the following Cisco Community article:
