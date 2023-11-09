@@ -160,6 +160,55 @@ In this case because we used a Prefix-List instead of an access-list based route
 When an IPv4 prefix is specified with le 32 - this makes it similar to an access-list entry matching all more-specific routes under that prefix.
 When an IPv4 previx is left without the "le ##" part, it will only match that prefix Exactly! This is what we want for the Default Route!
 
+## Multiple Autonomous Systems
+
+If you have Isolated LAN's that must route specific subnets between eachother, this might be a case for Multiple EIGRP Autonomous Systems.
+In a Multiple-AS scenario, at least one EIGRP "border" router will belong to more than one AS and will redistribute select routes between them.
+Here is a Multiple-AS Example with Named Configuration mode.
+* Main_AS with ASN 10 is the primary LAN with Internet access
+ * We use a `route-map` with associated `prefix-list` to `redistribute eigrp 65535 ...` select Lab_AS prefixes into Main_AS
+ * This scenario **assumes there are prefixes within Lab_AS EIGRP that should-NOT be shared with Main_AS**
+* Lab_AS with ASN 65535 is a secondary LAN with limited access to the Main LAN
+  * Lab_AS has some prefixes/subnets that should NOT be shared with Main_AS
+  * We are assuming that Lab_AS traverses Main_AS for a default-route which is likely statically configured
+  * If there is a dynamic default-route in Main_AS, we could use a route-map + prefix-list to redistribute that
+    the other direction from Main_AS to Lab_AS. In that case we would also have a `redistribute eigrp 10 ...` in the lab_as config.
+* The `network` statement determines which interfaces on the border router will belong to which EIGRP AS
+* It is assumed that there are EIGRP non-border routers within Main_AS 10 and Lab_AS 65535 which are benefitting
+  from the route redistribution and filtering done by the EIGRP Multi-AS border router.
+  * Another thing we may do on the border-router is summarize routes from either the Main_AS or Lab_AS into the other.
+    This allows more specific routes to propagate within the AS and aggregated/condensed summary routes to propagate outside of the AS.
+    Note that EIGRP allows route-summaries within an autonomous system, so Summarization is Not exclusive to a Multi-AS scenario.
+
+```
+router eigrp main_as
+ address-family ipv4 unicast autonomous-system 10
+  af-interface Vlan10
+   no passive-interface
+  exit-af-interface
+  topology base
+   redistribute eigrp 65535 route-map rm_lab_2_main
+  exit-af-topology
+  network 10.10.10.0 0.0.0.255
+  eigrp router-id 10.10.10.10
+ exit-address-family
+!
+router eigrp lab_as
+ address-family ipv4 unicast autonomous-system 65535
+  af-interface Vlan30
+   no passive-interface
+  exit-af-interface
+  network 10.30.0.0 0.0.255.255
+  eigrp router-id 10.30.30.30
+ exit-address-family
+ip prefix-list lab_2_main seq 5 permit 10.30.0.0/16 le 32
+route-map rm_lab_2_main permit 10
+ match ip address prefix-list lab_2_main
+```
+
+Prefix-Lists are preferred for route filtering over Access-Lists because we can select specific prefixes
+like a default-route 0.0.0.0/0 without matching all other routes. See the "filtering received routes" discussion above.
+
 ## Neighbor Authentication
 
 To establish a neighborship and share routes, EIGRP can require authentication.
