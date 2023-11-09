@@ -166,8 +166,8 @@ If you have Isolated LAN's that must route specific subnets between eachother, t
 In a Multiple-AS scenario, at least one EIGRP "border" router will belong to more than one AS and will redistribute select routes between them.
 Here is a Multiple-AS Example with Named Configuration mode.
 * Main_AS with ASN 10 is the primary LAN with Internet access
- * We use a `route-map` with associated `prefix-list` to `redistribute eigrp 65535 ...` select Lab_AS prefixes into Main_AS
- * This scenario **assumes there are prefixes within Lab_AS EIGRP that should-NOT be shared with Main_AS**
+  * We use a `route-map` with associated `prefix-list` to `redistribute eigrp 65535 ...` select Lab_AS prefixes into Main_AS
+  * This scenario **assumes there are prefixes within Lab_AS EIGRP that should-NOT be shared with Main_AS**
 * Lab_AS with ASN 65535 is a secondary LAN with limited access to the Main LAN
   * Lab_AS has some prefixes/subnets that should NOT be shared with Main_AS
   * We are assuming that Lab_AS traverses Main_AS for a default-route which is likely statically configured
