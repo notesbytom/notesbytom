@@ -214,6 +214,7 @@ like a default-route 0.0.0.0/0 without matching all other routes. See the "filte
 To establish a neighborship and share routes, EIGRP can require authentication.
 * Legacy authentication supports only MD5 and Key-Chain
 * Modern authentication in Named mode supports SHA-256 and simple pass-phrase or MD5 for backward compatibility
+  * Cisco ASA Firewall appears to only support MD5 auth for EIGRP.
 
 MD5 Authentication Example in Named Mode (removed other parts of config for brevity).
 ```
