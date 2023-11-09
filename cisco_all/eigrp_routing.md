@@ -215,6 +215,9 @@ To establish a neighborship and share routes, EIGRP can require authentication.
 * Legacy authentication supports only MD5 and Key-Chain
 * Modern authentication in Named mode supports SHA-256 and simple pass-phrase or MD5 for backward compatibility
   * Cisco ASA Firewall appears to only support MD5 auth for EIGRP.
+  * Cisco Nexus Datacenter Switches appear to also support only MD5 auth for EIGRP.
+  * In networks where EIGRP routes need to propagate to and from ASA or Nexus devices,
+    SHA-256 will Not be an option. Perhaps in the future, Cisco will add the feature.
 
 MD5 Authentication Example in Named Mode (removed other parts of config for brevity).
 ```
