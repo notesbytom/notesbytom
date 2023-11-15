@@ -26,3 +26,6 @@ foreach ($scope in $scopes) {
 
 # Cisco Reference "How to Calculate the Hexadecimal Value for DHCP Option 2 (time offset)" 
 #   https://www.cisco.com/c/en/us/support/docs/broadband-cable/cable-modem-termination-systems-cmts/12188-calculate-hexadecimal-dhcp.html
+
+# SonicWall Reference "How to Configure DHCP Option 2 (Time Offset)" - inludes Hex values for offsets
+#   https://www.sonicwall.com/support/knowledge-base/how-to-configure-dhcp-option-2-time-offset-in-the-sonicwall/170504779545133/
