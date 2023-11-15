@@ -2,9 +2,11 @@
 
 ## Documentation References
 
-* Dell Wyse Management Suite Version 1.3 Quick Start Guide
+* Dell Wyse Management Suite Quick Start Guide
   * [Create and configure DHCP option tags][1]
     * Includes Option Codes and Data Types
     * Includes Screen Shots for Windows DHCP Server
+* [Wyse Management Suite Documentation Links][2]
 
-[1]: https://www.dell.com/support/manuals/en-us/wyse-wms/wms_1.3_qsg/create-and-configure-dhcp-option-tags?guid=guid-326e46ab-162e-41f3-be4b-73f61133887e&lang=en-us
+[1]: https://www.dell.com/support/manuals/en-us/wyse-wms/wyse-wms_3.0_qsg/create-and-configure-dhcp-option-tags
+[2]: https://www.dell.com/support/home/en-us/product-support/product/wyse-wms/docs
