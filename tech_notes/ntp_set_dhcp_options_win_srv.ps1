@@ -9,6 +9,9 @@ $ntpservers = "1.2.3.4", "2.3.4.5"
 
 # Timezone Offset is in seconds and stored as a DWORD (uint32), example -5 hours
 $timezoneoffset = [BitConverter]::ToUInt32([BitConverter]::GetBytes(-5*60*60),0)
+# Example Converting to Hexadecimal String for use in DHCP Management GUI in Windows Server
+# [Convert]::ToString($timezoneoffset,16)
+# Add "0x" to the beginning of the Hex Number for the Value in DHCP GUI
 
 $scopes = Get-DhcpServerv4Scope -ComputerName $dhcpserver
 foreach ($scope in $scopes) {
