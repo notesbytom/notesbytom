@@ -9,3 +9,13 @@ Example: `show monitor capture cap_14 buffer`
 ## View List of Captured Packets
 
 Example: `show monitor capture cap_14 buffer brief`
+
+## Export the Capture to a File
+
+Example: `monitor capture cap_14 export flash:/cap_14.pcap`
+
+## References
+
+* [Configure and Capture Embedded Packet on Software][1] (Cisco IOS)
+
+[1]: https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-embedded-packet-capture/116045-productconfig-epc-00.html
