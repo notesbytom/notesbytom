@@ -2,6 +2,10 @@
 
 Example: `monitor capture cap_14 buffer circular size 2 int gig1/0/14 both match any start`
 
+## Licensed Capture Features
+
+If some capture features aren't working - you might need a higher license like DNA Advantage for the full capture feature set.
+
 ## Disabled Interfaces
 
 It appears that we can't start a capture on a Disabled/Shutdown Interface! The interface must be Enabled (No Shutdown) to start the capture.
