@@ -12,8 +12,11 @@ It appears that we can't start a capture on a Disabled/Shutdown Interface! The i
 
 ## View Status of Capture Buffer
 
-Example: `show monitor capture cap_14 buffer`
+Example 1: `show monitor capture cap_14 buffer`
 * This might not work while the capture is Active. You might need to Stop the capture to see the buffer.
+
+Alternate Example: `show monitor capture cap_14 capture-statistics`
+* Try this if the above Example 1 doesn't provide the buffer summary.
 
 ## View List of Captured Packets
 
