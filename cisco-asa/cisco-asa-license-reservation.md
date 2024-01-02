@@ -29,7 +29,7 @@ Here are some example commands for managing permanent license reservation on the
 For licensing it might be good to verify the time is correct first.
 
 * `show clock`
-* `set timezone US/Eastern`
+* `clock timezone US/Eastern`
   * Use tab completion to see timezone options such as `America/New_York`
 * `clock set HH:MM:SS Month DD Year`
 * Use ntp if the system has access to a network time source
