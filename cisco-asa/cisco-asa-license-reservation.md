@@ -8,7 +8,8 @@ via a Smart Licensing Satellite (which has direct communicaiton to Cisco Smart L
 ability to transfer Smart Licensing telemetry files regularly.
 
 To license completely offline, you will need to purchase a special Permanent License Reservation SKU which
-Cisco Global Licensing can provide. This type of licensing requires special validation and approval by Cisco.
+Cisco Global Licensing Support can provide (SKU Pattern Examples: -PU-, or -BPU). PU is short for Permanent Universal. 
+This type of licensing requires special validation and approval by Cisco.
 
 ## Permanent License Reservation Commands
 
