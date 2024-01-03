@@ -25,6 +25,16 @@ Centrally managed Firepower Management Center (FMC) deployments can use Specific
 * "Specific License Reservation **for approved customers**"
 * This is for offline air-gapped use only. If the FMC has Internet connectivity, normal Smart Licensing is used.
 
+FMC Specific License Reservation Hints:
+* Cisco Software Central - Smart Software Licensing - Inventory
+* Select the Correct Smart Account and Virtual Account for managing specific licenses
+* Inventory - Product Instances - Line-Item-ACTIONS-Menu - Update Reserved Licenses
+* Reserve a specific license
+* If Reserved License Lines are Expired, you will not be able to proceed.
+* Purchase the needed license(s), or add an available license(s) to the Virtual Account.
+* You can also use "Remove" in the Actions menu to process a Reservation Return Code for items no longer needed.
+* There is also a "Rehost Licenses from a Failed Product" option in the Actions menu if you are replacing a failed FMC.
+
 ## Virtual Tunnel Interfaces (VTI)
 
 [ENH: FTD should support VTI/Virtual-Template (CSCvf75938)][5]
