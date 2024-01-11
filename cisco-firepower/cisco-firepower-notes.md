@@ -37,7 +37,8 @@ FMC Specific License Reservation Hints:
 
 FMC Specific License Reservation Documentation:
 * [FMC Config Guide - Licensing the Firepower System][9]
-  * See "Specific License Reservation (SLR)" section.
+  * See the "Specific License Reservation (SLR)" section.
+  * Also See the "Licensing for Export-Controlled Functionality" section.
 
 ## Virtual Tunnel Interfaces (VTI)
 
