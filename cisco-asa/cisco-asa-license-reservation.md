@@ -20,6 +20,8 @@ SKU Pattern Examples: -PU-, or -BPU (PU is short for Permanent Universal).
 * `L-FPR4200-ASA-BPU=` (Firepower 4200 Series)
 * `L-FPR9K-ASA-BPU=` (Firepower 9300 Series)
 
+RELATED READING: See my Notes under Cisco Firepower for Specific License Reservation with FMC (Managing FTD Software).
+
 ## Permanent License Reservation Commands
 
 Here are some example commands for managing permanent license reservation on the device.
