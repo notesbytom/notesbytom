@@ -35,6 +35,10 @@ FMC Specific License Reservation Hints:
 * You can also use "Remove" in the Actions menu to process a Reservation Return Code for items no longer needed.
 * There is also a "Rehost Licenses from a Failed Product" option in the Actions menu if you are replacing a failed FMC.
 
+FMC Specific License Reservation Documentation:
+* [FMC Config Guide - Licensing the Firepower System][9]
+  * See "Specific License Reservation (SLR)" section.
+
 ## Virtual Tunnel Interfaces (VTI)
 
 [ENH: FTD should support VTI/Virtual-Template (CSCvf75938)][5]
@@ -118,3 +122,4 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [6]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/relnotes/firepower-release-notes-670/m_features_functionality.html
 [7]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvj90930/
 [8]: https://www.cisco.com/c/en/us/td/docs/security/firepower/720/fdm/fptd-fdm-config-guide-720/fptd-fdm-license.html
+[9]: https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/licensing_the_firepower_system.html
