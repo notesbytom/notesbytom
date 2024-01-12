@@ -1,5 +1,8 @@
 # Cisco Firepower Notes
 
+These notes apply to Cisco Secure Firewall Management Center (FMC) and Firewall Threat Defense (FTD). 
+The branding has recently changed from Firepower to Firewall, but the products are the same.
+
 ## SD-WAN Features
 
 Cisco has been steadily building in SD-WAN features in recent software releases. Here are some highlights.
