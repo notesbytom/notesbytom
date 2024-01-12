@@ -5,7 +5,7 @@ The branding has recently changed from Firepower to Firewall, but the products a
 
 ## SD-WAN Features
 
-Cisco has been steadily building in SD-WAN features in recent software releases. Here are some highlights.
+Cisco has been steadily adding SD-WAN features in recent software releases. Here are some highlights.
 * Virtual Tunnel Interfaces (VTI)
 * Loopback Interfaces
 * Equal-Cost Multi-Path (ECMP)
