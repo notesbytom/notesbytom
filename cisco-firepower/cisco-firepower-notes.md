@@ -1,5 +1,18 @@
 # Cisco Firepower Notes
 
+## SD-WAN Features
+
+Cisco has been steadily building in SD-WAN like features in recent software releases. Including:
+* Virtual Tunnel Interfaces (VTI)
+* Loopback Interfaces
+* Equal-Cost Multi-Path (ECMP)
+* Supporting BGP, OSPF, and EIGRP across VTI tunnels (Dynamic Routing Protocols)
+* Dynamic VTI (DVTI) for Hub-and-Spoke topologies
+* Single Pane of Glass Configuration and Montoring with Firewall Management Center (FMC)
+
+Related Documentation for Further Reading:
+* [FMC Config Guide - SD-WAN Capabilities][10]
+
 ## SAML Authentication
 
 SAML support was added for FMC in version 6.7.0.
@@ -124,3 +137,4 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [7]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvj90930/
 [8]: https://www.cisco.com/c/en/us/td/docs/security/firepower/720/fdm/fptd-fdm-config-guide-720/fptd-fdm-license.html
 [9]: https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/licensing_the_firepower_system.html
+[10]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/sd-wan-capabilities.html
