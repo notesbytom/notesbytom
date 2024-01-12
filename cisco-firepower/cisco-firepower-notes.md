@@ -2,7 +2,7 @@
 
 ## SD-WAN Features
 
-Cisco has been steadily building in SD-WAN like features in recent software releases. Including:
+Cisco has been steadily building in SD-WAN features in recent software releases. Here are some highlights.
 * Virtual Tunnel Interfaces (VTI)
 * Loopback Interfaces
 * Equal-Cost Multi-Path (ECMP)
