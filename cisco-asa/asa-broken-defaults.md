@@ -15,3 +15,20 @@ These settings might be good to change on standard deployments.
 There are many settings out-of-box that a deployment might want to change. 
 These are some common items that I usually want to change right away on a new ASA device.
 This was originally posted on my old blog - copying here so I can find it easier.
+
+## Traffic TO The ASA
+
+The ASA has a long-standing tradition of allowing you to talk ONLY to the ASA IP Address "facing" you.
+This is for management and monitoring traffic like ssh, https, snmp, ping.
+
+You canNOT traverse "through" the ASA and talk to its IP Address which is away from you.
+
+There are **a couple exceptions** to this rule:
+* **IF** you are connecting to the ASA **across a VPN tunnel** (ipsec or other vpn)
+  * **AND** the IP you are connecting to is designated as `management-access`
+  * THEN you might be able to talk to it (ping,ssh,https)
+  * There are *often bugs with this feature* - especially with SNMP in recent versions
+* On newer Firepower hardware and latest software release(s) - there is a "**loopback**" interface feature
+  * The loopback interface is not directly associated with a physical interface.
+  * The loopback interface should be reachable from any direction - if routing and access rules allow.
+  * There might be special configuration commands/options for protocols to work with a loopback interface.
