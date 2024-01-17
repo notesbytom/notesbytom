@@ -13,7 +13,7 @@ This type of licensing requires special validation and approval by Cisco.
 SKU Pattern Examples: -PU-, or -BPU (PU is short for Permanent Universal). 
 * [ASA General Operations CLI Configuration Guide][1] (Cisco Secure Firewall)
   * Search page for pattern "BPU" for Example SKU's
-* `L-FPR1K-ASA-BPU=` (Firepower 1000 Series)
+* `L-FPR1K-ASA-BPU=` (Firepower 1000 Series, product type FPRLOW)
 * `L-FPR2K-ASA-BPU=` (Firepower 2000 Series)
 * `L-FPR3K-ASA-BPU=` (Firepower 3000 Series)
 * `L-FPR4K-ASA-BPU=` (Firepower 4100 Series)
