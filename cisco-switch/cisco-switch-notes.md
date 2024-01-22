@@ -22,6 +22,8 @@ Examples for configuring serial-console and ssh access "lines".
   * `transport input ssh`
 * `show run part line`
 
+To see the Client IP Address for active SSH Connections, use the `show users` command. This is useful if you have a Zscaler deployment and users are randomly assigned to Zscaler on-premise connector addresses based on a combination of zscaler policy and magic of best-connector selection.
+
 ## VLAN Trunk Protocol (VTP)
 
 * Use VTP Version 3 to support vlans 1 through 4094 (extended range).
