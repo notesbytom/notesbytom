@@ -23,3 +23,6 @@ function get-bitlocker(
 # Based loosely on an example from https://www.top-password.com/blog/tag/get-bitlocker-recovery-key-from-ad-powershell/
 
 # Glossary: FVE = Full Volume Encryption? 
+
+# You can find this msFVE-RecoveryPassword with the ADSIEdit GUI 
+# ... in the Child Object msFVE-RecoveryInformation of the Computer Object.
