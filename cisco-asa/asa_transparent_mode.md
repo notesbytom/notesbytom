@@ -14,6 +14,7 @@ To verify the current mode, use the `show firewall` command.
 **WARNING!!!! Changing the mode will DELETE LARGE PARTS OF YOUR DEVICE CONFIGURATION** including: aaa, local user accounts, hostname, interface configurations, etc.
 * Because of this, **I recommend using ONLY routed firewall mode when possible** and NEVER changing modes!
   * Most of the transparent firewall features are available in routed mode.
+* [Cisco's Warning Note][1]: *"We recommend that you set the firewall mode before you perform any other configuration because changing the firewall mode clears the running configuration."*
  
 ## Unsupported Features in Routed Mode
 
