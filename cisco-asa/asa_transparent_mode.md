@@ -7,9 +7,10 @@ Because of this, **I recommend leaving the device in Routed mode** unless there 
 
 ## Switching Firewall Modes
 
-To switch between routed and transparent modes, the `firewall ...` command sequence is used.
+To switch between routed and transparent modes, the `firewall transparent` or `no firewall transparent` command sequences.
 To verify the current mode, use the `show firewall` command.
-**A REBOOT is likely required for the new mode to take effect!**
+**The RUNNING CONFIGURATION WILL BE CLEARED when changing modes!!! 
+You will LOSE IP-BASED ACCESS and the configuration will need to be rebuilt or restored from a backup!**
 
 **WARNING!!!! Changing the mode will DELETE LARGE PARTS OF YOUR DEVICE CONFIGURATION** including: aaa, local user accounts, hostname, interface configurations, etc.
 * Because of this, **I recommend using ONLY routed firewall mode when possible** and NEVER changing modes!
