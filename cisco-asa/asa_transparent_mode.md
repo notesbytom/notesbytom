@@ -14,6 +14,16 @@ To verify the current mode, use the `show firewall` command.
 **WARNING!!!! Changing the mode will DELETE LARGE PARTS OF YOUR DEVICE CONFIGURATION** including: aaa, local user accounts, hostname, interface configurations, etc.
 * Because of this, **I recommend using ONLY routed firewall mode when possible** and NEVER changing modes!
   * Most of the transparent firewall features are available in routed mode.
+ 
+## Unsupported Features in Routed Mode
+
+Bridge Group Members canNOT be EtherChannel interfaces. EtherChannel = Link Aggregation (LAG) / Channel-Groups / Port-Channels.
+* If you need a Bridge-Group with EtherChannel member interfaces, you need to use Transparent mode.
+Bridge Groups in Multiple-Context Mode (Routed) are not supported.
+* If you need Multiple Contexts with Bridge Groups, you will need to use Transparent Mode
+* In Routed Mode, you must have only the Single Default/Only Context to use Bridge Groups
+
+See the below Reference Document(s) for further detail on specific routed or transparent mode limitations.
 
 ## References
 
