@@ -15,7 +15,7 @@ Related feature announcement: Cisco Secure Firewall [ASA New Features by Release
 
 9.20(1) added some Loopback Interface Features including:
 * DNS - Name Lookup Source Address
-* HTTP - ASDM Management Address
+* HTTP - ASDM Management using the Loopback Address
 * ICMP - Ping and Traceroute. Likely for source, destination, and hop.
 
 ## Loopback Features in 9.19(1)
