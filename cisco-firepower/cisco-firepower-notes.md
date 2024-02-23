@@ -91,6 +91,7 @@ From FMC Config Guide v7.0, [Understanding Traffic Decryption][1]
 certificate** to the FMC and use it for either Decrypt - Resign or Decrypt - Known Key TLS/SSL rule 
 actions. For more information, see Decrypt and Resign (Outgoing Traffic). and Known Key Decryption (Incoming Traffic)."*
 * *"The Firepower System **does not currently support TLS version 1.3 encryption or decryption**."*
+  * [Newer versions of FTD/FMC support decrypting TLS 1.3][11] - as long as Snort v3 is used.
 * *"**Aggressive TLS 1.3 downgrade**, [introduced in] 6.2.3.7, Using the `system support ssl-client-hello-enabled aggressive_tls13_downgrade {true|false}` 
 CLI command, you can determine the behavior for downgrading TLS 1.3 traffic to TLS 1.2. For details, see the Command Reference for Firepower Threat Defense."*
   * https://www.cisco.com/c/en/us/td/docs/security/firepower/command_ref/b_Command_Reference_for_Firepower_Threat_Defense/s_8.html
@@ -141,3 +142,5 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [8]: https://www.cisco.com/c/en/us/td/docs/security/firepower/720/fdm/fptd-fdm-config-guide-720/fptd-fdm-license.html
 [9]: https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/licensing_the_firepower_system.html
 [10]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/sd-wan-capabilities.html
+[11]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/encrypted-traffic-overview.html
+
