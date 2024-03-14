@@ -13,5 +13,6 @@ Password Policies can be used for user accounts in the local-user database on th
  Password Expiration
  * If Password Expiration is enabled and a password expires, the user will Not be able to login using SSH or ASDM/HTTPS
    * Only the Serial Console login will work when a user password is expired!
+   * If the device is remote and you don't have serial console access, you will be unable to manage the device.
   
 [1]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa-cli-reference/A-H/asa-command-ref-A-H/ca-cld-commands.html
