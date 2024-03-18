@@ -2,6 +2,12 @@
 
 Route-Based VPN is available on Cisco ASA devices with the VTI feature in recent software versions. 
 
+## TCP MSS Bug
+
+There is a Cisco Bug for the `sysopt connection tcpmss ...` MSS Clamping feature which requires the setting to be reapplied
+EVEN when the setting is listed correctly in the running and startup configuration! See my ASA TCP MSS notes for details.
+* One of the triggers of the bug is configuration (new or changes) of VTI Tunnel Interfaces.
+
 ## VTI IPv6 Support
 
 In [ASA version 9.16, support for static-routed IPv6 was added to the VTI feature][asa916rn] set.
