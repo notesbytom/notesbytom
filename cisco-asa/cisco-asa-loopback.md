@@ -35,8 +35,9 @@ Related feature announcement: Cisco Secure Firewall [ASA New Features by Release
 * SSH - Secure Shell Management using the Loopback IP Address
 * Syslog - Source Interface for Syslog Messages
 * BGP - Loopback can be a BGP Neigborship Interface. CLI Only in 9.18(2)
-  * `neighbor update-source ...` command
+  * [`neighbor update-source ...`][3] command
   * See 9.19(1) for ASDM GUI support
 
 [asa918rn]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa918/release/notes/asarn918.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/asa/roadmap/asa_new_features.html
+[3]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa-cli-reference/I-R/asa-command-ref-I-R/n-commands.html
