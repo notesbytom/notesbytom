@@ -10,6 +10,7 @@ To workaround path MTU issues for TCP traffic, the ASA has a TCP Maximum Segment
 [The `sysopt connection tcpmss ...` command][1] can be used to change the TCPMSS clamping size (ASA default TCPMSS = 1380 bytes).
 * ASA General Operations CLI Configuration Guide - Interfaces - [Advanced Interface Configuration][5]
   * Sections: *Configure the MTU and TCP MSS, About the MTU, About the TCP MSS*
+* [Resolve IPv4 Fragmentation, MTU, MSS, and PMTUD Issues][6] (Related Documentation focused on Cisco Routers)
 
 ### TCP MSS Bug
 
@@ -38,3 +39,4 @@ The Cisco ASA Command Reference gives some incorrect information on this command
 [3]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwi49884
 [4]: https://bst.cloudapps.cisco.com/bugsearch
 [5]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/interface-mtu.html
+[6]: https://www.cisco.com/c/en/us/support/docs/ip/generic-routing-encapsulation-gre/25885-pmtud-ipfrag.html
