@@ -8,6 +8,8 @@ the end-to-end MTU for the ASA and/or endpoint systems will be lower than the et
 
 To workaround path MTU issues for TCP traffic, the ASA has a TCP Maximum Segment Size clamping feature enabled by default.
 [The `sysopt connection tcpmss ...` command][1] can be used to change the TCPMSS clamping size (ASA default TCPMSS = 1380 bytes).
+* ASA General Operations CLI Configuration Guide - Interfaces - [Advanced Interface Configuration][5]
+  * Sections: *Configure the MTU and TCP MSS, About the MTU, About the TCP MSS*
 
 ### TCP MSS Bug
 
@@ -35,3 +37,4 @@ The Cisco ASA Command Reference gives some incorrect information on this command
 [2]: https://bst.cisco.com/quickview/bug/CSCwi49884
 [3]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwi49884
 [4]: https://bst.cloudapps.cisco.com/bugsearch
+[5]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/interface-mtu.html
