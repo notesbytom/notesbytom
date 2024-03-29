@@ -10,6 +10,22 @@ These will show in the running-config.
 
 You can save the config with `write mem` to preserve the MAC address port association when the switch power cycles / reboots.
 
+## Maximum Mac Addresses
+
+You can configure a global maximum mac addresses allowed for the port and then you can specify specifically how many are allowed on the access vlan or the voice vlan.[^1]
+* Example from "Configuring Maximum MAC Addresses for Voice and Data VLANs" in the Cisco documentation.
+
+```
+Switch(config)# interface fa5/1
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport port-security
+Switch(config-if)# switchport port-security maximum 2
+Switch(config-if)# switchport port-security mac-address sticky
+Switch(config-if)# switchport port-security maximum 1 vlan voice
+Switch(config-if)# switchport port-security maximum 1 vlan access
+Switch(config-if)# end
+```
+
 ## Voice Access Ports
 
 Voice Access ports are configured with `switchport voice vlan #` and `switchport access vlan #` to use both a phone and computer on the same port with different vlans.
