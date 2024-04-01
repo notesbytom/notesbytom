@@ -27,6 +27,10 @@ Bridge Groups in Multiple-Context Mode (Routed) are not supported.
 
 See the below Reference Document(s) for further detail on specific routed or transparent mode limitations.
 
+**WARNING!!!** The SMALL PRINT says that **ASA 2100 Series hardware does NOT support Bridge-Groups in Routed Mode!**
+* It appears that the Bridge-Group IP Address cannot participate in routing, even if you are successful in configuring a bridge-group on 2100-series hardware.
+* The Bridge-Group IP would then not be usable for device management or diagnostic purposes.
+
 ## References
 
 * [ASA General Operations CLI Configuration - Getting Started - Transparent or Routed Firewall Mode][1]
