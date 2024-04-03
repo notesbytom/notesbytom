@@ -33,6 +33,8 @@ See the below Reference Document(s) for further detail on specific routed or tra
 
 ## References
 
-* [ASA General Operations CLI Configuration - Getting Started - Transparent or Routed Firewall Mode][1]
+* ASA General Operations CLI Configuration - Getting Started - [Transparent or Routed Firewall Mode][1]
+* ASA General Operations CLI Configuration - Interfaces - [Routed and Transparent Mode Interfaces][2]
 
-[1]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa914/configuration/general/asa-914-general-config/intro-fw.html
+[1]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/intro-fw.html
+[2]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/interface-routed-tfw.html
