@@ -11,6 +11,9 @@ These settings might be good to change on standard deployments.
 * Turn OFF ~~`inspect esmtp`~~ under policy-map global_policy inspection_default
   * This setting often breaks communication between mail servers like email gateways and Exchange servers.
     It also breaks the ability to test SMTP with telnet or other common troubleshooting tools.
+* Edit the `policy-map global_policy` for `class class-default` to add `set connection decrement-ttl`
+  * This should make the ASA try to appear as a "hop" during traceroute testing.
+  * The factory-default setting is for the ASA to appear "invisible" (not-a-hop) to traceroute.
 
 There are many settings out-of-box that a deployment might want to change. 
 These are some common items that I usually want to change right away on a new ASA device.
