@@ -28,7 +28,14 @@ Beware that asynchronous routing can be introduced by BGP due to multiple equal-
 
 To avoid asynchronous routing, I recommend suppressing "backup" paths using AS-Path Prepending (with route-map on neighbor config line).
 
+## Diffie Hellman Groups
+
+Some notes or links for Cisco ASA Diffie Hellman Groups.
+
+* Cisco Community - Security Knowledge Base - [ASA Diffie Hellman Groups][5]
+
 [asa916rn]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa916/release/notes/asarn916.html
 [asa918vpn-vti]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa918/configuration/vpn/asa-918-vpn-config/vpn-vti.html
 [asa-new-feat]: https://www.cisco.com/c/en/us/td/docs/security/asa/roadmap/asa_new_features.html
 [4]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa919/configuration/vpn/asa-919-vpn-config/vpn-vti.html
+[5]: https://community.cisco.com/t5/security-knowledge-base/diffie-hellman-groups/ta-p/3147010
