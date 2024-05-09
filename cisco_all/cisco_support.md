@@ -14,3 +14,11 @@ Devices may have more than one serial number. Here are some notes on which seria
 
 * Cisco ASA 5508: "Chassis" serial number from `show inventory`
   * Ignore the serial number from ~`show version`~ or ~`show run`~ - this may be tied to software licensing, but appears to not be linked to the support agreement or warranty.
+
+## End of Life
+
+Notes for Cisco products End of Life.
+
+* [ASA 5508 and 5516 EOL][1]
+
+[1]: https://www.cisco.com/c/en/us/products/collateral/security/asa-5500-series-next-generation-firewalls/eos-eol-notice-c51-744798.html
