@@ -45,10 +45,10 @@ NPS/RADIUS servers should belong to the **"RAS and IAS Servers"** group to ensur
 * Windows Groups on a single line only need to match one (logical OR)
   * Groups on separate match condition lines - each match condition must be true (logical AND)
 * RADIUS Attributes: Standard
- * Service-Type = Administrative (for Privileged Users, level 15); "Login" would be priv-1.
-  * Service-Type = Framed for 802.1x Wifi, Switch, or Remote-Access-VPN authentication?
- * Class = Administrator (Privileged Users on some equipment)
- * There may also be vendor-specific attributes available. See vendor support documentation.
+  * Service-Type = Administrative (for Privileged Users, level 15); "Login" would be priv-1.
+    * Service-Type = Framed for 802.1x Wifi, Switch, or Remote-Access-VPN authentication?
+  * Class = Administrator (Privileged Users on some equipment)
+  * There may also be vendor-specific attributes available. See vendor support documentation.
 
 ## Port Numbers
 
