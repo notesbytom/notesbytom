@@ -24,6 +24,8 @@ Set-ItemProperty -Path $reg_path -Name "Enable NTLMv2 Compatibility" -Type DWord
 Restart-Service "IAS" -Verbose
 ```
 
+I believe this is separate from Modern MSCHAPv2 support which is configured under EAP+MSCHAPv2 instead.
+
 ## Registered/Authorized Servers
 
 Domain Controllers might already have the needed permissions. 
