@@ -44,6 +44,10 @@ NPS/RADIUS servers should belong to the **"RAS and IAS Servers"** group to ensur
 * Regular Expressions: \. = literal-dot; .+ = one or more characters; ...
 * Windows Groups on a single line only need to match one (logical OR)
   * Groups on separate match condition lines - each match condition must be true (logical AND)
+* RADIUS Attributes: Standard
+ * Service-Type = Administrative (for Privileged Users, level 15); "Login" would be priv-1. 
+ * Class = Administrator (Privileged Users on some equipment)
+ * There may also be vendor-specific attributes available. See vendor support documentation.
 
 ## Port Numbers
 
@@ -51,3 +55,7 @@ https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
 
 * Authentication: 1812 (legacy 1645)
 * Accounting: 1813 (legacy 1646)
+
+## Further Reading
+
+* https://www.ciscozine.com/manage-cisco-with-nps-radius/
