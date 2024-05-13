@@ -18,6 +18,8 @@ Default Log File path is C:\Windows\system32\LogFiles\IN####.txt (filename patte
 
 ## Legacy MSCHAPv2 Support
 
+If you hare having trouble with MSCHAPv2 clients, you can try enabling the below setting.
+
 ```
 $reg_path = "HKLM:\SYSTEM\CurrentControlSet\Services\RemoteAccess\Policy"
 Set-ItemProperty -Path $reg_path -Name "Enable NTLMv2 Compatibility" -Type DWord -Value 1 -Verbose
