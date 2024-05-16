@@ -15,6 +15,7 @@ These settings might be good to change on standard deployments.
   * This should make the ASA try to appear as a "hop" during traceroute testing.
   * The factory-default setting is for the ASA to appear "invisible" (not-a-hop) to traceroute.
 
+
 There are many settings out-of-box that a deployment might want to change. 
 These are some common items that I usually want to change right away on a new ASA device.
 This was originally posted on my old blog - copying here so I can find it easier.
@@ -35,3 +36,14 @@ There are **a couple exceptions** to this rule:
   * The loopback interface is not directly associated with a physical interface.
   * The loopback interface should be reachable from any direction - if routing and access rules allow.
   * There might be special configuration commands/options for protocols to work with a loopback interface.
+
+## DHCP Issues
+
+For ASA DHCPd Server IP Reservations there is a glitch/bug where address reservation fails to same client due to differing client-id's.
+* First Client ID form gets the IP, other form doesn't. Only difference being a 01 prefix or not.
+* Common for HP Windows Thin Clients PXE booting from remote SCCM/MECM.
+* Workaround 1: Remove the ASA DHCPd Server IP Reservation for the trouble client during the PXE boot process.
+* Workaround 2 (preferred): Migrate to Windows Server DHCP Services and use DHCP Relay on the ASA (or IP Helper on an IOS network device).
+
+The High Availability Failover feature does not replicate the ASA DHCPd server lease state. This is another motivation to use Windows Server DHCP Services.
+* The documentation states that DHCPd lease state is not necessary because the server will ping addresses to see if they are in-use before offering them.
