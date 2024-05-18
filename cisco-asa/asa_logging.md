@@ -7,11 +7,12 @@ Tech Notes for Cisco ASA Firewall Logging Configuration.
 Firewalls can generate an excessively large amount of log messages. It is valuable to be able to reduce unimportant noise messages so that interesting log events are more easy to spot. Here are some hints to reduce the quantity and improve the quality of your ASA logging.
 * Find useless messages in your log and determine if the config can be improved to reduce or eliminate these.
 * Noisy log messages often highlight areas for improvement in your ASA configuration.
-* A common source of useless logs is outside systems probing common ports on the ASA management control-plane
+* A common source of useless logs is outside systems probing common ports on the ASA management control-plane: ssh, http, telnet, ike/isakmp, esp/ipsec, etc.
   * Use [Control-Plane Access-Control Policy][4] to deny and no-log this useless probing.
   * Example: Deny http, https, ssh, and telnet on the outside interface except for specific sources where needed.
-  * `control-plane` management access-lists have a `log disable` option you can append to any ACL entry.
-  * Important: The implicit deny does NOT apply to control-plane ACLs. This allows control-plane commands like `ssh ...` and `http ...` to be evaluated if there are no matches from the control-plane ACL.
+  * `control-plane` management access-lists have a **`log disable`** option you can append to any ACL entry.
+  * Important: The **implicit deny does NOT apply** to control-plane ACLs. This allows control-plane commands like `ssh ...` and `http ...` to be evaluated if there are no matches from the control-plane ACL.
+  * "Existing Connections" will be IGNORED by new control-plane access-control entries. USE **`clear connection 1.2.3.4`** command pattern to remove existing connections for an address. The connections will NOT be visible under `show connection` BUT they will still be invisibly tracked, so they MUST BE cleared for the ACL entry to impact them.
   * In the ASDM GUI, this feature is called Management Access Control.
 * If a noisy log message indicates something is broken, try to fix it!
 
