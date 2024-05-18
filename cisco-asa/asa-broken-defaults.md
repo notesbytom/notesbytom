@@ -60,4 +60,4 @@ If you already have IKEv2 Policies configured on the ASA, there is a good chance
     * Example: aes-gcm-256 + group 20 + prf_sha
   * Explicitly add the discovered magic failover ipsec ikev2 policy
   * THEN re-add your other ikev2 policies you cleared out for troubleshooting.
-* By adding the missing failover IKEv2 policy, the issue should be resolved and failoer ipsec link protection should work correctly.
+* By adding the missing failover IKEv2 policy, the issue should be resolved and failover ipsec link protection should work correctly.
