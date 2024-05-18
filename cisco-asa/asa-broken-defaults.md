@@ -47,3 +47,17 @@ For ASA DHCPd Server IP Reservations there is a glitch/bug where address reserva
 
 The High Availability Failover feature does not replicate the ASA DHCPd server lease state. This is another motivation to use Windows Server DHCP Services.
 * The documentation states that DHCPd lease state is not necessary because the server will ping addresses to see if they are in-use before offering them.
+
+## Failover Link IPsec IKEv2 Dependency
+
+If you already have IKEv2 Policies configured on the ASA, there is a good chance that enabling an ipsec key on the failover link will cause the failover communications to fail due to a Missing IKEv2 policy.
+* To Troubleshoot (IKEv2 and failover feature outage required):
+  * Disable failover
+  * Backup and Clear the IKEv2 configuration
+  * Re-enable failover with an ipsec key configured
+  * If the failover communication/link function correctly, verify the IKEv2 settings needed
+    * `show crypto ikev2 sa detail` and `show vpn-sessiondb failover` commands
+    * Example: aes-gcm-256 + group 20 + prf_sha
+  * Explicitly add the discovered magic failover ipsec ikev2 policy
+  * THEN re-add your other ikev2 policies you cleared out for troubleshooting.
+* By adding the missing failover IKEv2 policy, the issue should be resolved and failoer ipsec link protection should work correctly.
