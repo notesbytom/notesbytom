@@ -13,7 +13,7 @@ Some quotes from the Cisco documentation along with reference links and my notes
   IPsec tunnel or a failover key ..."*
   * [Failover and Stateful Failover Links][1]
   * The documentation lists ipsec failover link protection as "preferred" vs the
-    classic failover key confiugration being "legacy" and "proprietary".
+    classic failover key configuration being "legacy" and "proprietary".
     * Note that ipsec failover link encryption has an IKE policy dependency.
   * See my [ASA Broken Defaults][2] note page for failover ipsec dependency info.
 
