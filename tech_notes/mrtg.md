@@ -58,10 +58,13 @@ simply comment out the default pool and add lines like `server srv.fq.dn iburst`
 Restart the chrony service with `systemctl restart chronyd` to reload the configuration.
 Verify with `chronyc sources`.
 
-Verify the **Time Zone** is set to your desired value with [timedatectl][2].
+Verify the **Time Zone** is set to your desired value with `timedatectl`:
 * `timedatectl list-timezones`
 * `timedatectl set-timezone ...`
 * View current settings without arguments: `timedatectl`
+* RHEL 7 Sys Admin Guide - [Configuring Date and Time][2]
+* [timedatectl][3] manual page
 
 [1]: https://www.redhat.com/sysadmin/chrony-time-services-linux
 [2]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-configuring_the_date_and_time
+[3]: https://www.freedesktop.org/software/systemd/man/latest/timedatectl.html
