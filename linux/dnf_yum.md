@@ -8,3 +8,5 @@ In a minimal installation like one provided for small containers, the provided c
 
 * `microdnf repoquery`
   * This will list all available packages from enabled repositories. Pipe to grep to filter.
+* `microdnf repoquery PKGNAME --info`
+  * Append `--info` to get detail about the listed package(s)
