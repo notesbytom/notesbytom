@@ -9,6 +9,7 @@ This also applies to Red Hat Enterprise Linux 8 and other similar Linux distribu
 dnf install httpd
 dnf install mod_ssl
 dnf install mrtg
+dnf install perl-File-Copy
 
 # Save a copy of the factory default mrtg.cfg for reference
 cp /etc/mrtg/mrtg.cfg /etc/mrtg/factory_mrtg.cfg
