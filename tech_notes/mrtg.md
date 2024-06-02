@@ -1,8 +1,8 @@
 # Multi Router Traffic Grapher (MRTG)
 
-## CentOS 8 Stream MRTG Install Notes
+## CentOS Stream 9 MRTG Install Notes
 
-This also applies to Red Hat Enterprise Linux 8 and other similar Linux distributions
+This also applies to Red Hat Enterprise Linux (RHEL) 9 and similar distributions like Rocky.
 
 ```bash
 # Install the necessary packages
