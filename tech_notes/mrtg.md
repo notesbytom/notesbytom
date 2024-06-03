@@ -51,7 +51,7 @@ systemctl start httpd
 ## Time Synchronization (chrony)
 
 It is important to have time syncrhonized to a reliable source on your network monitoring system.
-Here are some notes (hints) for time synchronization with CentOS Stream 8.
+Here are some notes (hints) for time synchronization with CentOS Stream.
 
 Modern CentOS/RHEL ship with the `chrony` NTP service for clock network synchronization.
 The default [configuration `/etc/chrony.conf`][1] uses something like `pool pool.ntp.org iburst`.
