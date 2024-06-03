@@ -9,7 +9,9 @@ This also applies to Red Hat Enterprise Linux (RHEL) 9 and similar distributions
 dnf install httpd
 dnf install mod_ssl
 dnf install mrtg
+# Install dependencies not automatically resolved by dnf/yum/rpm:
 dnf install perl-File-Copy
+dnf install perl-Time-HiRes
 
 # Save a copy of the factory default mrtg.cfg for reference
 cp /etc/mrtg/mrtg.cfg /etc/mrtg/factory_mrtg.cfg
