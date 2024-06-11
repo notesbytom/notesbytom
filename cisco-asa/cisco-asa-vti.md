@@ -34,6 +34,10 @@ Some notes or links for Cisco ASA Diffie Hellman Groups.
 
 * Cisco Community - Security Knowledge Base - [ASA Diffie Hellman Groups][5]
 
+## IPsec VPN License Usage
+
+Use command `show vpn-sessiondb license-summary` to view current and historical peak license count usage against the entitled maximum on the device.
+
 [asa916rn]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa916/release/notes/asarn916.html
 [asa918vpn-vti]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa918/configuration/vpn/asa-918-vpn-config/vpn-vti.html
 [asa-new-feat]: https://www.cisco.com/c/en/us/td/docs/security/asa/roadmap/asa_new_features.html
