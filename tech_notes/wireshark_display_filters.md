@@ -27,6 +27,14 @@ This is useful to avoid saving and sharing packets unrelated to your traffic of 
 
 Related Documentation: [Wireshark User’s Guide - Exporting Data - Export Specified Packets][3]
 
+## IP Redirects Troubleshooting
+
+Troubleshooting ICMP IP Redirect Errors in Wireshark.
+
+Custom Column Hints:
+* Title=Destination Address, Type=Custom, Fields=ip.dst, Occurrence=0
+* Title=Gateway Address, Type=Custom, Fields=icmp.redir_gw, Occurrence=0
+
 ## References
 
 * [Wireshark Wiki - Display Filters][1]
