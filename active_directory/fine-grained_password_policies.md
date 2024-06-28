@@ -5,6 +5,11 @@ A Domain Functional Level of Server 2008 is required to use FGPP with Active Dir
 ## Management Tools
 
 * GUI = Active Directory Administrative Center (ADAC) `dsac.exe`
+* PowerShell Command-Line
+  * `New-ADFineGrainedPasswordPolicy`
+  * `Add-ADFineGrainedPasswordPolicySubject`
+  * `Get-ADUserResultantPasswordPolicy`
+  * `Set-ADFineGrainedPasswordPolicy`
 
 ## Further Reading
 
