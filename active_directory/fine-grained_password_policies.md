@@ -2,6 +2,10 @@
 
 A Domain Functional Level of Server 2008 is required to use FGPP with Active Directory.
 
+## Management Tools
+
+* GUI = Active Directory Administrative Center (ADAC) `dsac.exe`
+
 ## Further Reading
 
 * Active Directory Administrative Center [Fine-Grained Password Policy][1]
