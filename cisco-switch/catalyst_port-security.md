@@ -35,4 +35,11 @@ With Cisco IOS Release 12.2(31)SG and later releases, the maximum parameter must
 
 [^1]: [Cat. 4500 Config. Guide IOS 15.2 - Configuring Port Security][1]
 
+## 802.1x MAC Authentication Bypass
+
+A more advanced method of requiring valid MAC Addresses on switchports is to use the 802.1x MAC Authentication Bypass (MAB) feature. This has the advantage of allowing a device to move between different switch ports or even different switches without requiring a change to the port setttings - assuming that 802.1x + MAB is already enabled for the new switchport the device is moving to.
+
+* [MAC Authentication Bypass Deployment Guide][2]
+
 [1]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-9-0E/15-25E/configuration/guide/xe-390-configuration/port_sec.html
+[2]: https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/MAB/MAB_Dep_Guide.html
