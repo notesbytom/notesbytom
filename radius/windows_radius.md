@@ -41,7 +41,7 @@ NPS/RADIUS servers should belong to the **"RAS and IAS Servers"** group to ensur
   * This is NOT a hostname, just a string to match the entry in the Radius Server config.
 * RADIUS Clients are the network devices that are talking to the radius server on behalf of the client
   * Examples: Network Firewall, Router, Switch, etc.
-* Regular Expressions: \. = literal-dot; .+ = one or more characters; ...
+* Regular Expressions: `\.` = literal-dot; `.+` = one or more characters; ...
 * Windows Groups on a single line only need to match one (logical OR)
   * Groups on separate match condition lines - each match condition must be true (logical AND)
 * RADIUS Attributes: Standard
