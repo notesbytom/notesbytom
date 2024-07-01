@@ -50,8 +50,35 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
 * [How to use 802.1x/mac-auth and dynamic VLAN assignment][4] (Network Guys)
   * NPS/IAS Tunnel-Type = Virtual LANs (VLAN)
   * NPS/IAS Tunnel-Pvt-Group-ID == Tunnel-Private-Group-ID field
+ 
+## RADIUS Port Authentication
+
+* [`authentication port-control auto`][5]
+  * Old command was `dot1x port-control ...`
+* [`mab`][6]
+  * Enable MAC-Based Authentication on a switchport.
+  * `eap` is an optional parameter for this command.
+* [`authentication host-mode ...`][5]
+  * How many hosts get access to authenticated port and if they must separately authenticate.
+  * Requires: authentication port-control auto
+  * Typical option: `single-host`
+  * Other useful options:
+    * `multi-auth` - many data hosts but all must authenticate
+    * `multi-domain` - one data and one voice host, both must authenticate
+  * AVOID the multi-host option which allows additional hosts without authencation!
+* [`authentication violation ...`][5]
+  * What to do when the port fails auth: restrict or shutdown.
+  * The default is shutdown.
+* [`authentication order ...`][5]
+  * Can force MAB to be the first (and only!) auth method for the port.
+  * The default order is dot1x mab webauth.
+* [`authentication priority ...`][5]
+  * Allow higher-priority methods to interrupt running auth method.
+  * Default priority: dot1x mab webauth
 
 [1]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-9-0E/15-25E/configuration/guide/xe-390-configuration/port_sec.html
 [2]: https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/MAB/MAB_Dep_Guide.html
 [3]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-6/configuration_guide/sec/b_176_sec_9500_cg/ieee_802_1x_vlan_assignment.html
 [4]: https://networkguy.de/how-to-use-802-1xmac-auth-and-dynamic-vlan-assignment/
+[5]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3850-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_010.html
+[6]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/m1/sec-m1-xe-3se-3850-cr-book/sec-m1-xe-3se-3850-cr-book_chapter_00.html
