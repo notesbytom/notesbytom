@@ -41,5 +41,17 @@ A more advanced method of requiring valid MAC Addresses on switchports is to use
 
 * [MAC Authentication Bypass Deployment Guide][2]
 
+An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from the RADIUS server. In the case of Microsoft IAS/NPS, the vlan members can be selected based on something like Group Membership.
+
+* [Security Configuration Guide, Cisco IOS XE ... (Catalyst ... Switches)][3]
+  * [64] Tunnel-Type = VLAN
+  * [65] Tunnel-Medium-Type = 802
+  * [81] Tunnel-Private-Group-ID = VLAN name or VLAN ID
+* [How to use 802.1x/mac-auth and dynamic VLAN assignment][4] (Network Guys)
+  * NPS/IAS Tunnel-Type = Virtual LANs (VLAN)
+  * NPS/IAS Tunnel-Pvt-Group-ID == Tunnel-Private-Group-ID field
+
 [1]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-9-0E/15-25E/configuration/guide/xe-390-configuration/port_sec.html
 [2]: https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/MAB/MAB_Dep_Guide.html
+[3]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9500/software/release/17-6/configuration_guide/sec/b_176_sec_9500_cg/ieee_802_1x_vlan_assignment.html
+[4]: https://networkguy.de/how-to-use-802-1xmac-auth-and-dynamic-vlan-assignment/
