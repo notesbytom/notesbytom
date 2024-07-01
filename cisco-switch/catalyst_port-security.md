@@ -43,21 +43,37 @@ A more advanced method of requiring valid MAC Addresses on switchports is to use
 
 An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from the RADIUS server. In the case of Microsoft IAS/NPS, the vlan members can be selected based on something like Group Membership.
 
-* [Security Configuration Guide, Cisco IOS XE ... (Catalyst ... Switches)][3]
+* [IEEE 802.1X VLAN Assignment][3] (Security Configuration Guide, Cisco IOS XE ... Catalyst ... Switches)
   * [64] Tunnel-Type = VLAN
   * [65] Tunnel-Medium-Type = 802
   * [81] Tunnel-Private-Group-ID = VLAN name or VLAN ID
 * [How to use 802.1x/mac-auth and dynamic VLAN assignment][4] (Network Guys)
   * NPS/IAS Tunnel-Type = Virtual LANs (VLAN)
   * NPS/IAS Tunnel-Pvt-Group-ID == Tunnel-Private-Group-ID field
- 
+* [Flexible Authentication Order, Priority, and Failed Authentication][8] (pdf)
+  * See `authentication order` and `authentication priority` below.
+
 ## RADIUS Port Authentication
 
+* [`aaa authentication dot1x ...`][9]
+  * REQUIRED for 802.1x or MAB port authentication!
+  * Directs the switch to use your RADIUS server(s) for port authentication.
+* [`aaa authorization network ... if-authenticated`][9]
+  * REQUIRED for Dynamic VLAN Assignment from RADIUS Server (see above "VLAN Assignment" notes)
+* [`dot1x system-auth-control`][7]
+  * GLOBAL command to Enable RADIUS-based Port Authentication
+  * *You must enable Authentication, Authorization, and Accounting (AAA) and specify the authentication method list before enabling 802.1X.*
+* [`dot1x pae authenticator`][7]
+  * REQURED for Switch to authenticate clients with RADIUS (802.1x)
+  * This might NOT be required for MAB? PAE is for responding for dot1x messages on the port.
 * [`authentication port-control auto`][5]
   * Old command was `dot1x port-control ...`
+  * REQUIRED for RADIUS auth on port.
+  * PAE = "Port Access Entity (PAE) type"
 * [`mab`][6]
   * Enable MAC-Based Authentication on a switchport.
   * `eap` is an optional parameter for this command.
+  * Other form of this command: dot1x mac-auth-bypass.
 * [`authentication host-mode ...`][5]
   * How many hosts get access to authenticated port and if they must separately authenticate.
   * Requires: authentication port-control auto
@@ -82,3 +98,6 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
 [4]: https://networkguy.de/how-to-use-802-1xmac-auth-and-dynamic-vlan-assignment/
 [5]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3850-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_010.html
 [6]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/m1/sec-m1-xe-3se-3850-cr-book/sec-m1-xe-3se-3850-cr-book_chapter_00.html
+[7]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/d1/sec-d1-xe-3se-3850-cr-book/sec-d1-xe-3se-3850-cr-book_chapter_01.html
+[8]: https://www.cisco.com/c/dam/en/us/support/docs/ios-nx-os-software/identity-based-networking-service/flexible_authentication.pdf
+[9]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3850-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_00.html
