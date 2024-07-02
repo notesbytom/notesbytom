@@ -55,6 +55,8 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
 
 ## RADIUS Port Authentication
 
+Some of the below has been replaced with newer Identity-Based Networking Services (IBNS) which includes `access-session` commands along with `policy-map` and `service-policy` of `type control subscriber`.
+
 * [`aaa authentication dot1x ...`][9]
   * REQUIRED for 802.1x or MAB port authentication!
   * Directs the switch to use your RADIUS server(s) for port authentication.
@@ -66,14 +68,14 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
 * [`dot1x pae authenticator`][7]
   * REQURED for Switch to authenticate clients with RADIUS (802.1x)
   * This might NOT be required for MAB? PAE is for responding to dot1x messages on the port.
+  * PAE = "Port Access Entity (PAE) type"
 * [`authentication port-control auto`][5]
   * Old command was `dot1x port-control ...`
   * REQUIRED for RADIUS auth on port.
-  * PAE = "Port Access Entity (PAE) type"
 * [`mab`][6]
   * Enable MAC-Based Authentication on a switchport.
   * `eap` is an optional parameter for this command.
-  * Other form of this command: dot1x mac-auth-bypass.
+  * Older form of this command: dot1x mac-auth-bypass.
 * [`authentication host-mode ...`][5]
   * How many hosts get access to authenticated port and if they must separately authenticate.
   * Requires: authentication port-control auto
