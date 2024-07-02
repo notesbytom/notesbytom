@@ -93,6 +93,10 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
 * [`authentication priority ...`][5]
   * Allow higher-priority methods to interrupt running auth method.
   * Default priority: dot1x mab webauth
+ 
+## Further Reading
+
+* [IP Telephony for 802.1X Design Guide](https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/IP_Tele/IP_Telephony_DIG.html)
 
 [1]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-9-0E/15-25E/configuration/guide/xe-390-configuration/port_sec.html
 [2]: https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/MAB/MAB_Dep_Guide.html
