@@ -65,7 +65,7 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
   * *You must enable Authentication, Authorization, and Accounting (AAA) and specify the authentication method list before enabling 802.1X.*
 * [`dot1x pae authenticator`][7]
   * REQURED for Switch to authenticate clients with RADIUS (802.1x)
-  * This might NOT be required for MAB? PAE is for responding for dot1x messages on the port.
+  * This might NOT be required for MAB? PAE is for responding to dot1x messages on the port.
 * [`authentication port-control auto`][5]
   * Old command was `dot1x port-control ...`
   * REQUIRED for RADIUS auth on port.
