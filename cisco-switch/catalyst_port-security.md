@@ -55,7 +55,7 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
 
 ## RADIUS Port Authentication
 
-Some of the below has been replaced with newer Identity-Based Networking Services (IBNS) which includes `access-session` commands along with `policy-map` and `service-policy` of `type control subscriber`.
+Some of the below has been replaced with newer [Identity-Based Networking Services (IBNS)][10] which includes `access-session` commands along with `policy-map` and `service-policy` of `type control subscriber`.
 
 * [`aaa authentication dot1x ...`][9]
   * REQUIRED for 802.1x or MAB port authentication!
@@ -103,3 +103,4 @@ Some of the below has been replaced with newer Identity-Based Networking Service
 [7]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/d1/sec-d1-xe-3se-3850-cr-book/sec-d1-xe-3se-3850-cr-book_chapter_01.html
 [8]: https://www.cisco.com/c/dam/en/us/support/docs/ios-nx-os-software/identity-based-networking-service/flexible_authentication.pdf
 [9]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3850-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_00.html
+[10]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ibns/command/ibns-xe-3se-3850-cr-book/ibns-cr-3850.html
