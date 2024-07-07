@@ -83,7 +83,7 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
   * Requires: authentication port-control auto
   * Typical option: `single-host`
   * Other useful options:
-    * `multi-auth` - many data hosts but all must authenticate
+    * `multi-auth` - many hosts and all must authenticate
     * `multi-domain` - one data and one voice host, both must authenticate
   * AVOID the multi-host option which allows additional hosts without authencation!
 * [`authentication violation ...`][5]
