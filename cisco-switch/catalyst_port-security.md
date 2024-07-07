@@ -52,8 +52,14 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
   * NPS/IAS Tunnel-Pvt-Group-ID == Tunnel-Private-Group-ID field
 * [Flexible Authentication Order, Priority, and Failed Authentication][8] (pdf)
   * See `authentication order` and `authentication priority` below.
-* Security Configuration Guide, Cisco IOS XE ... Catalyst ... Switches [Configuring Identity Control Policies][11] (ICP)
+* *Security Configuration Guide, Cisco IOS XE ... Catalyst ... Switches* [Configuring Identity Control Policies][11] (ICP)
   * Practical examples for configuring Identity Based Networking Services (IBNS) policies
+
+## Cisco Discovery Protocol Bypass
+
+CDP Bypass can allow a Cisco phone to use the Voice Vlan on an access port while the Data Vlan requires authentication with Host-Mode Single-Host or Multi-Host. CDP Bypass is NOT used with Host-Modes of Multi-Auth or Multi-Domain which require 802.1x or MAB authentication for the Phone.
+
+* *Security Configuration Guide, Cisco IOS XE ... Catalyst ... Switches* [Configuring Cisco Discovery Protocol Bypass][12]
 
 ## RADIUS Port Authentication
 
@@ -111,3 +117,4 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
 [9]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3850-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_00.html
 [10]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ibns/command/ibns-xe-3se-3850-cr-book/ibns-cr-3850.html
 [11]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-14/configuration_guide/sec/b_1714_sec_9600_cg/configuring_identity_control_policies.html
+[12]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3650/software/release/16-6/configuration_guide/sec/b_166_sec_3650_cg/cisco_discovery_protocol_bypass.html
