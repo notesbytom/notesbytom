@@ -52,6 +52,8 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
   * NPS/IAS Tunnel-Pvt-Group-ID == Tunnel-Private-Group-ID field
 * [Flexible Authentication Order, Priority, and Failed Authentication][8] (pdf)
   * See `authentication order` and `authentication priority` below.
+* Security Configuration Guide, Cisco IOS XE ... Catalyst ... Switches [Configuring Identity Control Policies][11] (ICP)
+  * Practical examples for configuring Identity Based Networking Services (IBNS) policies
 
 ## RADIUS Port Authentication
 
@@ -108,3 +110,4 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
 [8]: https://www.cisco.com/c/dam/en/us/support/docs/ios-nx-os-software/identity-based-networking-service/flexible_authentication.pdf
 [9]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-xe-3se-3850-cr-book/sec-a1-xe-3se-3850-cr-book_chapter_00.html
 [10]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ibns/command/ibns-xe-3se-3850-cr-book/ibns-cr-3850.html
+[11]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-14/configuration_guide/sec/b_1714_sec_9600_cg/configuring_identity_control_policies.html
