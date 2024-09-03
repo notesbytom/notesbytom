@@ -86,16 +86,14 @@ Open a support request with Cisco and mention this Enhancement request number to
 
 ## Traffic Decryption
 
-From FMC Config Guide v7.0, [Understanding Traffic Decryption][1]
+From FMC Device Config Guide v7.4, [Traffic Decryption Overview][11]
 
 * *"The Firepower System **does not support mutual authentication; that is, you cannot upload a client
-certificate** to the FMC and use it for either Decrypt - Resign or Decrypt - Known Key TLS/SSL rule 
+certificate** to the management center and use it for either Decrypt - Resign or Decrypt - Known Key decryption rule 
 actions. For more information, see Decrypt and Resign (Outgoing Traffic). and Known Key Decryption (Incoming Traffic)."*
-* [TLS 1.3 Decryption was added as a feature in FMC/FTD version 7.2.0][12] - this requires Snort v3 to be used.
-  * [Traffic Decryption Overview for FMC 7.4 Document][11] Mentions Decrypting TLS 1.3 - as long as Snort v3 is used.
-* *"**Aggressive TLS 1.3 downgrade**, [introduced in] 6.2.3.7, Using the `system support ssl-client-hello-enabled aggressive_tls13_downgrade {true|false}` 
-CLI command, you can determine the behavior for downgrading TLS 1.3 traffic to TLS 1.2. For details, see the Command Reference for Firepower Threat Defense."*
-  * https://www.cisco.com/c/en/us/td/docs/security/firepower/command_ref/b_Command_Reference_for_Firepower_Threat_Defense/s_8.html
+
+[TLS 1.3 Decryption was added as a feature in FMC/FTD version 7.2.0][12] - this requires Snort v3 to be used.
+* [Traffic Decryption Overview for FMC 7.4 Document][11] Mentions Decrypting TLS 1.3 - as long as Snort v3 is used.
 
 ## File Control
 
@@ -133,7 +131,6 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 * LSP file contains Cisco Talos Snort 3 Rules
   * LSP = [Lightweight Security Package](https://www.cisco.com/c/en/us/td/docs/security/firepower/70/snort3/config-guide/snort3-configuration-guide-v70/overview.html)
 
-[1]: https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/understanding_traffic_decryption.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_policies_and_advanced_malware_protection.html
 [3]: https://www.cisco.com/c/en/us/td/docs/security/firepower/670/configuration/guide/fpmc-config-guide-v67/file_and_malware_inspection_performance_and_storage_tuning.html
 [4]: https://www.cisco.com/c/en/us/td/docs/security/firepower/623/configuration/guide/fpmc-config-guide-v623/decryption_tuning_using_ssl_rules.html
