@@ -77,7 +77,8 @@ From [Cisco Firepower Release Notes, Version 6.7.0, Features and Functionality][
 
 ## SSH Decryption
 
-[ENH: Add SSH decryption on the Firepower (CSCvj90930)][7]
+[ENH: Add SSH decryption on the Firepower (CSCvj90930)][7] (bugsearch login required)
+* *[ENH: Add SSH decryption on the Firepower][13]* Cisco Bug: CSCvj90930 (quickview)
 
 Cisco Firepower Enhancement Request for SSH decryption has not been implemented. No indication of plans to add the feature.
 
@@ -144,3 +145,4 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [10]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/sd-wan-capabilities.html
 [11]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/encrypted-traffic-overview.html
 [12]: https://www.cisco.com/c/en/us/td/docs/security/firepower/roadmap/fmc-new-features/fmc-new-features-by-release.html
+[13]: https://bst.cisco.com/quickview/bug/CSCvj90930
