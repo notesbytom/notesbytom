@@ -18,6 +18,10 @@ The port-authentication violation action can be customized.
 See the IBNS Command Reference linked below for examples to add to your policy.
 * Violation actions: err-disable, restrict, protect
 
+## Important Terminology
+
+* CPL = Class-Based Policy Language (Used to configure IBNS)
+
 ## Reference Documentation
 
 * [IBNS Command Reference IOS XE 3SE (Catalyst 3850)][1]
