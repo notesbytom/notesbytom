@@ -10,6 +10,7 @@ These policies are used by the webgui to specify the authentication types and or
 The primary authentication types supported are:
 * 802.1x - also referred to as dot1x. A RADIUS server is used for this.
 * MAB - switch sends fake mac-address username and password to 802.1x RADIUS server.
+* Captive Portal (Web Authentication)
 
 ## Violation Action
 
