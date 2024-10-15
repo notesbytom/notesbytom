@@ -55,7 +55,7 @@ If you already have IKEv2 Policies configured on the ASA, there is a good chance
   * Disable failover
   * Backup and Clear the IKEv2 configuration
   * Re-enable failover with an ipsec key configured
-  * If the failover communication/link function correctly, verify the IKEv2 settings needed
+  * If the failover communication/link functions correctly, verify the IKEv2 settings needed
     * `show crypto ikev2 sa detail` and `show vpn-sessiondb failover` commands
     * Example: aes-gcm-256 + group 20 + prf_sha
     * The actual IKE settings used may vary with hardware platform, software version, and encryption license.
