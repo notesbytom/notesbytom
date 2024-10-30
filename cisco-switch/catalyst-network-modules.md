@@ -20,6 +20,10 @@ Network Uplink Modules are available for the Catalyst 9300 and 9300X switches.
 * X Designated NM's are only compatible with X Series switches.
 * See the linked documentation for more information.
 
+All Fiber (SFP) 9300 Switch Models. These also support Uplink Network Modules (NM's).
+* C9300X-12Y and C9300X-24Y for up to 25G SFP's.
+* C9300-24S and C9300-48S for 1G SFP's.
+
 [1]: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.html#Networkmodules
 [2]: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9300-series-switches/nb-06-cat9300-ser-data-sheet-cte-en.html
 [3]: https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9000/nb-06-cat9k-swit-plat-faq-cte-en.html#CiscoCatalyst9300Seriesswitches
