@@ -19,7 +19,7 @@ Documentation from Appian Support and Other Sources
 * Appian: [Requesting a Custom Domain][4]
   * *If you are accessing your [Appian] environment over VPN or in a dual access configuration, you must customize all three [Appian] FQDNs.*
 * Appian: [Self-Service Certificate Management][5]
-  * *Required for Custom Domains*
+  * *Required for Custom Domains* - which are mandatory for accessing Appian over IPsec VPN.
 * Appian: [Configuring Inbound Access Over VPN][6]
 * Appian: [Configuring Inbound Dual Access][7]
 * [High Availability for Appian Cloud][8]
