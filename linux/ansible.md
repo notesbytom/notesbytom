@@ -13,12 +13,13 @@ Ansible can be used to automate and verify configurations on network hosts such 
 ## Cisco Automation with Ansible
 
 * [cisco.ios][2] collection [ios github][2g]
-  * dependency [ansible.utils][3] collection [utils github][3g]
-    * IP Address and Network Prefix Utilities
-  * dependency [ansible.netcommon][4] collection [netcommon github][4g]
-    * Transfer files to and from network devices.
-    * Run commands on network devices.
-    * NETCONF and RESTCONF support
+* [cisco.asa][7] collection [asa github][7g]
+* dependency [ansible.utils][3] collection [utils github][3g]
+  * IP Address and Network Prefix Utilities
+* dependency [ansible.netcommon][4] collection [netcommon github][4g]
+  * Transfer files to and from network devices.
+  * Run commands on network devices.
+  * NETCONF and RESTCONF support
 
 [1]: https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html
 [2]: https://docs.ansible.com/ansible/latest/collections/cisco/ios/index.html
@@ -29,3 +30,5 @@ Ansible can be used to automate and verify configurations on network hosts such 
 [4g]: https://github.com/ansible-collections/ansible.netcommon
 [5]: https://docs.ansible.com/ansible/latest/inventory/implicit_localhost.html
 [6]: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/local_connection.html
+[7]: https://docs.ansible.com/ansible/latest/collections/cisco/asa/index.html
+[7g]: https://github.com/ansible-collections/cisco.asa
