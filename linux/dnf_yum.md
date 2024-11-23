@@ -8,5 +8,6 @@ In a minimal installation like one provided for small containers, the provided c
 
 * `microdnf repoquery`
   * This will list all available packages from enabled repositories. Pipe to grep to filter.
+  * `microdnf repoquery '*vim*'` # search for package names containing "vim"
 * `microdnf repoquery PKGNAME --info`
   * Append `--info` to get detail about the listed package(s)
