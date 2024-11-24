@@ -1,6 +1,6 @@
 # VIM Notes
 
-# Modelines
+## Modelines
 
 Modelines are considered a security risk so they are always disabled for root and default-disabled for other users.
 * https://vim.fandom.com/wiki/Modeline_magic
@@ -13,7 +13,7 @@ GitHub Linguist Overrides (for syntax highlighting language of a file)
 GitHub Linguist Languages List
 * https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
 
-# Show Setting Values
+## Show Setting Values
 
 Show values of VIM Setting Variables
 * :set filetype?
@@ -24,3 +24,8 @@ Show values of VIM Setting Variables
   * $VIMRUNTIME/syntax/*.vim (language syntax definitions)
   * $VIMRUNTIME/filetype.vim (mapping file types)
 
+## Vim Minimal
+
+On some Linux environments with a small install footprint, a package like `vim-minimal` might be installed. 
+On RHEL type systems, this provides only the `vi` command alias for Vim.
+There is a reduced set of capabilities, and one odd thing is the config file may be `~/.virc` instead of the typical vimrc.
