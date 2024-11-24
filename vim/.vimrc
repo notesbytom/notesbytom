@@ -5,3 +5,4 @@ set tabstop=4
 set ruler
 set autoindent
 set background=dark
+" for vim-minimal `ln -s ~/.vimrc ~/.virc`
