@@ -13,6 +13,7 @@ Ansible can be used to automate and verify configurations on network hosts such 
 ## Cisco Automation with Ansible
 
 * [cisco.ios][2] collection [ios github][2g]
+  * Ansible [IOS Platform Options][8]. Example of Required Host Variables!!
 * [cisco.asa][7] collection [asa github][7g]
 * dependency [ansible.utils][3] collection [utils github][3g]
   * IP Address and Network Prefix Utilities
@@ -32,3 +33,4 @@ Ansible can be used to automate and verify configurations on network hosts such 
 [6]: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/local_connection.html
 [7]: https://docs.ansible.com/ansible/latest/collections/cisco/asa/index.html
 [7g]: https://github.com/ansible-collections/cisco.asa
+[8]: https://docs.ansible.com/ansible/latest/network/user_guide/platform_ios.html
