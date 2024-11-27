@@ -62,3 +62,15 @@ If you already have IKEv2 Policies configured on the ASA, there is a good chance
   * Explicitly add the discovered magic failover ipsec ikev2 policy
   * THEN re-add your other ikev2 policies you cleared out for troubleshooting.
 * By adding the missing failover IKEv2 policy, the issue should be resolved and failover ipsec link protection should work correctly.
+
+## Software Updates
+
+Uploading Software Updates to the ASA using SCP initiated from a remote PC or Server is painfully slow. 
+This appears to be a similar issue to sending update files to IOS switches.
+There is likely a Control Plane Policing type of feature limiting the SCP bandwidth.
+As a workaround, uploads initiated from a remote PC using ASDM are relatively fast.
+This is similar to using the webgui on an IOS switch. 
+For automation, HTTPS transfers can be attempted from a remote PC or Server using `curl`.
+ASA `curl` HTTPS examples: [Cisco Secure Firewall ASA HTTP Interface for Automation][1].
+
+[1]: https://www.cisco.com/c/en/us/td/docs/security/asa/misc/http-interface/asa-http-interface.html
