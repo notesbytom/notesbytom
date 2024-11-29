@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+- name: Remove Duplicate Files Playbook
+  hosts: localhost
+  tasks:
+    - name: Find files
+      ansible.builtin.find:
+        paths: backup/
+        get_checksum: true
+        file_type: file
+      register: find_obj
+    - name: Create variables for all and unique files
+      ansible.builtin.set_fact:
+        all_files: "{{ find_obj.files | map(attribute='path') }}"
+        unique_files: "{{ find_obj.files | unique(attribute='checksum') | map(attribute='path') }}"
+    - name: Create dependent variable for duplicate files
+      ansible.builtin.set_fact:
+        dup_files: "{{ all_files | difference(unique_files) }}"
+    - name: remove duplicate files
+      ansible.builtin.file:
+        path: "{{ item }}"
+        state: absent
+      loop: "{{ dup_files }}"
