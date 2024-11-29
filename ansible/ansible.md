@@ -27,6 +27,13 @@ Ansible can be used to automate and verify configurations on network hosts such 
   * Run commands on network devices.
   * NETCONF and RESTCONF support
 
+## Filters
+
+Advanced ansible solutions are likely to use Jinja Filters.
+
+* [Jinja Builtin Filters][10] - includes the `map(...)` filter.
+* [Ansible Builtin Filters][11]
+
 [1]: https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html
 [2]: https://docs.ansible.com/ansible/latest/collections/cisco/ios/index.html
 [2g]: https://github.com/ansible-collections/cisco.ios
@@ -40,3 +47,5 @@ Ansible can be used to automate and verify configurations on network hosts such 
 [7g]: https://github.com/ansible-collections/cisco.asa
 [8]: https://docs.ansible.com/ansible/latest/network/user_guide/platform_ios.html
 [9]: https://docs.ansible.com/ansible/latest/network/user_guide/platform_index.html
+[10]: https://jinja.palletsprojects.com/en/stable/templates/#list-of-builtin-filters
+[11]: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
