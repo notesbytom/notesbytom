@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+- name: Remove Old Backup Files Playbook
+  hosts: localhost
+  tasks:
+    - name: Find backup files
+      ansible.builtin.find:
+        paths: backup/
+        file_type: file
+      register: find_obj
+    - name: Create sorted file list
+      ansible.builtin.set_fact:
+        new2old: >-
+          {{ find_obj.files | sort(attribute='mtime')
+            | reverse | map(attribute='path') }}
+    - name: Create new list to keep and old list to remove
+      # Change the number 5 to keep more or less most recent files
+      ansible.builtin.set_fact:
+        old_files: "{{ new2old[5:] }}"
+        keep_files: "{{ new2old[:5-1] }}"
+    - name: remove old backup files
+      ansible.builtin.file:
+        path: "{{ item }}"
+        state: absent
+      loop: "{{ old_files }}"
