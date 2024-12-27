@@ -1,6 +1,6 @@
 # JSON
 
-Search keywords: pretty printing.
+Search keywords: pretty printing, human readable, indentation.
 
 ## Format JSON File for Human Readability
 
