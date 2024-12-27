@@ -11,4 +11,4 @@ Popular **Web Browsers** can be used to open a JSON file (open-with).
 * **Edge** automatically uses human-readable formatting and optional Code folding from the Settings Gear.
 * **Firefox** automatically uses human-readable formatting with code folding in a `JSON` tab
   along with the unmodified original in a `Raw Data` tab.
-* The document Must be Valid JSON. Vscode is useful for finding and fixing errors in your JSON file.
+* The document Must be Valid JSON. Vscode is useful for finding and fixing syntax errors in your JSON file.
