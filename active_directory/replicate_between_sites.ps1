@@ -25,3 +25,5 @@ function Replicate-SitePair($site1, $site2) {
   }
 
 }
+
+# https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts
