@@ -35,6 +35,13 @@ Custom Column Hints:
 * Title=Destination Address, Type=Custom, Fields=ip.dst, Occurrence=0
 * Title=Gateway Address, Type=Custom, Fields=icmp.redir_gw, Occurrence=0
 
+## MAC Address OUI Manufacturers
+
+Web-based Wireshark [OUI Lookup Tool][4] - uses the same data source as the Wireshark program.
+The file `manuf-data.c` (~4MB in 2025) is used by the Wireshark Enhanced Packet ANalyzer (EPAN).
+There is a Python script [make-manuf.py][5] which creates the Manufacturer Data file from IEEE sources.
+Search the python script for string "manuf-data" for details of the IEEE sources used.
+
 ## References
 
 * [Wireshark Wiki - Display Filters][1]
@@ -43,3 +50,5 @@ Custom Column Hints:
 [1]: https://wiki.wireshark.org/DisplayFilters
 [2]: https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html
 [3]: https://www.wireshark.org/docs/wsug_html_chunked/ChIOExportSection.html
+[4]: https://www.wireshark.org/tools/oui-lookup.html
+[5]: https://gitlab.com/wireshark/wireshark/-/blob/master/tools/make-manuf.py
