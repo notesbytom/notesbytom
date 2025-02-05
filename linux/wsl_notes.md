@@ -36,6 +36,7 @@ Dnf/Yum repositories might need to be enabled for extra packages.
 * See config files under /etc/yum.repos.d/
 * Set enabled=1 for any repo you want to use.
 * `crb` is the Code Ready Builder repo formerly called "powertools."
+  * After enabling crb, then add EPEL if desired: `microdnf install epel-release`
 * The "plus" repo might also be worth enabling.
 
 [1]: https://docs.rockylinux.org/guides/interoperability/import_rocky_to_wsl/
