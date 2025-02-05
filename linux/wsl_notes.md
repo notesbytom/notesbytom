@@ -36,6 +36,7 @@ Dnf/Yum repositories might need to be enabled for extra packages.
 * See config files under /etc/yum.repos.d/
 * Set enabled=1 for any repo you want to use.
 * `crb` is the Code Ready Builder repo formerly called "powertools."
+* The "plus" repo might also be worth enabling.
 
 [1]: https://docs.rockylinux.org/guides/interoperability/import_rocky_to_wsl/
 [2]: dnf_yum.md
