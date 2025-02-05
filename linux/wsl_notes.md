@@ -24,6 +24,9 @@ Rocky documentation: [Import Rocky Linux to WSL][1]. My own notes might differ, 
 The Rocky Minimal Container rootfs image has an Extremely Limited number of default packages installed.
 This can help minimize the amount of disk space and system resources used by your Rocky Linux WSL distribution instance.
 Here are some notes of packages that might be useful to install in the minimal container.
+Package management is with [microdnf][2].
+
 * `which` # search the PATH for a named command/program
 
 [1]: https://docs.rockylinux.org/guides/interoperability/import_rocky_to_wsl/
+[2]: dnf_yum.md
