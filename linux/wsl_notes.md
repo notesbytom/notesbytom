@@ -27,6 +27,9 @@ Here are some notes of packages that might be useful to install in the minimal c
 Package management is with [microdnf][2].
 
 * `which` # search the PATH for a named command/program
+* `vim-enhanced` or `vim-minimal` # Lightweight text editor.
+* `ansible-core` # Automation CLI Tool
+  * Includes many useful dependencies like: openssh-clients, python3.
 
 [1]: https://docs.rockylinux.org/guides/interoperability/import_rocky_to_wsl/
 [2]: dnf_yum.md
