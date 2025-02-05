@@ -30,6 +30,13 @@ Package management is with [microdnf][2].
 * `vim-enhanced` or `vim-minimal` # Lightweight text editor.
 * `ansible-core` # Automation CLI Tool
   * Includes many useful dependencies like: openssh-clients, python3.
+ 
+Dnf/Yum repositories might need to be enabled for extra packages.
+* [Rocky Linux Repositories][3]
+* See config files under /etc/yum.repos.d/
+* Set enabled=1 for any repo you want to use.
+* `crb` is the Code Ready Builder repo formerly called "powertools."
 
 [1]: https://docs.rockylinux.org/guides/interoperability/import_rocky_to_wsl/
 [2]: dnf_yum.md
+[3]: https://wiki.rockylinux.org/rocky/repo/
