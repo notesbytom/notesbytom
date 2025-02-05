@@ -11,3 +11,7 @@ In a minimal installation like one provided for small containers (RHEL/CentOS/Ro
   * `microdnf repoquery '*vim*'` # search for package names containing "vim"
 * `microdnf repoquery PKGNAME --info`
   * Append `--info` to get detail about the listed package(s)
+
+## Related Reading
+
+* [WSL Notes](wsl_notes.md)
