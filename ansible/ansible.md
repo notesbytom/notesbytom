@@ -32,8 +32,12 @@ Ansible can be used to automate and verify configurations on network hosts such 
 Advanced ansible solutions are likely to use Jinja Filters.
 
 * [Jinja Builtin Filters][10]
-  * includes: map, select, sort, reject, reverse ...
+  * Includes: map, select, sort, reject, reverse ...
 * [Ansible Builtin Filters][11]
+
+## Tests
+* [Jinja Builtin Tests](https://jinja.palletsprojects.com/en/stable/templates/#list-of-builtin-tests)
+  * Includes: eq/==/equalto, ne/!=, ...
 
 [1]: https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html
 [2]: https://docs.ansible.com/ansible/latest/collections/cisco/ios/index.html
