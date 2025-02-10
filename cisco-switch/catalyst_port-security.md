@@ -54,6 +54,9 @@ An advantage to using 802.1x or MAB is that a Dynamic VLAN can be assigned from 
   * See `authentication order` and `authentication priority` below.
 * *Security Configuration Guide, Cisco IOS XE ... Catalyst ... Switches* [Configuring Identity Control Policies][11] (ICP)
   * Practical examples for configuring Identity Based Networking Services (IBNS) policies
+  * See the section *"Control Policy for Concurrent Authentication"* for an example of allowing 802.1x and MAB to authenticate in parallel on a switchport.
+    *"making it possible to invoke multiple authentication methods in parallel on a single subscriber session.
+    This allows the client-supported method to complete at the earliest opportunity without the delays associated with serialization."*
 
 ## Cisco Discovery Protocol Bypass
 
