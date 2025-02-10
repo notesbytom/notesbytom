@@ -71,7 +71,7 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
 * [`aaa authorization network ... if-authenticated`][9]
   * REQUIRED for Dynamic VLAN Assignment from RADIUS Server (see above "VLAN Assignment" notes)
 * [`dot1x system-auth-control`][7]
-  * GLOBAL command to Enable RADIUS-based Port Authentication
+  * **GLOBAL command to Enable RADIUS-based Port Authentication**
   * *You must enable Authentication, Authorization, and Accounting (AAA) and specify the authentication method list before enabling 802.1X.*
 * [`dot1x pae authenticator`][7]
   * REQURED for Switch to authenticate clients with RADIUS (802.1x)
