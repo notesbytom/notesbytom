@@ -24,10 +24,11 @@ See the IBNS Command Reference linked below for examples to add to your policy.
 
 ## Concurrent 802.1x and MAB Example
 
+Parallel/Concurrent 802.1x and MAB. 
 Based on a config sample from [Security Config Guide IOS XE - Icentity Control Policies][4]. 
 Removed the webauth items and fixed indentation, improved sequence numbering.
 Lowest number priorities are Most-Preferred. Higest number priorities are least-preferred.
-Parallel/Concurrent 802.1x and MAB. If an 802.1x agent/supplicant is detected, MAB will be terminated.
+Event "agent-found" indicates that an 802.1x agent/supplicant is detected on the port.
 
 ~~~
 class-map type control subscriber match-all ALL_FAILED
