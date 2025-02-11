@@ -28,7 +28,7 @@ See the IBNS Command Reference linked below for examples to add to your policy.
 * [Configure IBNS 2.0 for Single-Host and Multi-Domain Scenarios][2]
 * [IBNS Config Guide IOS 15E - Configuring Identity Control Policies][3]
 * [Security Config Guide IOS XE 17.15.x (Catalyst 9300) - Configuring Identity Control Policies][4]
-* See also my notes file "catalyst_port-security.md"
+* See also my notes file "[catalyst_port-security.md](catalyst_port-security.md)"
 
 [1]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ibns/command/ibns-xe-3se-3850-cr-book/ibns-cr-3850.html
 [2]: https://www.cisco.com/c/en/us/support/docs/switches/catalyst-3750-x-series-switches/207193-Configure-IBNS-2-0-for-Single-Host-and-M.html
