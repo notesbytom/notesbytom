@@ -61,7 +61,7 @@ policy-map type control subscriber CONCURRENT_DOT1X_MAB
 ! In interface mode, use `service-policy type control subscriber CONCURRENT_DOT1X_MAB` to apply to a port.
 ~~~
 
-## Reference Documentation
+## Related Reading
 
 * [IBNS Command Reference IOS XE 3SE (Catalyst 3850)][1]
 * [Configure IBNS 2.0 for Single-Host and Multi-Domain Scenarios][2]
