@@ -108,6 +108,7 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
 ## Further Reading
 
 * [IP Telephony for 802.1X Design Guide](https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/IP_Tele/IP_Telephony_DIG.html)
+* My Identity Based Network Services (IBNS) Notes: [catalyst_ibns.md](catalyst_ibns.md)
 
 [1]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-9-0E/15-25E/configuration/guide/xe-390-configuration/port_sec.html
 [2]: https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/MAB/MAB_Dep_Guide.html
