@@ -18,6 +18,18 @@ The port-authentication violation action can be customized.
 See the IBNS Command Reference linked below for examples to add to your policy.
 * Violation actions: err-disable, restrict, protect
 
+## Multi-Domain Authentication (MDA)
+
+For a port configured with both access (data) and voice vlans, you can use MDA to authenticate the phone into the voice vlan.
+There is a special Cisco Proprietary value that should be sent in the RADIUS response when the phone authenticates:
+* cisco-av-pair = `device-traffic-class=voice`
+* This should be compatible with MAB, just send this with the response when the MAB account authenticates.
+
+Read about it here:
+* [802.1x MDA on Catalyst Config. Example](https://www.cisco.com/c/en/us/support/docs/lan-switching/8021x/98523-8021x-cat-layer3.html#radius)
+* [IEEE 802.1X Multidomain Authentication](https://www.cisco.com/en/US/docs/ios-xml/ios/sec_usr_8021x/configuration/15-2mt/sec-ieee-mda.html)
+  * *"send a Cisco Attribute-Value (AV) pair attribute with a value of device-traffic-class=voice. Without this value, the switch treats the voice device as a data device."*
+
 ## Related Terminology
 
 * CPL = Class-Based Policy Language (Used to configure IBNS)
