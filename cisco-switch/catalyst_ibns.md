@@ -23,7 +23,10 @@ See the IBNS Command Reference linked below for examples to add to your policy.
 For a port configured with both access (data) and voice vlans, you can use MDA to authenticate the phone into the voice vlan.
 There is a special Cisco Proprietary value that should be sent in the RADIUS response when the phone authenticates:
 * cisco-av-pair = `device-traffic-class=voice`
-* This should be compatible with MAB, just send this with the response when the MAB account authenticates.
+* This is compatible with MAB, just send this with the response when the MAB account authenticates.
+* This is compatible with `access-session host-mode multi-auth` in addition to `multi-domain`
+  * With either multi-auth or multi-domain, the above AV-Pair will put the device into the Voice domain.
+  * The Voice domain will be the `switchport voice vlan ...` configured for the interface.
 
 Read about it here:
 * [802.1x MDA on Catalyst Config. Example](https://www.cisco.com/c/en/us/support/docs/lan-switching/8021x/98523-8021x-cat-layer3.html#radius)
