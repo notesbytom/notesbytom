@@ -40,7 +40,7 @@ Read about it here:
 ## Concurrent 802.1x and MAB Example
 
 Parallel/Concurrent 802.1x and MAB. 
-Based on a config sample from [Security Config Guide IOS XE - Icentity Control Policies][4]. 
+Based on a config sample from [Security Config Guide IOS XE - Identity Control Policies][4]. 
 Removed the webauth items and fixed indentation, improved sequence numbering.
 Lowest number priorities are Most-Preferred. Higest number priorities are least-preferred.
 Event "agent-found" indicates that an 802.1x agent/supplicant is detected on the port.
