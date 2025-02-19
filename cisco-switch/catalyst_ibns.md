@@ -46,6 +46,9 @@ Lowest number priorities are Most-Preferred. Higest number priorities are least-
 Event "agent-found" indicates that an 802.1x agent/supplicant is detected on the port.
 
 ~~~
+! If `authentication display config-mode` is "legacy" then:
+! `authentication convert-to new-style forced`
+!
 class-map type control subscriber match-all ALL_FAILED
  no-match result-type method dot1x none
  no-match result-type method dot1x success
