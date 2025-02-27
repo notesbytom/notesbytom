@@ -4,7 +4,9 @@
 
 PowerShell remoting must be enabled on a host before you can connect to it.
 * Legacy CLI command: `winrm quickconfig`
-* Modern PowerShell-Native command: `Set-WSManQuickConfig`
+* Modern PowerShell-Native command:
+  * `Enable-PSRemoting`
+    * Runs `Set-WSManQuickConfig` then restarts WinRM service.
 
 ## Connect to a Remote System
 
@@ -15,9 +17,11 @@ There are multiple ways to use PS Remoting. One or more possibilities:
 ## Related Documentation
 
 * [Installation and configuration for Windows Remote Management][1] (winrm)
+* [Enable-PSRemoting][4]
 * [Set-WSManQuickConfig][2]
 * [Enter-PSSession][3]
 
 [1]: https://learn.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management
 [2]: https://learn.microsoft.com/en-us/powershell/module/Microsoft.WsMan.Management/Set-WSManQuickConfig?view=powershell-5.1
 [3]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enter-pssession?view=powershell-5.1
+[4]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting?view=powershell-5.1
