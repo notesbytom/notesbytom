@@ -4,8 +4,12 @@ Keeping an Archive of recent configurations with rollback capabilities.
 
 ## Commands
 
-* `archive ...`
-  * Configure archiving including the `path` pattern and `maximum` archived configs.
+* Enter archive configuration mode: `archive`
+  * Path pattern example: `path flash:/archive_config` 
+  * Number of archive configs to keep: `maximum 14`
+  * Save archive config automatically during write-mem: `write-memory`
+* Archive filename date/time pattern is based on Log Timestamps Service config:
+  * `service timestamps log datetime msec localtime show-timezone year`
 * `archive config`
   * Archive the current running config.
 * `configure replace ...`
