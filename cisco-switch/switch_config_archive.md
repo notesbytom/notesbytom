@@ -10,6 +10,8 @@ Keeping an Archive of recent configurations with rollback capabilities.
   * Save archive config automatically during write-mem: `write-memory`
 * Archive filename date/time pattern is based on Log Timestamps Service config:
   * `service timestamps log datetime msec localtime show-timezone year`
+  * Verify that the switch date/time is correct including any timezone or summer-time.
+    * Ideally NTP will be used to synchronize time with an accurate source.
 * `archive config`
   * Archive the current running config.
 * `configure replace ...`
