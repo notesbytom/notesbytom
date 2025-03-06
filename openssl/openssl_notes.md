@@ -10,6 +10,12 @@ One easy way is to install **Git for Windows** and access it through **Git Bash*
 Show build details including default configuration path (for openssl.cnf).
 * `openssl version -a`
 
+## Verify Server Cert
+
+Example commands to retrieve and view TLS/SSL certificate presented by a server.
+
+* `echo "Q" | openssl s_client -connect "your.fqdn.com:443" | openssl x509 -noout -text`
+
 ## Changes to Config File
 
 I recommend making a local user-specific copy of the system default `openssl.cnf` file and using `openssl -config` to specify your user copy of the config.
