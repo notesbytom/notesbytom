@@ -2,7 +2,7 @@
 
 Tech notes related to Citrix support.
 
-# NetScaler Load Balancer
+## NetScaler Load Balancer
 
 NetScaler might also be referred to as the Application Delivery Controller (ADC).
 
