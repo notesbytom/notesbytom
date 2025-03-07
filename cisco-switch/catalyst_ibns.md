@@ -33,10 +33,6 @@ Read about it here:
 * [IEEE 802.1X Multidomain Authentication](https://www.cisco.com/en/US/docs/ios-xml/ios/sec_usr_8021x/configuration/15-2mt/sec-ieee-mda.html)
   * *"send a Cisco Attribute-Value (AV) pair attribute with a value of device-traffic-class=voice. Without this value, the switch treats the voice device as a data device."*
 
-## Related Terminology
-
-* CPL = Class-Based Policy Language (Used to configure IBNS)
-
 ## Concurrent 802.1x and MAB Example
 
 Parallel/Concurrent 802.1x and MAB. 
@@ -79,6 +75,17 @@ policy-map type control subscriber CONCURRENT_DOT1X_MAB
 ! In interface mode, use `service-policy type control subscriber CONCURRENT_DOT1X_MAB` to apply to a port.
 ~~~
 
+## View Authenticated Devices
+
+Use the `show access-session` to view authenticated devices. 
+With IOS-XE 7.11.1+ use `show access-session info` in combination with `device-tracking` to see the device IPv4 addresses.
+Use `show access-session mac address details` for more info like Device-type/Device-name.
+* [Command Reference, Cisco IOS XE - Security][5]
+
+## Related Terminology
+
+* CPL = Class-Based Policy Language (Used to configure IBNS)
+
 ## Related Reading
 
 * [IBNS Command Reference IOS XE 3SE (Catalyst 3850)][1]
@@ -91,3 +98,4 @@ policy-map type control subscriber CONCURRENT_DOT1X_MAB
 [2]: https://www.cisco.com/c/en/us/support/docs/switches/catalyst-3750-x-series-switches/207193-Configure-IBNS-2-0-for-Single-Host-and-M.html
 [3]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ibns/configuration/15-e/ibns-15-e-book/ibns-cntrl-pol.html
 [4]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-16/configuration_guide/sec/b_1716_sec_9300_cg/configuring_identity_control_policies.html
+[5]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-16/command_reference/b_1716_9300_cr/security_commands.html
