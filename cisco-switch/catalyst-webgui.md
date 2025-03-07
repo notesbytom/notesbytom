@@ -11,6 +11,7 @@ There are frequently announced security vulerabilities for the Web GUI feature.
 Keep your switch software up-to-date for security fixes.
 * Disable Non-Secure access to the Web UI: `no ip http server`
 * Temporarily enable Secure access to the Web UI: `ip http secure-server`
+  * Apply an access-list using `ip http access-class ...` to restrict webui access.
 * User accounts must be authenticated to privilege level 15 for full webui feature access.
 
 ## Fast File Transfers for Updates
