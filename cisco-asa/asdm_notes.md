@@ -14,7 +14,7 @@ This is only visible when the installer has launched and before the installer ha
 
 ## ASDM MSI Versions
 
-Newer versions of ASDM will require Newer versions of the Launcher Program which has an MSI installer for Windows.
+Newer versions of ASDM will require Newer versions of the ASDM-IDM Launcher Program which has an MSI installer for Windows.
 This table is based on a limited number of releases. There may be some variations not reflected here.
 
 | ASDM | MSI |
