@@ -19,6 +19,7 @@ This table is based on a limited number of releases. There may be some variation
 
 | ASDM | MSI |
 |------|-----|
+|7.23.x|1.9.9|
 |7.22.x|1.9.8|
 |7.20.x|1.9.7|
 |7.18.x|1.9.5|
