@@ -24,4 +24,10 @@ This table is based on a limited number of releases. There may be some variation
 |7.20.x|1.9.7|
 |7.18.x|1.9.5|
 
+## Broken Start Menu Shortcut
+
+The Cisco ASDM-IDM Launcher shortcut is usually broken (invalid path for wscript). 
+This can be fixed by removing/changing the Shortcut Properties Target path for `wscript.exe` to the default under $env:SystemRoot\system32\
+for example `C:\Windows\system32\wscript.exe`.
+
 [1]: https://community.cisco.com/t5/other-security-subjects/asdm-upgrade-issue-dm-install-tmp-msi-error-1714/m-p/4673223#M150704
