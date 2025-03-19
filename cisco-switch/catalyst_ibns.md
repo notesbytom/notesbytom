@@ -79,7 +79,7 @@ policy-map type control subscriber CONCURRENT_DOT1X_MAB
 
 Use the `show access-session` to view authenticated devices. 
 With IOS-XE 7.11.1+ use `show access-session info` in combination with `device-tracking` to see the device IPv4 addresses.
-Use `show access-session mac address details` for more info like Device-type/Device-name.
+Use `show access-session mac address details` for more info like Device-type/Device-name (Possibly based on OUI lookup?).
 * [Command Reference, Cisco IOS XE - Security][5]
 
 ## Related Terminology
