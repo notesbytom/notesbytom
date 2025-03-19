@@ -10,6 +10,19 @@ This appears to be a BREAKING change with IMPORTANT DHCP Snooping prerequisites/
 * [Operate and Troubleshoot DHCP Snooping on Catalyst 9000 Switches][2] (a Dependency of DAI)
 * Security Configuration Guide - Catalyst Switches [Configuring Dynamic ARP Inspection][3]
 
+## DHCP Snooping
+
+DHCP Snooping is a Dependency for Dynamic ARP Inspection (DAI).
+* Interface Commands:
+  * `ip dhcp snopping trust`
+  * The DEFAULT is UNTRUSTED which is intended for end-user access ports.
+* Global Commands:
+  * `ip dhcp snooping`
+  * `ip dhcp snooping vlan VLAN_NUMBER`
+* Show Commands:
+  * `show ip dhcp snooping`
+  * `show ip dhcp snooping ...` [binding|database|statistics]
+
 ## Type 6 Password Encryption
 
 Passwords the switch must be able to decrypt can be stored using "Type 6" encryption 
