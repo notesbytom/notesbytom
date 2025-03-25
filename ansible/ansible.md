@@ -38,6 +38,16 @@ Advanced ansible solutions are likely to use Jinja Filters.
 ## Tests
 * [Jinja Builtin Tests](https://jinja.palletsprojects.com/en/stable/templates/#list-of-builtin-tests)
   * Includes: eq/==/equalto, ne/!=, ...
+ 
+## DNS Lookups
+
+Resolving DNS Names to IP Addresses can be done with some community lookup plugins.
+* [community.general.dig][12]
+  * On RHEL/CentOS 9.x the all-included ansible package community.general collection includes this dig lookup plugin.
+* [community.dns.lookup][13]
+  * On RHEL/CentOS 9.x the all-included ansible package community.dns collection is too old. Use ansible-galaxy to install newer collection.
+* DEPENDENCY on RHEL/CentOS 9.x: install the `python3-dns` package.
+* It is not clear why there are two plugins which appear to have the same functionality?
 
 [1]: https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html
 [2]: https://docs.ansible.com/ansible/latest/collections/cisco/ios/index.html
@@ -54,3 +64,5 @@ Advanced ansible solutions are likely to use Jinja Filters.
 [9]: https://docs.ansible.com/ansible/latest/network/user_guide/platform_index.html
 [10]: https://jinja.palletsprojects.com/en/stable/templates/#list-of-builtin-filters
 [11]: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
+[12]: https://docs.ansible.com/ansible/latest/collections/community/general/dig_lookup.html
+[13]: https://docs.ansible.com/ansible/latest/collections/community/dns/lookup_lookup.html
