@@ -46,7 +46,7 @@ Resolving DNS Names to IP Addresses can be done with some community lookup plugi
   * On RHEL/CentOS 9.x the all-included ansible package community.general collection includes this dig lookup plugin.
 * [community.dns.lookup][13]
   * On RHEL/CentOS 9.x the all-included ansible package community.dns collection is too old. Use ansible-galaxy to install newer collection.
-* DEPENDENCY on RHEL/CentOS 9.x: install the `python3-dns` package.
+* DEPENDENCY on RHEL/CentOS 9.x: install the `python3-dns` package (dnspython.org).
 * It is not clear why there are two plugins which appear to have the same functionality?
 
 [1]: https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html
