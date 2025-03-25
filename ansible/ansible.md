@@ -3,6 +3,7 @@
 Ansible can be used to automate and verify configurations on network hosts such as servers, routers, switches, firewalls, etc.
 
 * RHEL 9 and clones have the `ansible-core` package available.
+* In RHEL/CentOS 9.x there is an all-included type package called `ansible` in EPEL which has a massive set of collections.
 * [Installing Collections][1]
 
 ## Inventory Targets
