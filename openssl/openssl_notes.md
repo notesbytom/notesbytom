@@ -4,6 +4,10 @@
 
 One easy way is to install **Git for Windows** and access it through **Git Bash**.
 * use `winpty` before openssl commands if they will prompt for input (or it will freeze)
+* PowerShell can use openssl via git bash. Some related helpful tools:
+  * `tr -d '\r'` # to remove carriage return added by PowerShell pipeline string formatting
+  * `xxd` # Hex Dump to find what bytes we received from PowerShell on the git-bash side.
+  * `base64 -d` # Decode Base64 sent from powershell (workaround pipeline odd string issues)
 
 ## Default Configuration
 
