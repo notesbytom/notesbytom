@@ -1,6 +1,8 @@
 # Mermaid Diagram Notes
 
 * [Flowchart/Graph Syntax][5] documentation
+* [Class Diagram Syntax][6] documentation
+  * Check out: Namespace (similar to subgraph), Note, hideEmptyMembersBox.
 
 ## Simple Network Diagram
 
@@ -64,3 +66,4 @@ info
 [3]: https://github.com/mermaid-js/mermaid/pull/6374
 [4]: https://github.com/mermaid-js/mermaid/pull/6093#issuecomment-2734046994
 [5]: https://mermaid.js.org/syntax/flowchart.html
+[6]: https://mermaid.js.org/syntax/classDiagram.html
