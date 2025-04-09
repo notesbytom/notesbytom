@@ -1,5 +1,7 @@
 # Mermaid Diagram Notes
 
+* [Flowchart/Graph Syntax][5] documentation
+
 ## Simple Network Diagram
 
 While there is no native diagram type for computer networks, 
@@ -61,3 +63,4 @@ info
 [2]: https://mermaid.js.org/syntax/flowchart.html
 [3]: https://github.com/mermaid-js/mermaid/pull/6374
 [4]: https://github.com/mermaid-js/mermaid/pull/6093#issuecomment-2734046994
+[5]: https://mermaid.js.org/syntax/flowchart.html
