@@ -158,7 +158,7 @@ router eigrp eigrp_virt
 I recommend using Prefix-Lists for Route Filtering because of the Easier-to-read CIDR notation, and because of the more precise prefix control.
 In this case because we used a Prefix-List instead of an access-list based route-map, we were able to allow a dynamic default-route without receiving all other routes.
 When an IPv4 prefix is specified with le 32 - this makes it similar to an access-list entry matching all more-specific routes under that prefix.
-When an IPv4 previx is left without the "le ##" part, it will only match that prefix Exactly! This is what we want for the Default Route!
+When an IPv4 prefix is left without the "le ##" part, it will only match that prefix Exactly! This is what we want for the Default Route!
 
 ## Multiple Autonomous Systems
 
