@@ -8,7 +8,7 @@ some of the existing diagram types can be used to approximate a network topology
 
 ## Graph Top Down Example
 
-It appears that in Mermaid the Diagram types `flowchart` and `graph` alternative keywords for the same type of diagram? 
+It appears that in Mermaid `flowchart` and `graph` are alternative keywords for the same type of diagram. 
 * [Flowcharts - Basic Syntax][2]. "*Instead of flowchart one can also use graph.* "
 
 ```mermaid
