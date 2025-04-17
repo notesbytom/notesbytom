@@ -32,6 +32,7 @@ To see the Client IP Address for active SSH Connections, use the `show users` co
   * `vtp version 3`
 * Exec mode command `vtp primary` or `do vtp primary` (from config mode) to add or edit vlan information (assign name to number).
   * All devices by default are secondary servers (can't add or edit layer-two vlans).
+* Disable VTP with `vtp mode transparent`
 
 ## Port-Channel LACP
 
