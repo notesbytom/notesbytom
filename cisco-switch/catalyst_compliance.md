@@ -37,12 +37,14 @@ DHCP Snooping is a Dependency for Dynamic ARP Inspection (DAI).
 
 ## Type 6 Password Encryption
 
-Passwords the switch must be able to decrypt can be stored using "Type 6" encryption 
+Passwords the switch must be able to decrypt can be stored using [IOS "Type 6" encryption][5] 
 which requires a symmetric encryption passphrase/key to be pre-configured. This helps protect the
 password/secret values stored in the switch configuration from being decrypted without having the passphrase/key.
 
+* `key config-key password-encrypt MAIN_KEY`
+* `password encryption aes`
 * CiscoDevNet [Type-6-Password-Encode][4] (details and code examples for the algorithm used)
-* Modifications from IOS Type 6 used in Cisco ASA flavor of "password encryption aes":
+* Modifications from IOS Type 6 used in [Cisco ASA flavor of "password encryption aes"][6]:
   * Standardized Base64 is used to encode and decode the Salt+Encrypted_Bytes+MAC data.
   * Random Salt is 4 bytes longer
   * HMAC-SHA0 is used to generate the MAC (instead of HMAC-SHA1 used in IOS)
@@ -51,3 +53,5 @@ password/secret values stored in the switch configuration from being decrypted w
 [2]: https://www.cisco.com/c/en/us/support/docs/ip/dynamic-host-configuration-protocol-dhcp-dhcpv6/217055-operate-and-troubleshoot-dhcp-snooping.html
 [3]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/sec/b_179_sec_9300_cg/configuring_dynamic_arp_inspection.html
 [4]: https://github.com/CiscoDevNet/Type-6-Password-Encode/
+[5]: https://www.cisco.com/c/en/us/support/docs/security-vpn/ipsec-negotiation-ike-protocols/46420-pre-sh-keys-ios-rtr-cfg.html
+[6]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/general/asa-923-general-config/basic-hostname-pw.html
