@@ -42,6 +42,10 @@ which requires a symmetric encryption passphrase/key to be pre-configured. This 
 password/secret values stored in the switch configuration from being decrypted without having the passphrase/key.
 
 * CiscoDevNet [Type-6-Password-Encode][4] (details and code examples for the algorithm used)
+* Modifications from IOS Type 6 used in Cisco ASA flavor of "password encryption aes":
+  * Standardized Base64 is used to encode and decode the Salt+Encrypted_Bytes+MAC data.
+  * Random Salt is 4 bytes longer
+  * HMAC-SHA0 is used to generate the MAC (instead of HMAC-SHA1 used in IOS)
 
 [1]: https://www.tenable.com/audits/items/DISA_STIG_Cisco_IOS_XE_Switch_L2S_v3r1.audit:7a70877c979276b792ecba468e404c78
 [2]: https://www.cisco.com/c/en/us/support/docs/ip/dynamic-host-configuration-protocol-dhcp-dhcpv6/217055-operate-and-troubleshoot-dhcp-snooping.html
