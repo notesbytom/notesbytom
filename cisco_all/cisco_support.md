@@ -22,6 +22,10 @@ Notes for Cisco products End of Life.
 * [ASA 5508 and 5516 EOL][1]
 * [Firepower 2100 Series Security Appliances][2] (includes 2130)
   * New Service Attachment 27 May 2026. Service Renewal 22 Aug 2029. Support 31 May 2030.
+ 
+## Bug Search Tool
+
+* https://bst.cloudapps.cisco.com/bugsearch
 
 [1]: https://www.cisco.com/c/en/us/products/collateral/security/asa-5500-series-next-generation-firewalls/eos-eol-notice-c51-744798.html
 [2]: https://www.cisco.com/c/en/us/products/collateral/security/firepower-ngfw/firepower-2100-series-sec-app-5-yr-sub-eol.html
