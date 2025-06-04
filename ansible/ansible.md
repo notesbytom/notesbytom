@@ -29,6 +29,15 @@ Ansible can be used to automate and verify configurations on network hosts such 
   * Run commands on network devices.
   * NETCONF and RESTCONF support
 
+## Paramiko
+
+There are bugs with netcommon net_put and net_get and the default pylibssh.
+Use paramiko instead.
+* https://docs.ansible.com/ansible/latest/network/user_guide/network_debug_troubleshooting.html
+  * Disable the paramiko default `look_for_keys` if using password authentication!
+* https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html
+  * Search the network_cli_connection documentation page for `ssh_type` to use paramiko.
+
 ## Filters
 
 Advanced ansible solutions are likely to use Jinja Filters.
