@@ -24,7 +24,8 @@ Ansible can be used to automate and verify configurations on network hosts such 
 * dependency [ansible.utils][3] collection [utils github][3g]
   * IP Address and Network Prefix Utilities
 * dependency [ansible.netcommon][4] collection [netcommon github][4g]
-  * Transfer files to and from network devices.
+  * Transfer files to and from network devices with `net_put` and `net_get`.
+    * Bugs with pylibssh compatibility - use paramiko instead!
   * Run commands on network devices.
   * NETCONF and RESTCONF support
 
