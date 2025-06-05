@@ -73,4 +73,9 @@ This is similar to using the webgui on an IOS switch.
 For automation, HTTPS transfers can be attempted from a remote PC or Server using `curl`.
 ASA `curl` HTTPS examples: [Cisco Secure Firewall ASA HTTP Interface for Automation][1].
 
+## Further Reading and References
+
+* [Secure Firewall ASA - CLI Configuration Guide - Inspection of Basic Internet Protocols][2]
+
 [1]: https://www.cisco.com/c/en/us/td/docs/security/asa/misc/http-interface/asa-http-interface.html
+[2]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/firewall/asa-923-firewall-config/inspect-basic.html
