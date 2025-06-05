@@ -75,7 +75,9 @@ ASA `curl` HTTPS examples: [Cisco Secure Firewall ASA HTTP Interface for Automat
 
 ## Further Reading and References
 
-* [Secure Firewall ASA - CLI Configuration Guide - Inspection of Basic Internet Protocols][2]
+* Secure Firewall ASA - CLI Configuration Guide - [Getting Started with Application Layer Protocol Inspection][3] (default ports, etc)
+* Secure Firewall ASA - CLI Configuration Guide - [Inspection of Basic Internet Protocols][2] (detail for specific protocol inspections)
 
 [1]: https://www.cisco.com/c/en/us/td/docs/security/asa/misc/http-interface/asa-http-interface.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/firewall/asa-923-firewall-config/inspect-basic.html
+[3]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/firewall/asa-923-firewall-config/inspect-overview.html
