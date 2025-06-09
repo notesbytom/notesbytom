@@ -42,6 +42,13 @@ The file `manuf-data.c` (~4MB in 2025) is used by the Wireshark Enhanced Packet 
 There is a Python script [make-manuf.py][5] which creates the Manufacturer Data file from IEEE sources.
 Search the python script for string "manuf-data" for details of the IEEE sources used.
 
+## TCPDump Notes
+
+* https://www.tcpdump.org/manpages/tcpdump.1.html
+* Use `-nn` for numeric addresses and ports in the output.
+* Use `-r` to read and display a pcap file
+* Use `-v` for more verbose detail in the output including TTL values.
+
 ## References
 
 * [Wireshark Wiki - Display Filters][1]
