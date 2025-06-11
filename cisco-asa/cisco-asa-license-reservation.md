@@ -14,6 +14,7 @@ SKU Pattern Examples: -PU-, or -BPU (PU is short for Permanent Universal).
 * [ASA General Operations CLI Configuration Guide][1] (Cisco Secure Firewall)
   * Search page for pattern "BPU" for Example SKU's
 * `L-FPR1K-ASA-BPU=` (Firepower 1000 Series, product type FPRLOW)
+* `L-CSF1200-ASA-BPU=` (Secure Firewall 1200 Series)
 * `L-FPR2K-ASA-BPU=` (Firepower 2000 Series)
 * `L-FPR3K-ASA-BPU=` (Firepower 3000 Series)
 * `L-FPR4K-ASA-BPU=` (Firepower 4100 Series)
@@ -46,4 +47,4 @@ For licensing it might be good to verify the time is correct first.
 * `clock set HH:MM:SS Month DD Year`
 * Use ntp if the system has access to a network time source
 
-[1]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/intro-license-smart.html
+[1]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/general/asa-923-general-config/intro-license-smart.html
