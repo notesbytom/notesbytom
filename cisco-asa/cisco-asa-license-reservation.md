@@ -4,7 +4,7 @@
 
 ASA software on Firepower 2100 and 1100 Series Chassis normally require Smart Licensing which requires direct 
 communication from the licensed device to the Cisco Smart Licensing portal, or indirect communication
-via a Smart Licensing Satellite (which has direct communicaiton to Cisco Smart Licensing portal or 
+via a Smart Licensing Satellite (which has direct communication to Cisco Smart Licensing portal or 
 ability to transfer Smart Licensing telemetry files regularly.
 
 To license completely offline, you will need to purchase a special Permanent License Reservation SKU which
