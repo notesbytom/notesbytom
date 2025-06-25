@@ -19,9 +19,10 @@ Devices may have more than one serial number. Here are some notes on which seria
 
 Notes for Cisco products End of Life.
 
-* [ASA 5508 and 5516 EOL][1]
-* [Firepower 2100 Series Security Appliances][2] (includes 2130)
-  * New Service Attachment 27 May 2026. Service Renewal 22 Aug 2029. Support 31 May 2030.
+| Hardware Model                 | New Service Attachment | Service Renewal | Support        |
+|--------------------------------|------------------------|-----------------|----------------|
+| [Firepower 2100 Firewalls][2]  | 27 May 2026            | 22 Aug 2029     | 31 May 2030    |
+| [ASA 5508 + 5516 Firewalls][1] | 2 August 2022          | 28 October 2025 | 31 August 2026 |
  
 ## Bug Search Tool
 
