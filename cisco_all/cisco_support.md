@@ -21,7 +21,7 @@ Notes for Cisco products End of Life.
 
 | Hardware Model                 | Last Hardware Purchase | New Service Attachment | Service Renewal | Support        |
 |--------------------------------|------------------------|------------------------|-----------------|----------------|
-| [Firepower 2100 Firewall][2]   | 27 May 2025            | 27 May 2026            | 22 Aug 2029     | 31 May 2030    |
+| [Firepower 21xx Firewall][2]   | 27 May 2025            | 27 May 2026            | 22 Aug 2029     | 31 May 2030    |
 | [ASA 5508 + 5516 Firewall][1]  | 2 August 2021          | 2 August 2022          | 28 Oct 2025     | 31 Aug 2026    |
 | [ASA 5525 + 5545 Firewall][4]  | 4 September 2020       | 4 September 2021       | 30 Nov 2024     | 30 Sept 2025   |
 
