@@ -28,6 +28,7 @@ Notes for Cisco products End of Life.
 ## Catalyst Switch In-Service Software Upgrade (ISSU)
 
 * [Catalyst Switch - Tech Reference - ISSU][3] (Includes Release Support Matrix)
+* [Perform ISSU on Catalyst 3850 and Catalyst 9000 Series Switches][5] (How-to Guide)
 
 ## Bug Search Tool
 
@@ -37,3 +38,4 @@ Notes for Cisco products End of Life.
 [2]: https://www.cisco.com/c/en/us/products/collateral/security/firepower-ngfw/firepower-2100-series-sec-app-5-yr-sub-eol.html
 [3]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst_standalones/b-in-service-software-upgrade-issu.html
 [4]: https://www.cisco.com/c/en/us/products/collateral/security/asa-firepower-services/eos-eol-notice-c51-743545.html
+[5]: https://www.cisco.com/c/en/us/support/docs/switches/catalyst-9500-series-switches/214406-in-service-software-upgrade-issu-on-ca.html
