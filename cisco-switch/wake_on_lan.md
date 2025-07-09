@@ -23,6 +23,7 @@ Remotely managing user devices on a network might require waking up the hardware
 * [wake on lan with dynamic vlan assignment][4] (cisco community discussion)
 * IP Addressing Configuration Guide, Cisco IOS XE - [Configuring IPv4 Broadcast Packet Handling][6]
 * IOS IP Application Services [Command Reference][7] *ip directed-broadcast; ip forward-protocol; ip helper-address*
+* [HP Device Manager 5.0 Administrator’s Guide][8] - search for "Wake" or "WoL"
 
 [1]: https://www.cisco.com/c/en/us/support/docs/switches/catalyst-3750-series-switches/91672-catl3-wol-vlans.html
 [2]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_usr_8021x/configuration/15-mt/sec-user-8021x-15-mt-book/sec-ieee-wake-lan-supp.html
@@ -31,3 +32,4 @@ Remotely managing user devices on a network might require waking up the hardware
 [5]: https://en.wikipedia.org/wiki/Wake-on-LAN
 [6]: https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-addressing/b-ip-addressing/m_iap-bph-0.html
 [7]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp/command/iap-cr-book/iap-i1.html
+[8]: https://ftp.hp.com/pub/hpdm/Documentation/AdminGuide/5.0/HP_Device_Manager_5.0.4_Administrator_Guide_en_US.pdf
