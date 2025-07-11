@@ -12,6 +12,9 @@ dnf install mrtg
 # Install dependencies not automatically resolved by dnf/yum/rpm:
 dnf install perl-File-Copy
 dnf install perl-Time-HiRes
+# The following EPEL dependencies are for SNMPv3 and AES support
+dnf install perl-Net-SNMP
+dnf install perl-Crypt-Rijndael
 
 # Save a copy of the factory default mrtg.cfg for reference
 cp /etc/mrtg/mrtg.cfg /etc/mrtg/factory_mrtg.cfg
@@ -40,6 +43,11 @@ systemctl start httpd
 # Use `firewall-cmd` to `--add-service=https` or similar (both `--permanent` and runtime)
 ```
 
+## Troubleshooting
+
+The RHEL/CentOS compatible systemctl service daemon logs to `/var/log/messages` by default.
+* Grep for "mrtg"
+
 ## Adding Items to the MRTG Configuration
 
 * Use `cfgmaker` to generate an isolated sample configuration against your target device.
@@ -47,6 +55,8 @@ systemctl start httpd
 * Copy the New Target Items from the sample config into your active MRTG configuration file
 * Use `mrtg --check /etc/mrtg/mrtg.cfg` to validate your config file syntax
 * Use `systemctl restart mrtg` to start monitoring the new items with MRTG
+  * If enabling SNMPv3 or removing targets from monitoring, Restart MRTG!
+* For SNMPv3 support use global setting `EnableSnmpV3: yes`
 
 ## Time Synchronization (chrony)
 
