@@ -39,6 +39,8 @@ Use paramiko instead.
   * Disable the paramiko default `look_for_keys` if using password authentication!
 * https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/network_cli_connection.html
   * Search the network_cli_connection documentation page for `ssh_type` to use paramiko.
+* PACKAGE DEPENDENCIES: paramiko and python scp modules.
+  * In RHEL/CentOS 8.x with Python 3.12, these dependencies might need to be installed with pip3.
 
 ## Filters
 
