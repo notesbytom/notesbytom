@@ -10,6 +10,7 @@ Server Certificates (Machine Identity)
 
 Trusted Certificate Authorities (CA) Trust Store
 * `/etc/pki/ca-trust/source/anchors/` # put special CA certificates in here
+  * Put `*.pem` files here.
 * `update-ca-trust` # update the system default trust store(s)
 * Related Documentation:
   * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-certificates
