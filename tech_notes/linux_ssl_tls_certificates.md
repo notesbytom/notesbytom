@@ -13,7 +13,7 @@ Trusted Certificate Authorities (CA) Trust Store
   * Put `*.pem` files here.
 * `update-ca-trust` # update the system default trust store(s)
 * Related Documentation:
-  * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-certificates
+  * https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/securing_networks/using-shared-system-certificates
 
 ## Ubuntu Certificates
 
