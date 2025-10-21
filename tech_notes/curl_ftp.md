@@ -24,8 +24,8 @@ but you can use the `--quote` option to send ftp-delete commands
 
 Root and Intermediate CA Certificate Trust List notes.
 * [RHEL/CentOS/Fedora CA-Certificates Package Info](https://fedoraproject.org/wiki/CA-Certificates)
-  * [Source Code Mirror for ca-certificates][2] - not sure where the official repo is
+  * [Source Code Mirror for ca-certificates][2]
   * Includes `update-ca-trust` script code
 
 [1]: https://stackoverflow.com/questions/10397334/libcurl-is-there-any-way-to-get-certificates-of-ftps-without-logging-in
-[2]: https://gitlab.com/freedesktop-sdk/mirrors/fedora_rpms/ca-certificates
+[2]: https://gitlab.com/redhat/centos-stream/rpms/ca-certificates
