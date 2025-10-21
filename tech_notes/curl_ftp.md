@@ -16,7 +16,7 @@ but you can use the `--quote` option to send ftp-delete commands
 
 ## Troubleshooting FTPS
 
-* [FTPS Implicit, Explicit, Common Problems](https://everything.curl.dev/ftp/ftps.html)
+* [FTPS Implicit, Explicit, Common Problems](https://everything.curl.dev/ftp/ftps.html) (from "Everything curl" book)
 * [openssl - download cert of FTPS server][1]
   * `openssl s_client -showcerts -connect ftp.server.fqdn:21 -starttls ftp`
  
