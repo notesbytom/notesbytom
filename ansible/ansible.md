@@ -41,7 +41,7 @@ There are bugs with netcommon **net_put** and net_get and the default pylibssh.
   * Search the network_cli_connection documentation page for `ssh_type` to use paramiko.
 * PACKAGE DEPENDENCIES: paramiko and python scp modules.
   * In RHEL/CentOS 8.x with Python 3.12, these dependencies might need to be installed with pip3.
-  * In RHEL/CentOS 9.x the `python3-scp` package can be used (with paramiko).
+  * In RHEL/CentOS 9.x the `python3-scp` EPEL package can be used (with paramiko).
 
 ## Filters
 
