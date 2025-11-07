@@ -15,3 +15,14 @@ $ tclsh
 % format %llb 240
 11110000
 ```
+
+## Powers of Two
+
+Another useful thing for IP Address work is powers of two. Those can be done with the TCL `pow(x,y)` math function.
+
+```
+% exp pow(2,4)
+16.0
+% exp pow(2,8)
+256.0
+```
