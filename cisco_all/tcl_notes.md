@@ -26,3 +26,7 @@ Another useful thing for IP Address work is powers of two. Those can be done wit
 % exp pow(2,8)
 256.0
 ```
+
+## TCL Version
+
+The version of TCL running can be shown with `puts $tcl_version`
