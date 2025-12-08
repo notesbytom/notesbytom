@@ -15,6 +15,10 @@ Cisco has been steadily adding SD-WAN features in recent software releases. Here
 
 Related Documentation for Further Reading:
 * [FMC Config Guide - SD-WAN Capabilities][10]
+* [Secure Firewall - SD-WAN Wizard (FMC)][14]
+* [Use Cases for SD-WAN Capabilities in Cisco Secure Firewall][15]
+* [Secure Firewall SD-WAN Solution Overview and Device Onboarding][16]
+* [Deploying Cisco Secure Firewall SD-WAN Overlay Topology Using SD-WAN Wizard and Enabling Site-to-Site Routing][17]
 
 ## SAML Authentication
 
@@ -139,7 +143,11 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [7]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvj90930/
 [8]: https://www.cisco.com/c/en/us/td/docs/security/firepower/720/fdm/fptd-fdm-config-guide-720/fptd-fdm-license.html
 [9]: https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/licensing_the_firepower_system.html
-[10]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/sd-wan-capabilities.html
+[10]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/100/management-center-device-config-10-0/sd-wan-capabilities.html
 [11]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/encrypted-traffic-overview.html
 [12]: https://www.cisco.com/c/en/us/td/docs/security/firepower/roadmap/fmc-new-features/fmc-new-features-by-release.html
 [13]: https://bst.cisco.com/quickview/bug/CSCvj90930
+[14]: https://secure.cisco.com/secure-firewall/docs/sd-wan-wizard
+[15]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/usecase/b_wan-deployment/m_introduction.html
+[16]: https://learningnetwork.cisco.com/s/question/0D56e0000EBslwsCQB/cisco-secure-firewall-sdwan-solution-overview-and-device-onboarding-livestream-and-postevent-discussion
+[17]: https://learningnetwork.cisco.com/s/question/0D56e0000EBsvs9CQB/deploying-cisco-secure-firewall-sdwan-overlay-topology-using-sdwan-wizard-and-enabling-sitetosite-routing-livestream-and-postevent-discussion
