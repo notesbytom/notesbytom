@@ -15,6 +15,18 @@ Password Policies can be used for user accounts in the local-user database on th
    * Only the Serial Console login will work when a user password is expired!
    * If the device is remote and you don't have serial console access, you will be unable to manage the device.
 
+## SSH X.509 User Certificates
+
+[RFC 6187 X.509 Certificates for SSH Authentication][4]. 
+* Unfortunately it appears that [OpenSSH does Not support this][5]
+* It also appears that [PuTTY does Not support this][6]
+
+As of [Late 2025, the latest ASA software adds support for RFC 6187 X.509 Certificate Authentication with SSH][7].
+
+Some Paid SSH Clients appear to support RFC 6187:
+* [Pragma Fortress SSH Client][8]
+* [VanDyke SecureCRT Client][9]
+
 ## Radius and AAA Notes
 
 * ASA General CLI Guide - System Administration - [Management Access][2]
@@ -23,3 +35,9 @@ Password Policies can be used for user accounts in the local-user database on th
 [1]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa-cli-reference/A-H/asa-command-ref-A-H/ca-cld-commands.html
 [2]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/admin-management.html
 [3]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/aaa-radius.html
+[4]: https://datatracker.ietf.org/doc/html/rfc6187
+[5]: https://security.stackexchange.com/questions/30396/how-to-set-up-openssh-to-use-x509-pki-for-authentication
+[6]: https://community.cisco.com/t5/network-management/ios-ssh-configuration-for-pki-login-putty-still-wants-to-use-ssh/td-p/4047741
+[7]: https://www.cisco.com/c/en/us/td/docs/security/asa/roadmap/asa_new_features.html
+[8]: https://www.pragmasys.com/support-cisco-2-factor
+[9]: https://www.vandyke.com/support/tips/configure-securecrt-securefx-for-2fa-rfc-6187-smartcard-authentication.html
