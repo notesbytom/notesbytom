@@ -1,8 +1,27 @@
 # ASDM Notes
 
-## MSI Installer
+## Release Notes
 
-Cisco ASA ASDM MSI File (Security Device Manager GUI).
+https://www.cisco.com/c/en/us/support/security/adaptive-security-device-manager/products-release-notes-list.html
+
+## User Certificate Authentication
+
+As of [ASDM 7.14, User Certificate Authentication][2] is supported.
+
+## Java Version Dependency
+
+For a very long time, ASDM was depending on Java Version 8.x LTS and was not listing any support for Java versions older or newer.
+
+As of December 2025, Cisco has begun the process of Updating ASDM to support more recent versions of Java beginning with Java 11.x LTS.
+* Cisco Secure Firewall [ASA New Features by Release][2]
+  * Search page for "ASDM 7.24 now requires Java 11"
+  * Notable: `For the OpenJRE version, you do not need to install Java; it is built-in.`
+    * Assuming that means a compatible OpenJRE is provided with the **ASDM Launcher** Installer.
+    * This also explains why the ASDM download files for OpenJRE are Much Larger than the Non-Open version.
+
+## MSI ASDM Launcher Installer
+
+Cisco ASA ASDM Launcher MSI File (Security Device Manager GUI).
 [ASDM upgrade issue (dm-install-tmp.msi, Error 1714)][1] - Cisco Community
 
 * `C:\Users\myusername\.asdm\cache\`
@@ -31,3 +50,4 @@ This can be fixed by removing/changing the Shortcut Properties Target path for `
 for example `C:\Windows\system32\wscript.exe`.
 
 [1]: https://community.cisco.com/t5/other-security-subjects/asdm-upgrade-issue-dm-install-tmp-msi-error-1714/m-p/4673223#M150704
+[2]: https://www.cisco.com/c/en/us/td/docs/security/asa/roadmap/asa_new_features.html
