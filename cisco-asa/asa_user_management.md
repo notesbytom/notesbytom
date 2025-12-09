@@ -27,7 +27,7 @@ Free or Open Source SSH Clients
   * Source Code at https://gitlab.com/secsh/pkixssh
   * Are Linux Distributions shipping packages for this?
   * See the [R. Petrov's Android SSH applications][13] in the Google Play store.
-    * TermOne and [SecureBox][15] add-on are free. SecureBox Pro integrated GUI is paid.
+    * TermOne and [SecureBox][15] add-on are free/[open-source][16]. SecureBox Pro integrated GUI is paid.
     * May work on some [Chrome OS devices with Android App support][14]?
 * Unfortunately it appears that [OpenSSH does Not support this][5]
   * There is a source code file `ssh-pkcs11.c` in OpenSSH which includes a function `pkcs11_fetch_x509_pubkey`.
@@ -63,3 +63,4 @@ The document is for a different operating system (IOS-XE), but still useful read
 [13]: https://play.google.com/store/apps/developer?id=Roumen+Petrov&hl=en-US
 [14]: https://www.chromium.org/chromium-os/chrome-os-systems-supporting-android-apps/
 [15]: https://securebox.termoneplus.com/
+[16]: https://gitlab.com/termapps
