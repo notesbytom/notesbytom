@@ -23,8 +23,12 @@ As of [Late 2025, the latest ASA software adds support for RFC 6187 X.509 Certif
 
 Free or Open Source SSH Clients
 * [PKIX-SSH / pkixssh][12] by Roumen Petrov (Bulgaria) supports RFC 6187.
+  * The name is like "PKI x SSH"
   * Source Code at https://gitlab.com/secsh/pkixssh
   * Are Linux Distributions shipping packages for this?
+  * See the [R. Petrov's Android SSH applications][13] in the Google Play store.
+    * TermOne and SecureBox add-on are free. SecureBox Pro integrated GUI is paid.
+    * May work on some [Chrome OS devices with Android App support][14]?
 * Unfortunately it appears that [OpenSSH does Not support this][5]
   * There is a source code file `ssh-pkcs11.c` in OpenSSH which includes a function `pkcs11_fetch_x509_pubkey`.
     * This has further dependencies including `openssl/x509.h` and `openssl/x509v3.h`.
@@ -56,3 +60,5 @@ The document is for a different operating system (IOS-XE), but still useful read
 [10]: https://www.cisco.com/c/en/us/support/docs/security-vpn/secure-shell-ssh/223290-configuring-certificate-authentication.html
 [11]: https://github.com/openssh/openssh-portable/blob/master/ssh-pkcs11.c
 [12]: https://roumenpetrov.info/secsh/
+[13]: https://play.google.com/store/apps/developer?id=Roumen+Petrov&hl=en-US
+[14]: https://www.chromium.org/chromium-os/chrome-os-systems-supporting-android-apps/
