@@ -27,6 +27,9 @@ Some Paid SSH Clients appear to support RFC 6187:
 * [Pragma Fortress SSH Client][8]
 * [VanDyke SecureCRT Client][9]
 
+See Also [Configuring Certificate Authentication for SSH on Cisco IOS XE Devices][10]. 
+The document is for a different operating system (IOS-XE), but still useful reading for Cisco ASA users.
+
 ## Radius and AAA Notes
 
 * ASA General CLI Guide - System Administration - [Management Access][2]
@@ -41,3 +44,4 @@ Some Paid SSH Clients appear to support RFC 6187:
 [7]: https://www.cisco.com/c/en/us/td/docs/security/asa/roadmap/asa_new_features.html
 [8]: https://www.pragmasys.com/support-cisco-2-factor
 [9]: https://www.vandyke.com/support/tips/configure-securecrt-securefx-for-2fa-rfc-6187-smartcard-authentication.html
+[10]: https://www.cisco.com/c/en/us/support/docs/security-vpn/secure-shell-ssh/223290-configuring-certificate-authentication.html
