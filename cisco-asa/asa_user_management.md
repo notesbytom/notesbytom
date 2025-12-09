@@ -19,6 +19,9 @@ Password Policies can be used for user accounts in the local-user database on th
 
 [RFC 6187 X.509 Certificates for SSH Authentication][4]. 
 * Unfortunately it appears that [OpenSSH does Not support this][5]
+  * There is a source code file `ssh-pkcs11.c` in OpenSSH which includes a function `pkcs11_fetch_x509_pubkey`.
+    * This has further dependencies including `openssl/x509.h` and `openssl/x509v3.h`.
+    * It is not clear if this is part of some work to support RFC 6187 or for another unrelated purpose.
 * It also appears that [PuTTY does Not support this][6]
 
 As of [Late 2025, the latest ASA software adds support for RFC 6187 X.509 Certificate Authentication with SSH][7].
@@ -45,3 +48,4 @@ The document is for a different operating system (IOS-XE), but still useful read
 [8]: https://www.pragmasys.com/support-cisco-2-factor
 [9]: https://www.vandyke.com/support/tips/configure-securecrt-securefx-for-2fa-rfc-6187-smartcard-authentication.html
 [10]: https://www.cisco.com/c/en/us/support/docs/security-vpn/secure-shell-ssh/223290-configuring-certificate-authentication.html
+[11]: https://github.com/openssh/openssh-portable/blob/master/ssh-pkcs11.c
