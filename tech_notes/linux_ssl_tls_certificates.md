@@ -12,8 +12,7 @@ Trusted Certificate Authorities (CA) Trust Store
 * `/etc/pki/ca-trust/source/anchors/` # put special CA certificates in here
   * Put `*.pem` files here.
 * `update-ca-trust` # update the system default trust store(s)
-* Related Documentation:
-  * RHEL 10 Documentation - Securing Networks - [Using Shared System Certificates][1]
+* RHEL 10 Documentation - Securing Networks - [Using Shared System Certificates][1]
 
 ## Ubuntu Certificates
 
