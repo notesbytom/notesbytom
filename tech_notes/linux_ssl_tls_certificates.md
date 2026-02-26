@@ -14,7 +14,7 @@ Trusted Certificate Authorities (CA) Trust Store
 * `update-ca-trust` # update the system default trust store(s)
 * RHEL 10 Documentation - Securing Networks - [Using Shared System Certificates][1]
 
-## Ubuntu Certificates
+## Ubuntu / Debian Certificates
 
 Server Certificates (Machine Identity)
 * `/etc/ssl/certs` # for public cert
@@ -26,6 +26,7 @@ Server Certificates (Machine Identity)
 
 Trusted Certificate Authorities (CA) Trust Store
 * `/usr/local/share/ca-certificates/` # for special CA certificates
+  * Put `*.crt` files here. The Filename Must End with '.crt' !!
 * `update-ca-certificates` # update the system default trust store(s)
 * Related Discussion:
   * https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
