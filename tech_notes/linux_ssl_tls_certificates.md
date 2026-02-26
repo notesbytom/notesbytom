@@ -13,7 +13,7 @@ Trusted Certificate Authorities (CA) Trust Store
   * Put `*.pem` files here.
 * `update-ca-trust` # update the system default trust store(s)
 * Related Documentation:
-  * https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/securing_networks/using-shared-system-certificates
+  * RHEL 10 Documentation - Securing Networks - [Using Shared System Certificates][1]
 
 ## Ubuntu Certificates
 
@@ -31,3 +31,4 @@ Trusted Certificate Authorities (CA) Trust Store
 * Related Discussion:
   * https://askubuntu.com/questions/645818/how-to-install-certificates-for-command-line
 
+[1]: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/securing_networks/using-shared-system-certificates
