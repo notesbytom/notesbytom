@@ -3,6 +3,10 @@
 WSL can run most generic Linux container rootfs images such as those for RHEL/CentOS/Rocky.
 This can be useful for running Ansible controller playbooks from a Windows machine.
 
+## Fedora Linux Container Host with WSL
+
+Podman for Windows ships with a Fedora-based WSL Container designed to host other containers. This is very similar to capabilities provided by Docker on Windows. Container hosting can be rootless or rootful. Rootless mode tries to add a security layer, but might cause some trouble with lack of permissions and may require additional configuration for container operations to function correctly.
+
 ## Rocky Linux Containers with WSL
 
 Rocky documentation: [Import Rocky Linux to WSL][1]. My own notes might differ, see below.
