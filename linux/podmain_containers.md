@@ -22,6 +22,11 @@ Red Hat Compatible Container Images may be provided in UBI format. Note that *"R
   * NO dnf/microdnf package manager!
   * Also known as "Distroless"?
 
+## CentOS Stream Container Images
+
+From the [CentOS Stream Download page][5] under the Containers Column Click on Images for the Row matching your architecture (x86_64, ARM64, etc).
+* For CentOS Stream 10 they are hosted at https://quay.io/centos/centos:stream10
+
 ## Terminology and Definitions
 
 * Open Container Initiative (OCI)
@@ -31,3 +36,4 @@ Red Hat Compatible Container Images may be provided in UBI format. Note that *"R
 [2]: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/building_running_and_managing_containers/index#understanding-the-ubi-init-images
 [3]: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/building_running_and_managing_containers/index#understanding-the-ubi-minimal-images
 [4]: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html-single/building_running_and_managing_containers/index#understanding-the-ubi-micro-images
+[5]: https://www.centos.org/download/
