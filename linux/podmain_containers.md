@@ -27,6 +27,11 @@ Red Hat Compatible Container Images may be provided in UBI format. Note that *"R
 From the [CentOS Stream Download page][5] under the Containers Column Click on Images for the Row matching your architecture (x86_64, ARM64, etc).
 * For CentOS Stream 10 they are hosted at https://quay.io/centos/centos:stream10
 
+## Fedora Container Images
+
+Fedora Container Images can be found at https://quay.io/organization/fedora
+* Options include: fedora, fedora-minimal, fedora-coreos, and many others. Further research required to highlight the differences.
+
 ## Terminology and Definitions
 
 * Open Container Initiative (OCI)
