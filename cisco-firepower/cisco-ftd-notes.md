@@ -1,7 +1,9 @@
-# Cisco Firepower Notes
+# Cisco Secure Firewall FTD Notes
 
 These notes apply to Cisco Secure Firewall Management Center (FMC) and Firewall Threat Defense (FTD). 
 The branding has recently changed from Firepower to Firewall, but the products are the same.
+
+* Cisco [Secure Firewall Platforms and Design Considerations][14] deep dive (June 2025 - Cisco Live Presentation)
 
 ## SD-WAN Features
 
@@ -147,6 +149,7 @@ Cisco Talos (formerly Sourcefire VRT) provides Snort Rules and other threat mana
 [11]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/740/management-center-device-config-74/encrypted-traffic-overview.html
 [12]: https://www.cisco.com/c/en/us/td/docs/security/firepower/roadmap/fmc-new-features/fmc-new-features-by-release.html
 [13]: https://bst.cisco.com/quickview/bug/CSCvj90930
+[14]: https://www.ciscolive.com/c/dam/r/ciscolive/global-event/docs/2025/pdf/BRKSEC-2239.pdf
 [14]: https://secure.cisco.com/secure-firewall/docs/sd-wan-wizard
 [15]: https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/usecase/b_wan-deployment/m_introduction.html
 [16]: https://learningnetwork.cisco.com/s/question/0D56e0000EBslwsCQB/cisco-secure-firewall-sdwan-solution-overview-and-device-onboarding-livestream-and-postevent-discussion
