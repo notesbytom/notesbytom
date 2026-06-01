@@ -17,6 +17,7 @@
 In addition to the Air Train and Mobile Lounge transportation, there are several options for passengers choosing to walk.
 
 * Main Terminal to Concourse A and B - Underground Walkway
+  * Main Terminal Walkway Entrance is Near the Z Gates
 * Concourse E Train Station to Concourse C (and D) - Underground Walkway
 * Metro Rail Station to Main Terminal - Underground Walkway
 
