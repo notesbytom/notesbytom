@@ -23,7 +23,7 @@ This is useful for having separate vaults to unlock sensitive values for differe
 ## Encrypting Strings
 
 Instead of encrypting whole files, `ansible-vault` can also incrypt individual string values which can then be pasted directly into Ansible YAML files as values.
-Those will then be decrypted automatically at runtime as long as a compatible vault-id/vault-password is available to
+Those will then be decrypted automatically at runtime as long as a compatible vault-id/vault-password is available.
 
 ## Documentation
 
