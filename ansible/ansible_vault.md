@@ -35,6 +35,13 @@ from [Creating encrypted variables][7].
 * The Prompt will be something like this: _Reading plaintext input from stdin. (ctrl-d to end input, twice if your content does not already have a new line)_
   * To Avoid Breaking your Encrypted Value with a trailing newline character, do NOT press the Enter key, but Instead type Ctrl-D Twice!!
 
+## Vault Header Format
+
+[Vault Format Versions listed in the header][9] can include the following:
+* 1.0 = Old/Legacy AES format
+* 1.1 = AES256 Without Vault-Id Label
+* 1.2 = AES256 WITH VAULT-ID LABEL
+
 ## Documentation
 
 * [ansible-vault][1] CLI tool
@@ -42,6 +49,7 @@ from [Creating encrypted variables][7].
 * [Managing multiple passwords with vault IDs][3]
 * [Storing and accessing vault passwords][4]
 * [Creating encrypted variables][7]
+* [Format of files encrypted with Ansible Vault][9]
 
 [1]: https://docs.ansible.com/projects/ansible/latest/cli/ansible-vault.html
 [2]: https://docs.ansible.com/projects/ansible/latest/vault_guide/index.html
@@ -51,3 +59,4 @@ from [Creating encrypted variables][7].
 [6]: https://docs.ansible.com/projects/ansible/latest/reference_appendices/config.html#default-vault-identity-list
 [7]: https://docs.ansible.com/projects/ansible/latest/vault_guide/vault_encrypting_content.html#creating-encrypted-variables
 [8]: https://docs.ansible.com/projects/ansible/latest/reference_appendices/config.html#default-vault-encrypt-identity
+[9]: https://docs.ansible.com/projects/ansible/latest/vault_guide/vault_using_encrypted_content.html#format-of-files-encrypted-with-ansible-vault
