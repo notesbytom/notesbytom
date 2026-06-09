@@ -7,14 +7,14 @@ Sensitive items in Ansible can be encrypted and decrypted with the included `ans
 When ansible is decrypting a string value or file, you can use [vault identifier labels/tags][3] as a hint or note to indicate which vault-password to use.
 This is useful for having separate vaults to unlock sensitive values for different teams, roles, or individuals.
 * In the following examples, `label` is a Vault Identifier
-  * Settings [associating Vault-Id's with vault-passwords][6]
-    * CLI Option `--vault-id label@source`
-    * _source can be a prompt, a file, or a script_
-    * Or Ansible Config File `[defaults]` section: `vault_identity_list=label@source,label2@source2`
-    * Or Environment Variable `ANSIBLE_VAULT_IDENTITY_LIST`
-  * Encrypted string/file header vault-id label examples
-    * `$ANSIBLE_VAULT;1.2;AES256;label` - decrypt with vault-id `label`
-    * `$ANSIBLE_VAULT;1.2;AES256;label2` - decrypt with vault-id `label2`
+* Settings [associating Vault-Id's with vault-passwords][6]
+  * CLI Option `--vault-id label@source`
+  * _source can be a prompt, a file, or a script_
+  * Or Ansible Config File `[defaults]` section: `vault_identity_list=label@source,label2@source2`
+  * Or Environment Variable `ANSIBLE_VAULT_IDENTITY_LIST`
+* Encrypted string/file header vault-id label examples
+  * `$ANSIBLE_VAULT;1.2;AES256;label` - decrypt with vault-id `label`
+  * `$ANSIBLE_VAULT;1.2;AES256;label2` - decrypt with vault-id `label2`
 * Settings to [require vault-id's to match][5] (default is to try all known vault-ids at runtime)
   * In Ansible Config File `[defaults]` section: `vault_id_match=True`
   * Environment Variable `ANSIBLE_VAULT_ID_MATCH`
@@ -23,6 +23,10 @@ This is useful for having separate vaults to unlock sensitive values for differe
   * CLI Option `--encrypt-vault-id=label`
   * Or Ansible Config File `[defaults]` section: `vault_encrypt_identity=label`
   * Or Environment Variable `ANSIBLE_VAULT_ENCRYPT_IDENTITY`
+* Setting _[default vault id label][10] in cases where a vault id label is not provided_ FOR DECRYPTION
+  * Ansible Config File `[defaults]` section: `vault_identity=labal`
+  * Or Environment Variable `ANSIBLE_VAULT_IDENTITY`
+  * This is useful in cases where vault-id matching is being required. Missing vault-id will use this setting.
 
 ## Encrypting Strings
 
@@ -60,3 +64,4 @@ from [Creating encrypted variables][7].
 [7]: https://docs.ansible.com/projects/ansible/latest/vault_guide/vault_encrypting_content.html#creating-encrypted-variables
 [8]: https://docs.ansible.com/projects/ansible/latest/reference_appendices/config.html#default-vault-encrypt-identity
 [9]: https://docs.ansible.com/projects/ansible/latest/vault_guide/vault_using_encrypted_content.html#format-of-files-encrypted-with-ansible-vault
+[10]: https://docs.ansible.com/projects/ansible/latest/reference_appendices/config.html#default-vault-identity
