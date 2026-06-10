@@ -1,5 +1,11 @@
 # Linux Keyrings
 
+## Reboot Persistence
+
+It looks like these are Not persistently stored on disk to survive a reboot. 
+Examples of keys/secrets which don't need to survive reboot include Kerberos tickets.
+Example of secrets that require persistence: Machine or User PKI Certificates (SSL/TLS Private Keys).
+
 ## Documentation
 
 * [The Linux Kernel Key Retention Service and why you should use it in your next application][1] (Cloudflare)
