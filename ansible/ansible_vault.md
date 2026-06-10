@@ -24,7 +24,7 @@ This is useful for having separate vaults to unlock sensitive values for differe
   * Or Ansible Config File `[defaults]` section: `vault_encrypt_identity=label`
   * Or Environment Variable `ANSIBLE_VAULT_ENCRYPT_IDENTITY`
 * Setting _[default vault id label][10] in cases where a vault id label is not provided_ FOR DECRYPTION
-  * Ansible Config File `[defaults]` section: `vault_identity=labal`
+  * Ansible Config File `[defaults]` section: `vault_identity=label`
   * Or Environment Variable `ANSIBLE_VAULT_IDENTITY`
   * This is useful in cases where vault-id matching is being required. Missing vault-id will use this setting.
 
