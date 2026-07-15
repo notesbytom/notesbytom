@@ -20,3 +20,5 @@ function get-laps($hostName = $env:COMPUTERNAME) {
   "ms-Mcs-AdmPwd = $($adComputer.'ms-Mcs-AdmPwd')"
   "ms-Mcs-AdmPwdExpirationTime = $([datetime]::FromFileTimeUtc($adComputer.'ms-Mcs-AdmPwdExpirationTime'))"
 }
+
+# Also try `Get-LapsADPassword COMPUTERNAME` which will return a SecureString along with the Expiration Date.
