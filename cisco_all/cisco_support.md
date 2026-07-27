@@ -34,6 +34,12 @@ Notes for Cisco products End of Life.
 
 * https://bst.cloudapps.cisco.com/bugsearch
 
+## Cisco Security Software Checker
+
+*Search for Cisco **Security Advisories** that apply to specific software releases.*
+
+* https://sec.cloudapps.cisco.com/security/center/softwarechecker.x
+
 [1]: https://www.cisco.com/c/en/us/products/collateral/security/asa-5500-series-next-generation-firewalls/eos-eol-notice-c51-744798.html
 [2]: https://www.cisco.com/c/en/us/products/collateral/security/firepower-ngfw/firepower-2100-series-sec-app-5-yr-sub-eol.html
 [3]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst_standalones/b-in-service-software-upgrade-issu.html
