@@ -16,6 +16,9 @@ $ tclsh
 11110000
 ```
 
+See [Binary representation of numbers][1] (wiki.tcl-lang.org) for an explanation that using `%ll` (long long) should prevent 
+nonsense values which might happen when truncating large or negative values. In this case `%ll` means No Truncation.
+
 ## Powers of Two
 
 Another useful thing for IP Address work is powers of two. Those can be done with the TCL `pow(x,y)` math function.
@@ -30,3 +33,5 @@ Another useful thing for IP Address work is powers of two. Those can be done wit
 ## TCL Version
 
 The version of TCL running can be shown with `puts $tcl_version`
+
+[1]: https://wiki.tcl-lang.org/page/Binary+representation+of+numbers
