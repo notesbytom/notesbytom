@@ -1,4 +1,4 @@
-# Procedure for Clearing (Re-Authenticating) 802.1x Access-Sessions
+# Procedure for Clearing (Re-Authenticating) 802.1x Unauth Access-Sessions
 # If RADIUS Servers are Unreachable 802.1x Access-Sessions can Fail as Unauth
 # After RADIUS Servers become reachable this will trigger re-auth of Unauth Devices
 proc reauth_dot1x {} {
