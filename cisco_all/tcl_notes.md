@@ -34,4 +34,11 @@ Another useful thing for IP Address work is powers of two. Those can be done wit
 
 The version of TCL running can be shown with `puts $tcl_version`
 
+## Command Reference
+
+* [format][2] (string formatting)
+* [expr][3] (math operations)
+
 [1]: https://wiki.tcl-lang.org/page/Binary+representation+of+numbers
+[2]: https://www.tcl-lang.org/man/tcl9.0.2/TclCmd/format.html
+[3]: https://www.tcl-lang.org/man/tcl9.0.2/TclCmd/expr.html
