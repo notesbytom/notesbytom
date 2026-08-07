@@ -38,7 +38,9 @@ The version of TCL running can be shown with `puts $tcl_version`
 
 * [format][2] (string formatting)
 * [expr][3] (math operations)
-
+  * [mathfunc][4] Mathematical functions for Tcl expressions
+ 
 [1]: https://wiki.tcl-lang.org/page/Binary+representation+of+numbers
 [2]: https://www.tcl-lang.org/man/tcl9.0.2/TclCmd/format.html
 [3]: https://www.tcl-lang.org/man/tcl9.0.2/TclCmd/expr.html
+[4]: https://www.tcl-lang.org/man/tcl9.0.2/TclCmd/mathfunc.html
