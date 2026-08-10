@@ -30,9 +30,13 @@ Switch(config-if)# end
 
 Use command `switchport port-security violation ...` to indicate the [Security Violation action][13] as one of the following:
 * `protect` - Block Traffic (Silently)
+  * The lack of notification makes protect a **poor option for troubleshooting**. Use `restrict` to enable violation counters and notifications.
 * `report` - Allow Traffic + Syslog/SNMP Notification?
+  * This option **should be avoided** if you want to prohibit the non-compliant device traffic.
 * `restrict` - Block Traffic + Syslog/SNMP Notification
+  * This might be the **most graceful of the options**. It prevents/logs non-compliant traffic while avoiding the need to deal with err-disabled (shutdown) ports.
 * `shutdown` - Error-Disable the Switchport (this is the Default action)
+  * Use `show interfaces status err-disabled` to troubleshoot the shutdown action.
 
 ## Voice Access Ports
 
