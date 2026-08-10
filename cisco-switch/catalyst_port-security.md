@@ -26,6 +26,14 @@ Switch(config-if)# switchport port-security maximum 1 vlan access
 Switch(config-if)# end
 ```
 
+## Violation Action
+
+Use command `switchport port-security violation ...` to indicate the [Security Violation action][13] as one of the following:
+* `protect` - Block Traffic (Silently)
+* `report` - Allow Traffic + Syslog/SNMP Notification?
+* `restrict` - Block Traffic + Syslog/SNMP Notification
+* `shutdown` - Error-Disable the Switchport (this is the Default action)
+
 ## Voice Access Ports
 
 Voice Access ports are configured with `switchport voice vlan #` and `switchport access vlan #` to use both a phone and computer on the same port with different vlans.
@@ -122,3 +130,4 @@ Some of the below has been replaced with newer [Identity-Based Networking Servic
 [10]: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ibns/command/ibns-xe-3se-3850-cr-book/ibns-cr-3850.html
 [11]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9600/software/release/17-14/configuration_guide/sec/b_1714_sec_9600_cg/configuring_identity_control_policies.html
 [12]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3650/software/release/16-6/configuration_guide/sec/b_166_sec_3650_cg/cisco_discovery_protocol_bypass.html
+[13]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/configuration_guide/sec/b_1715_sec_9300_cg/port_security.html#security_violations
