@@ -24,9 +24,9 @@ nonsense values which might happen when truncating large or negative values. In 
 Another useful thing for IP Address work is powers of two. Those can be done with the TCL `pow(x,y)` math function.
 
 ```
-% exp pow(2,4)
+% expr pow(2,4)
 16.0
-% exp pow(2,8)
+% expr pow(2,8)
 256.0
 ```
 
