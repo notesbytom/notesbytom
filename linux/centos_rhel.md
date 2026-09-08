@@ -32,3 +32,7 @@ Selected [Stream and RHEL Fedora Lineage][4]
 [2]: https://access.redhat.com/support/policy/updates/errata#Life_Cycle_Dates
 [3]: https://en.wikipedia.org/wiki/Fedora_Linux
 [4]: https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/
+
+## Search Keywords
+
+* End of Life (EOL)
