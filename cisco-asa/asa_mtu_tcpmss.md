@@ -17,6 +17,11 @@ To workaround path MTU issues for TCP traffic, the ASA has a TCP Maximum Segment
 If a MTU test has been completed, then subtract maximum combined header size from the MTU to determine conservative TCP Maximum Segment Size.
 * [IPv4 Header][5] = 20 Bytes (without options)
 * [TCP Header][6] = 64 Bytes (Including max SACK and Timestamp Options padded to 4-byte increment)
+  * 20 Byte TCP Header Without Options
+  * 34 Bytes Maximum Selective Acknowledgement Option
+    * 2 + 8*4 = 34 Bytes Maximum
+  * 10 Bytes TCP Timestamp
+  * Pad Sum of Option Lengths to a 4-Byte Increment (44 is compliant)
 * Total Headers (IPv4+TCP) = 84 Bytes
   * This is a conservative estimate accounting for common tcp performance options (timestamp and selective acknowledgement)
 * If IPsec tunnels are being used, do the MTU testing from Inside the tunnel.
