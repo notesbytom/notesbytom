@@ -10,7 +10,7 @@ To use the Voice Vlan feature, you need to:
 * enable lldp globally, `lldp run`
 * configure all vlans on the port as `tagged`
 * designate one tagged-vlan as `dual-mode` (untagged) using interface config
-* designame one tagged-vlan as `voice-vlan`
+* designate one tagged-vlan as `voice-vlan`
 
 ## Untagged Vlan Multi-Vlan Port
 
