@@ -20,7 +20,7 @@ If a MTU test has been completed, then subtract maximum combined header size fro
   * 20 Byte TCP Header Without Options
   * 34 Bytes Maximum Selective Acknowledgement Option
     * 2 + 8*4 = 34 Bytes Maximum
-  * 10 Bytes TCP Timestamp
+  * 10 Bytes TCP Timestamp Option
   * Pad Sum of Option Lengths to a 4-Byte Increment (44 is compliant)
 * Total Headers (IPv4+TCP) = 84 Bytes
   * This is a conservative estimate accounting for common tcp performance options (timestamp and selective acknowledgement)
