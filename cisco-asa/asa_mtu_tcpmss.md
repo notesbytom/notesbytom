@@ -12,6 +12,16 @@ To workaround path MTU issues for TCP traffic, the ASA has a TCP Maximum Segment
   * Sections: *Configure the MTU and TCP MSS, About the MTU, About the TCP MSS*
 * [Resolve IPv4 Fragmentation, MTU, MSS, and PMTUD Issues][6] (Related Documentation focused on Cisco Routers)
 
+## Conservative TCP MSS Calculation
+
+If a MTU test has been completed, then subtract maximum combined header size from the MTU to determine conservative TCP Maximum Segment Size.
+* [IPv4 Header][5] = 20 Bytes (without options)
+* [TCP Header][6] = 64 Bytes (Including max SACK and Timestamp Options padded to 4-byte increment)
+* Total Headers (IPv4+TCP) = 84 Bytes
+  * This is a conservative estimate accounting for common tcp performance options (timestamp and selective acknowledgement)
+* If IPsec tunnels are being used, do the MTU testing from Inside the tunnel.
+  * If the tunneling protocol has a variable header size, subtract more to allow for the maximum
+
 ### TCP MSS Bug
 
 Cisco Bug: CSCwi49884, TCP MSS is changed back to the default value when a VTI or loopback interface is created.
@@ -38,5 +48,8 @@ The Cisco ASA Command Reference gives some incorrect information on this command
 [2]: https://bst.cisco.com/quickview/bug/CSCwi49884
 [3]: https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwi49884
 [4]: https://bst.cloudapps.cisco.com/bugsearch
+[5]: https://en.wikipedia.org/wiki/IPv4#Header
+[6]: https://en.wikipedia.org/wiki/Transmission_Control_Protocol#TCP_segment_structure
+
 [5]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa920/configuration/general/asa-920-general-config/interface-mtu.html
 [6]: https://www.cisco.com/c/en/us/support/docs/ip/generic-routing-encapsulation-gre/25885-pmtud-ipfrag.html
