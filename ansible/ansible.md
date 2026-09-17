@@ -11,6 +11,10 @@ Ansible can be used to automate and verify configurations on network hosts such 
 * [Implicit `localhost`][5] - automate things on the ansible 'controller' server
   * Uses [ansible.builtin.local][6] `ansible_connection: local`
 * Use `--limit ...` or `-l ...` to run on only [targets matching your limit-subset pattern][15]
+* [Inventory Sources][16] Configuration
+  * CLI Option `--inventory` or `-i`
+  * In Ansible Config File `[defaults]` section: `inventory = /path/to/inventory.yml`
+  * Environment Variable `ANSIBLE_INVENTORY`
 
 ## Cisco Automation with Ansible
 
@@ -85,3 +89,4 @@ Resolving DNS Names to IP Addresses can be done with some community lookup plugi
 [13]: https://docs.ansible.com/ansible/latest/collections/community/dns/lookup_lookup.html
 [14]: https://docs.ansible.com/ansible/latest/network/index.html
 [15]: https://docs.ansible.com/projects/ansible/latest/cli/ansible-playbook.html
+[16]: https://docs.ansible.com/projects/ansible/latest/reference_appendices/config.html#default-host-list
