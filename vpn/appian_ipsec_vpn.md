@@ -5,9 +5,19 @@
 If you have Databases or Data Sources at different sites, you might want to build separate tunnels to send that 
 Appian data traffic directly to the location of the data source.
 
-In my experience when using Multiple Tunnels with the same Appian instance, 
-the Same IKEv2 Phase-1 and IPsec/ESP Phase-2 parameters should be used. This might be something buggy with the way
-Appian or Libreswan handle multiple tunnels terminating on the same Appian server/node.
+Troubleshooting Multiple Tunnels with the same Appian instance:  
+Try using the Same IKEv2 Phase-1 and IPsec/ESP Phase-2 parameters if you added new tunnels and test connectivity is failing. 
+This might be something buggy with the way Appian or Libreswan handle multiple tunnels terminating on the same Appian server/node.
+* This issue has been observed primarily with the 
+
+## Palo Alto Compatibility
+
+Use **Proxy ID's** for your Palo Also IPsec Tunnels to match the configuration applied to the Appian VPN Self-Service Tool.
+
+## Oracle Compatibility
+
+Force a **Lower MTU** for the Tunnel Interface, or **Lower TCP Maximum Segment Size (MSS)** to work around issues 
+if traffic to your Oracle Database infrastructure might have limited or inconsistent MTU support.
 
 ## Related Documentation 
 
