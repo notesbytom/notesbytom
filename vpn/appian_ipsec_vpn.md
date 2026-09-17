@@ -8,7 +8,7 @@ Appian data traffic directly to the location of the data source.
 Troubleshooting Multiple Tunnels with the same Appian instance:  
 Try using the Same IKEv2 Phase-1 and IPsec/ESP Phase-2 parameters if you added new tunnels and test connectivity is failing. 
 This might be something buggy with the way Appian or Libreswan handle multiple tunnels terminating on the same Appian server/node.
-* This issue has been observed primarily with the 
+* This issue has been observed primarily with the Triple-Tunnel Appian High Availability Static VPN Architecture.
 
 ## Palo Alto Compatibility
 
