@@ -48,4 +48,4 @@ Documentation from Appian Support and Other Sources
 [6]: https://docs.appian.com/suite/help/24.3/Configuring_Inbound_Access_Over_VPN.html
 [7]: https://docs.appian.com/suite/help/24.3/Configuring_Dual_Inbound_Access.html
 [8]: https://docs.appian.com/suite/help/latest/High_Availability_for_Appian_Cloud.html
-[9]: https://libreswan.org/wiki/Cipher_suites_and_algorithm_support
+[9]: https://github.com/libreswan/libreswan.github.io/blob/main/Internals/Cipher-suites-and-algorithm-support.md
