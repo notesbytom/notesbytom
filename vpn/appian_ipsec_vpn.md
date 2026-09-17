@@ -19,6 +19,14 @@ Use **Proxy ID's** for your Palo Also IPsec Tunnels to match the configuration a
 Force a **Lower MTU** for the Tunnel Interface, or **Lower TCP Maximum Segment Size (MSS)** to work around issues 
 if traffic to your Oracle Database infrastructure might have limited or inconsistent MTU support.
 
+## VPN Alternatives
+
+**Cloud Secure Link** is a new on-premise container-based appian connector agent which can be used as an alternative to VPN connections (they can also co-exist).
+* [Connect with Cloud Secure Link][10]
+* [Cloud Secure Link (Admin Console)][11]
+  * Includes **Screen Shots** and example of using a **join token** to **Register a Client**.
+* [Transition to Cloud Secure Link][12]
+
 ## Related Documentation 
 
 Documentation from Appian Support and Other Sources
@@ -43,9 +51,12 @@ Documentation from Appian Support and Other Sources
 [1]: https://docs.appian.com/suite/help/latest/Cloud_VPN_Integration.html
 [2]: https://docs.appian.com/suite/help/latest/Cloud_Self_Service_VPN.html
 [3]: https://docs.appian.com/suite/help/latest/Dynamic_VPN_Routing.html
-[4]: https://docs.appian.com/suite/help/24.3/Using_a_Custom_Domain_in_Appian_Cloud.html
-[5]: https://docs.appian.com/suite/help/24.3/Self_Service_Certificate_Management_for_Appian_Cloud.html
-[6]: https://docs.appian.com/suite/help/24.3/Configuring_Inbound_Access_Over_VPN.html
-[7]: https://docs.appian.com/suite/help/24.3/Configuring_Dual_Inbound_Access.html
+[4]: https://docs.appian.com/suite/help/latest/Using_a_Custom_Domain_in_Appian_Cloud.html
+[5]: https://docs.appian.com/suite/help/latest/Self_Service_Certificate_Management_for_Appian_Cloud.html
+[6]: https://docs.appian.com/suite/help/latest/Configuring_Inbound_Access_Over_VPN.html
+[7]: https://docs.appian.com/suite/help/latest/Configuring_Dual_Inbound_Access.html
 [8]: https://docs.appian.com/suite/help/latest/High_Availability_for_Appian_Cloud.html
 [9]: https://github.com/libreswan/libreswan.github.io/blob/main/Internals/Cipher-suites-and-algorithm-support.md
+[10]: https://docs.appian.com/suite/help/latest/cloud-secure-link.html
+[11]: https://docs.appian.com/suite/help/latest/admin-cloud-secure-link.html
+[12]: https://docs.appian.com/suite/help/latest/cloud-secure-link-migration.html
