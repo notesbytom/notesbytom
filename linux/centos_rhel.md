@@ -26,7 +26,7 @@ Fedora is the upstream project which CentOS Stream and RHEL are based on. Releas
 Selected [Stream and RHEL Fedora Lineage][4]
 * Stream and RHEL 9 are based on Fedora 34
 * Stream and RHEL 10 are based on Fedora 40
-* Stream and RHEL 11 will be based on Fedora __?
+* Stream and RHEL 11 will be based on Fedora 46?
 
 [1]: https://en.wikipedia.org/wiki/CentOS_Stream
 [2]: https://access.redhat.com/support/policy/updates/errata#Life_Cycle_Dates
