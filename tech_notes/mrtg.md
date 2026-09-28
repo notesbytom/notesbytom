@@ -78,6 +78,17 @@ Verify the **Time Zone** is set to your desired value with `timedatectl`:
 * RHEL 7 Sys Admin Guide - [Configuring Date and Time][2]
 * [timedatectl][3] manual page
 
+## Related Documentation
+
+* [MRTG][4] on oss.oetiker.ch
+  * [MRTG on GitHub][6] source code
+* [RRDtool][5] on oss.oetiker.ch
+  * [RRDtool on GitHub][7] source code
+
 [1]: https://www.redhat.com/sysadmin/chrony-time-services-linux
 [2]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-configuring_the_date_and_time
 [3]: https://www.freedesktop.org/software/systemd/man/latest/timedatectl.html
+[4]: https://oss.oetiker.ch/mrtg/
+[5]: https://oss.oetiker.ch/rrdtool/
+[6]: https://github.com/oetiker/mrtg
+[7]: https://github.com/oetiker/rrdtool-1.x
