@@ -59,7 +59,14 @@ Advanced ansible solutions are likely to use Jinja Filters.
 ## Tests
 * [Jinja Builtin Tests](https://jinja.palletsprojects.com/en/stable/templates/#list-of-builtin-tests)
   * Includes: eq/==/equalto, ne/!=, ...
- 
+
+## Variables
+
+[Ansible Core 2.21][17] introduced the ability to **Register Variable Projections using Jinja Expressions** from Task Result output.
+* This is documented in [Using variables - Registering variables][18].
+* RHEL 11 will likely be the first Enterprise Release bundling this new feature.
+* This can significantly reduce the size and complexity of playbooks by removing the need for `set_fact` tasks.
+
 ## DNS Lookups
 
 Resolving DNS Names to IP Addresses can be done with some community lookup plugins.
@@ -90,3 +97,5 @@ Resolving DNS Names to IP Addresses can be done with some community lookup plugi
 [14]: https://docs.ansible.com/ansible/latest/network/index.html
 [15]: https://docs.ansible.com/projects/ansible/latest/cli/ansible-playbook.html
 [16]: https://docs.ansible.com/projects/ansible/latest/reference_appendices/config.html#default-host-list
+[17]: https://github.com/ansible/ansible/blob/stable-2.21/changelogs/CHANGELOG-v2.21.rst
+[18]: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_variables.html#registering-variables
