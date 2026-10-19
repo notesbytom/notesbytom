@@ -26,6 +26,20 @@ Switch(config-if)# switchport port-security maximum 1 vlan access
 Switch(config-if)# end
 ```
 
+There is a GLITCH/BUG related to vlan-specific port-security maximums.
+* You MUST Configure the VLAN NUMBER on the switchport FIRST
+  * `switchport access vlan #`
+  * `switchport voice vlan #`
+* THEN you can configure the port-security maximum # vlan ...
+  * `switchport port-security maximum 1 vlan access`
+  * `switchport port-security maximum 1 vlan voice`
+* IF you later CHANGE the VLAN ASSIGNMENT you MUST RE-CONFIGURE the port-security maximum # vlan ...
+  * This is TRICKY because the `port-security maximum # vlan ...` command will still be listed in the running config but it will NOT WORK!
+  * You can verify the ACTIVE vlan-specific port-security maximum using a command like:
+    * `show port-security interface TwentyFiveGigE 1/0/47 vlan`
+    * IF there is NO MAXIMUM listed for a VLAN then it WILL NOT BE ENFORCED!!
+    * ALSO after a reboot, only the ACTIVE/ENFORCED `port-security maximum # vlan` items will be preserved.
+
 ## Violation Action
 
 Use command `switchport port-security violation ...` to indicate the [Security Violation action][13] as one of the following:
