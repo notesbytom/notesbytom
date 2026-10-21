@@ -34,6 +34,14 @@ DHCP Snooping is a Dependency for Dynamic ARP Inspection (DAI).
 * Show Commands:
   * `show ip dhcp snooping`
   * `show ip dhcp snooping ...` [binding|database|statistics]
+* For DHCP Snooping to work, you likely Need to configure the database.
+  * `ip dhcp snooping database bootflash:/dhcp_snoop_db`
+* Important Compatibility Note: When enabling dhcp snooping on an access switch,
+  if it is Not also the dhcp server or relay you will likely need to Disable Snooping Information Option (82)
+  * `no ip dhcp snooping information option`
+  * The Access Switch will populate Information Option 82 including giaddr=0 which will cause the
+    upstream dhcp server or relay to reject the client dhcp requests.
+  * [DHCP Snooping Interactions with GIADDR and Option 82 on CAT9...][7] - Cisco
 
 ## Type 6 Password Encryption
 
@@ -55,3 +63,4 @@ password/secret values stored in the switch configuration from being decrypted w
 [4]: https://github.com/CiscoDevNet/Type-6-Password-Encode/
 [5]: https://www.cisco.com/c/en/us/support/docs/security-vpn/ipsec-negotiation-ike-protocols/46420-pre-sh-keys-ios-rtr-cfg.html
 [6]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/general/asa-923-general-config/basic-hostname-pw.html
+[7]: https://www.cisco.com/c/en/us/support/docs/switches/catalyst-9600-series-switches/225929-dhcp-snooping-interactions-with-giaddr.html
