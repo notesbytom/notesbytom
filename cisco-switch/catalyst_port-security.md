@@ -2,6 +2,29 @@
 
 Port Security is a feature on Catalyst switches to restrict the quantity and identity of allowable MAC Addresses on a Switch Port.
 
+## Sandbox VLAN for MAC Discovery
+
+One trick to learn new mac addresses without allowing them is to configure the port access and voice vlans to 
+use a vlan which is not operationally usable on the network.
+* For example, operational vlans 10 and 20 could have corresponding sandbox vlans 1010 and 2020
+  * The numbers selected will be based on which vlans are in-use or unused in your network
+  * Unused non-routable vlans are good choices for sandbox use
+  * Remove your sandbox vlans from trunk vlan allow lists
+Use `switchport port-security mac-address sticky` to learn the new mac addresses.
+* Once verified, move the port vlan assignment(s) to the operational ones
+* You may need to re-configure the `switchport port-security maximum # vlan ...` after changing port vlan(s)
+Use a command like `show archive config differences nvram:startup-config system:running-config`
+to see any newly learned sticky mac addresses for review.
+* If a port-security violation happens, you might need to check other things like ...
+* Check for violations/errors in the Log Buffer
+  * `show logging`
+* Check for err-disabled ports
+  * `show interfaces status err-disabled`
+* Check the port-security violation counters and settings
+  * `show port-security`
+  * Vlan-specific counters are seen at the interface-level
+    * `show port-security interface ... vlan`
+
 ## Sticky MAC Addresses
 
 Use `switchport port-security mac-address sticky` to lock-in MAC addresses leared on the port.
