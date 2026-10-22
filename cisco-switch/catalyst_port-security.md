@@ -10,9 +10,11 @@ use a vlan which is not operationally usable on the network.
   * The numbers selected will be based on which vlans are in-use or unused in your network
   * Unused non-routable vlans are good choices for sandbox use
   * Remove your sandbox vlans from trunk vlan allow lists
+
 Use `switchport port-security mac-address sticky` to learn the new mac addresses.
 * Once verified, move the port vlan assignment(s) to the operational ones
 * You may need to re-configure the `switchport port-security maximum # vlan ...` after changing port vlan(s)
+
 Use a command like `show archive config differences nvram:startup-config system:running-config`
 to see any newly learned sticky mac addresses for review.
 * If a port-security violation happens, you might need to check other things like ...
