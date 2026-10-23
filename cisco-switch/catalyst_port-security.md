@@ -29,7 +29,7 @@ to see any newly learned sticky mac addresses for review.
 
 ## Sticky MAC Addresses
 
-Use `switchport port-security mac-address sticky` to lock-in MAC addresses leared on the port.
+Use `switchport port-security mac-address sticky` to lock-in MAC addresses learned on the port.
 
 These will show in the running-config. 
 
