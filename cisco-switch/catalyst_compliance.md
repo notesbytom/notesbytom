@@ -57,7 +57,7 @@ password/secret values stored in the switch configuration from being decrypted w
   * Random Salt is 4 bytes longer
   * HMAC-SHA0 is used to generate the MAC (instead of HMAC-SHA1 used in IOS)
 
-[1]: https://www.tenable.com/audits/items/DISA_STIG_Cisco_IOS_XE_Switch_L2S_v3r1.audit:7a70877c979276b792ecba468e404c78
+[1]: https://www.tenable.com/audits/items/DISA_STIG_Cisco_IOS_Switch_L2S_v3r2.audit:df83047d392bf16b39a69d9603a06c4a
 [2]: https://www.cisco.com/c/en/us/support/docs/ip/dynamic-host-configuration-protocol-dhcp-dhcpv6/217055-operate-and-troubleshoot-dhcp-snooping.html
 [3]: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/sec/b_179_sec_9300_cg/configuring_dynamic_arp_inspection.html
 [4]: https://github.com/CiscoDevNet/Type-6-Password-Encode/
