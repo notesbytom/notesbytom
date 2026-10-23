@@ -24,6 +24,8 @@ This appears to be a BREAKING change with IMPORTANT DHCP Snooping prerequisites/
 ## DHCP Snooping
 
 DHCP Snooping is a Dependency for Dynamic ARP Inspection (DAI).
+* [CISC-L2-000130 - The Cisco switch must have DHCP snooping for all user VLANs ...][8]
+  * *"Other security features, such as IP Source Guard and Dynamic Address Resolution Protocol (ARP) Inspection (DAI), also use information stored in the DHCP snooping binding database. Hence, it is imperative that the DHCP snooping feature is enabled on all VLANs."*
 * [Operate and Troubleshoot DHCP Snooping on Catalyst 9000 Switches][2]
 * Interface Commands:
   * `ip dhcp snooping trust`
@@ -64,3 +66,4 @@ password/secret values stored in the switch configuration from being decrypted w
 [5]: https://www.cisco.com/c/en/us/support/docs/security-vpn/ipsec-negotiation-ike-protocols/46420-pre-sh-keys-ios-rtr-cfg.html
 [6]: https://www.cisco.com/c/en/us/td/docs/security/asa/asa923/configuration/general/asa-923-general-config/basic-hostname-pw.html
 [7]: https://www.cisco.com/c/en/us/support/docs/switches/catalyst-9600-series-switches/225929-dhcp-snooping-interactions-with-giaddr.html
+[8]: https://www.tenable.com/audits/items/DISA_STIG_Cisco_IOS_Switch_L2S_v3r2.audit:310af3781800c3a33d32e39750d91103
