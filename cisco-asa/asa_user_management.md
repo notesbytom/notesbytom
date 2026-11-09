@@ -26,6 +26,7 @@ Free or Open Source SSH Clients
   * The name is like "PKI x SSH"
   * Source Code at https://gitlab.com/secsh/pkixssh
   * Are Linux Distributions shipping packages for this?
+    * Quick AI Search ~November 2026 - NO popular linux distributions are providing pkixssh packages.
   * See the [R. Petrov's Android SSH applications][13] in the Google Play store.
     * TermOne and [SecureBox][15] add-on are free/[open-source][16]. SecureBox Pro integrated GUI is paid.
     * May work on some [Chrome OS devices with Android App support][14]?
