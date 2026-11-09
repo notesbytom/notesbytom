@@ -12,7 +12,9 @@ In the Federal Aquisition Regulation (FAR) a list of Designated Countries is mai
   * Find section with heading "*Designated country* means any of the following countries"
 * FAR Section [52.225-5 Trade Agreements][1]
   * Find the section with heading "*Designated country* means any of the following countries"
+* General Service Administration (GSA) - [Look up Trade Agreements Act-designated countries][4]
 
 [1]: https://www.acquisition.gov/far/part-52#FAR_52_225_5
 [2]: https://en.wikipedia.org/wiki/Trade_Agreements_Act_of_1979
 [3]: https://www.acquisition.gov/far/25.003
+[4]: https://www.gsa.gov/sell-to-government/step-1-learn-about-government-contracting/how-to-access-contract-opportunities/help-with-mas-contracts-to-sell-to-government/roadmap-to-get-a-mas-contract/readiness-assessment-for-mas-offerors/look-up-trade-agreements-actdesignated-countries
