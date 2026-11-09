@@ -21,4 +21,11 @@ The same type of options also work for `scp` but make sure to put them BEFORE th
 * `-O`
   * Use Legacy (Old) SCP Protocol instead of newer SFTP
 
+## Related Reading
+
+* [RFC 6187 X.509 Certificates for SSH Authentication][2]
+  * In my Cisco ASA User Management notes.
+  * Support for this is Extremely Limited. Recommend instead to use more common SSH authentication features.
+
 [1]: https://www.openssh.org/manual.html
+[2]: ../cisco-asa/asa_user_management.md
