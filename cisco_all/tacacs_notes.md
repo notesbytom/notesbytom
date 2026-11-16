@@ -23,7 +23,7 @@ There are several TACACS+ open source projects. Here are some for review. Binari
 ## Acronyms and Definitions
 
 * Terminal Access Controller Access-Control System Plus (TACACS+)
-* Multi‑Authentication and Verification Interface System (MAVIS)
+* Modular Attribute-Value Interchange System (MAVIS)
   * This may be specific to the Marc Huber implementation.
 
 [1]: https://github.com/MarcJHuber/event-driven-servers
