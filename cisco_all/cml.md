@@ -19,6 +19,11 @@ A CML DevNet Sandbox is available to reserve.
 * I'm curious if this could be used for Ansible testing with a virtual Cisco environment
   * Possibly for Ansible Collection Integration Testing
 
+## CML Discussions (Learning Network)
+
+* [Cisco Modeling Labs Community Forum][4]
+
 [1]: https://developer.cisco.com/docs/modeling-labs/
 [2]: https://developer.cisco.com/docs/modeling-labs/vm-images-for-cml-labs/
 [3]: https://developer.cisco.com/sandbox/detail/cml-sandbox
+[4]: https://learningnetwork.cisco.com/s/topic/0TO3i00000094ZjGAI/cisco-modeling-labs-community
