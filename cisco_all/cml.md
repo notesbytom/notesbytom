@@ -16,6 +16,7 @@ A CML DevNet Sandbox is available to reserve.
   * Two Linux Servers
   * Two Linux PCs
   * CML access to GUI, REST, etc. for simulations.
+  * Connectivity depends on SSL VPN ([Secure Client][5] / formerly AnyConnect)
 * I'm curious if this could be used for Ansible testing with a virtual Cisco environment
   * Possibly for Ansible Collection Integration Testing
 
@@ -27,3 +28,4 @@ A CML DevNet Sandbox is available to reserve.
 [2]: https://developer.cisco.com/docs/modeling-labs/vm-images-for-cml-labs/
 [3]: https://developer.cisco.com/sandbox/detail/cml-sandbox
 [4]: https://learningnetwork.cisco.com/s/topic/0TO3i00000094ZjGAI/cisco-modeling-labs-community
+[5]: https://software.cisco.com/download/home/286330811/type/282364313/
