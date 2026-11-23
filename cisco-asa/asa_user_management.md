@@ -15,6 +15,14 @@ Password Policies can be used for user accounts in the local-user database on th
    * Only the Serial Console login will work when a user password is expired!
    * If the device is remote and you don't have serial console access, you will be unable to manage the device.
 
+## SSH Public Key Authentication
+
+From [ASA CLI Configuration Guide - Management Access][2]
+* Section: *"History for Management Access"*
+* Feature Name: *"Separate authentication for users with SSH public key authentication and users with passwords"*
+* Platform Releases: Added in 9.6.3 and 9.8.1
+* Description Snippet: *"When you explicitly configure AAA SSH authentication, this configuration only applies for for usernames with passwords, and you can use any AAA server type (aaa authentication ssh console radius_1 , for example). For example, some users can use public key authentication using the local database, and other users can use passwords with RADIUS."*
+
 ## SSH X.509 User Certificates
 
 As of [Late 2025, the latest ASA software adds support for RFC 6187 X.509 Certificate Authentication with SSH][7].
