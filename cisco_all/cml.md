@@ -5,6 +5,9 @@
 * [CML Documentation][1]
 * [Cisco Reference Platform Images (for CML)][2]
   * Includes ASAv
+* [CML Docker Containers][7]
+  * Reference Container Node Types
+  * Includes a Lightweight Open-Source TACACS+ Service
  
 ## CML DevNet Sandbox
 
@@ -32,3 +35,4 @@ A CML DevNet Sandbox is available to reserve.
 [4]: https://learningnetwork.cisco.com/s/topic/0TO3i00000094ZjGAI/cisco-modeling-labs-community
 [5]: https://software.cisco.com/download/home/286330811/type/282364313/
 [6]: https://developer.cisco.com/docs/sandbox/connection/
+[7]: https://github.com/CiscoLearning/cml-docker-containers/releases
