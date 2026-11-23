@@ -18,6 +18,7 @@ There are several TACACS+ open source projects. Here are some for review. Binari
 * TACACS+ daemon (tac_plus) by John Heasley of shrubbery.net
   * [TACACS+ daemon][3] Tool overview page
   * [tac_plus download][4] Source Code bundle
+  * This is used by Cisco Modeling Labs (CML) for [lightweight TACACS+ container testing][6]
 * [Tacquito RFC8907 TACACS+][5] Meta reference implementation (in Go)
 
 ## Acronyms and Definitions
@@ -31,3 +32,4 @@ There are several TACACS+ open source projects. Here are some for review. Binari
 [3]: https://www.shrubbery.net/tac_plus/
 [4]: https://www.shrubbery.net/pub/tac_plus/
 [5]: https://github.com/facebookincubator/tacquito
+[6]: https://github.com/CiscoLearning/cml-docker-containers/blob/main/containers/tacplus/Dockerfile
