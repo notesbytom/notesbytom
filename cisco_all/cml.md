@@ -5,8 +5,9 @@
 * [CML Documentation][1]
 * [Cisco Reference Platform Images (for CML)][2]
   * Includes ASAv
-* [CML Docker Containers][7]
+* [CML Docker Container Images][7]
   * Reference Container Node Types
+    * Browsers and Services Only
   * Includes a Lightweight Open-Source TACACS+ Service
  
 ## CML DevNet Sandbox
