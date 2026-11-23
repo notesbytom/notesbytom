@@ -19,13 +19,14 @@ There are several TACACS+ open source projects. Here are some for review. Binari
   * [TACACS+ daemon][3] Tool overview page
   * [tac_plus download][4] Source Code bundle
   * This is used by Cisco Modeling Labs (CML) for [lightweight TACACS+ container testing][6]
+  * Ubuntu [manual page for this `tac_plus` distribution][7] (as of 18.04 LTS "bionic")
 * [Tacquito RFC8907 TACACS+][5] Meta reference implementation (in Go)
 
 ## Acronyms and Definitions
 
 * Terminal Access Controller Access-Control System Plus (TACACS+)
 * Modular Attribute-Value Interchange System (MAVIS)
-  * This may be specific to the Marc Huber implementation.
+  * This may be specific to the Marc Huber NG implementation.
 
 [1]: https://github.com/MarcJHuber/event-driven-servers
 [2]: https://projects.pro-bono-publico.de/event-driven-servers/doc/tac_plus-ng.html
@@ -33,3 +34,4 @@ There are several TACACS+ open source projects. Here are some for review. Binari
 [4]: https://www.shrubbery.net/pub/tac_plus/
 [5]: https://github.com/facebookincubator/tacquito
 [6]: https://github.com/CiscoLearning/cml-docker-containers/blob/main/containers/tacplus/Dockerfile
+[7]: https://manpages.ubuntu.com/manpages/bionic/man5/tac_plus.conf.5.html
