@@ -22,6 +22,11 @@ There are several TACACS+ open source projects. Here are some for review. Binari
   * Ubuntu [manual page for this `tac_plus` distribution][7] (as of 18.04 LTS "bionic")
 * [Tacquito RFC8907 TACACS+][5] Meta reference implementation (in Go)
 
+## SSH Public Key Authentication Support
+
+* [IOS-XR 26.3.1 SSH remote public key authentication using TACACS+][8] (September 2026)
+* IOS-XE appears to still be missing this feature, hopefully added in a future release.
+
 ## Acronyms and Definitions
 
 * Terminal Access Controller Access-Control System Plus (TACACS+)
@@ -35,3 +40,4 @@ There are several TACACS+ open source projects. Here are some for review. Binari
 [5]: https://github.com/facebookincubator/tacquito
 [6]: https://github.com/CiscoLearning/cml-docker-containers/blob/main/containers/tacplus/Dockerfile
 [7]: https://manpages.ubuntu.com/manpages/bionic/man5/tac_plus.conf.5.html
+[8]: https://www.cisco.com/c/en/us/td/docs/iosxr/cisco8000/system-security/configuration-guide/system-security-config-cisco8000/tacacs-services-for-aaa-w/ssh-remote-pub-key-auth-via-tacacs.html
